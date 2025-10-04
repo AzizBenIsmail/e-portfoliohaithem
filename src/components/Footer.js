@@ -5,8 +5,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: 'LinkedIn', icon: '💼', url: 'https://linkedin.com/in/haithem' },
-    { name: 'Email', icon: '📧', url: 'mailto:haithem.ingenieur@email.com' },
+    { name: 'LinkedIn', icon: '💼', url: 'https://linkedin.com/in/haythem-ayadi' },
+    { name: 'Email', icon: '📧', url: 'mailto:Engineer.haithem.ayadi@gmail.com' },
     { name: 'CV', icon: '📄', url: '#cv' }
   ];
 
@@ -50,8 +50,8 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contact</h4>
             <div className="contact-info">
-              <p>📧 haithem.ingenieur@email.com</p>
-              <p>📱 +33 6 XX XX XX XX</p>
+              <p>📧 Engineer.haithem.ayadi@gmail.com</p>
+              <p>📱 +33 611488502</p>
               <p>📍 Recherche en France</p>
             </div>
           </div>

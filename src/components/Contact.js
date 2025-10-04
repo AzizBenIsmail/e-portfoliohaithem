@@ -46,14 +46,14 @@ const Contact = () => {
     {
       icon: '📧',
       title: 'Email',
-      value: 'haythem.ayadi@email.com',
-      action: 'mailto:haythem.ayadi@email.com'
+      value: 'Engineer.haithem.ayadi@gmail.com',
+      action: 'mailto:Engineer.haithem.ayadi@gmail.com'
     },
     {
       icon: '📱',
       title: 'Téléphone',
-      value: '+33 6 XX XX XX XX',
-      action: 'tel:+336XXXXXXXX'
+      value: '+33 611488502',
+      action: 'tel:+33611488502'
     },
     {
       icon: '📍',
