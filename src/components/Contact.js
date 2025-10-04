@@ -64,8 +64,8 @@ const Contact = () => {
     {
       icon: '💼',
       title: 'LinkedIn',
-      value: 'linkedin.com/in/haythem-ayadi',
-      action: 'https://linkedin.com/in/haythem-ayadi'
+      value: 'linkedin.com/in/ayadi-haithem-aa26791a9',
+      action: 'https://www.linkedin.com/in/ayadi-haithem-aa26791a9/'
     }
   ];
 

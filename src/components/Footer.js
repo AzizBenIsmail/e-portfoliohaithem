@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: 'LinkedIn', icon: '💼', url: 'https://linkedin.com/in/haythem-ayadi' },
+    { name: 'LinkedIn', icon: '💼', url: 'https://www.linkedin.com/in/ayadi-haithem-aa26791a9/' },
     { name: 'Email', icon: '📧', url: 'mailto:Engineer.haithem.ayadi@gmail.com' },
     { name: 'CV', icon: '📄', url: '#cv' }
   ];
