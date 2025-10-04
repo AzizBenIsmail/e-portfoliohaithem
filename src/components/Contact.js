@@ -113,6 +113,16 @@ const Contact = () => {
                 <span className="status-indicator"></span>
                 Recherche active en France
               </p>
+              <div className="cv-download">
+                <a 
+                  href="/Curriculum-vitae.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="cv-btn"
+                >
+                  📄 Télécharger mon CV
+                </a>
+              </div>
             </div>
           </div>
 

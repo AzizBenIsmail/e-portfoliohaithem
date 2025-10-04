@@ -7,7 +7,7 @@ const Footer = () => {
   const socialLinks = [
     { name: 'LinkedIn', icon: '💼', url: 'https://www.linkedin.com/in/ayadi-haithem-aa26791a9/' },
     { name: 'Email', icon: '📧', url: 'mailto:Engineer.haithem.ayadi@gmail.com' },
-    { name: 'CV', icon: '📄', url: '#cv' }
+    { name: 'CV', icon: '📄', url: '/Curriculum-vitae.pdf', target: '_blank' }
   ];
 
   const quickLinks = [

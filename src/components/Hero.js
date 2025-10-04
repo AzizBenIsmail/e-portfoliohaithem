@@ -34,6 +34,14 @@ const Hero = () => {
               >
                 Me contacter
               </button>
+              <a 
+                href="/Curriculum-vitae.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn btn-outline"
+              >
+                📄 Télécharger CV
+              </a>
             </div>
           </div>
           <div className="hero-image">
