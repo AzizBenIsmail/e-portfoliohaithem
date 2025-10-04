@@ -21,7 +21,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <h2>Haithem</h2>
+            <h2>Haythem Ayadi</h2>
             <span>Ingénieur Génie Civil</span>
           </div>
           

@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <h3>Haithem</h3>
+              <h3>Haythem Ayadi</h3>
               <p>Ingénieur Génie Civil</p>
               <span className="specialization">Spécialiste Offshore</span>
             </div>
@@ -78,7 +78,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p className="copyright">
-              © {currentYear} Haithem - Ingénieur Génie Civil. Tous droits réservés.
+              © {currentYear} Haythem Ayadi - Ingénieur Génie Civil. Tous droits réservés.
             </p>
             <div className="footer-tags">
               <span className="tag">Génie Civil</span>

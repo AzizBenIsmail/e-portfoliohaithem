@@ -46,8 +46,8 @@ const Contact = () => {
     {
       icon: '📧',
       title: 'Email',
-      value: 'haithem.ingenieur@email.com',
-      action: 'mailto:haithem.ingenieur@email.com'
+      value: 'haythem.ayadi@email.com',
+      action: 'mailto:haythem.ayadi@email.com'
     },
     {
       icon: '📱',
@@ -64,8 +64,8 @@ const Contact = () => {
     {
       icon: '💼',
       title: 'LinkedIn',
-      value: 'linkedin.com/in/haithem',
-      action: 'https://linkedin.com/in/haithem'
+      value: 'linkedin.com/in/haythem-ayadi',
+      action: 'https://linkedin.com/in/haythem-ayadi'
     }
   ];
 
