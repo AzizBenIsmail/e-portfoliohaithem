@@ -45,8 +45,19 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero-image">
-            <div className="image-placeholder">
-              <div className="engineer-icon">👷‍♂️</div>
+            <div className="profile-image-container">
+              <img 
+                src="/haythem-profile.jpg" 
+                alt="Haythem Ayadi - Ingénieur Génie Civil"
+                className="profile-image"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="image-placeholder" style={{display: 'none'}}>
+                <div className="engineer-icon">👷‍♂️</div>
+              </div>
             </div>
           </div>
         </div>
