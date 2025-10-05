@@ -3,6 +3,7 @@
   color: white;
   padding: 3rem 0 1rem;
 }
+body.dark .footer { background: #0f1720; color: var(--text); }
 
 .container {
   max-width: 1200px;
@@ -20,14 +21,14 @@
 .footer-section h4 {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
-  color: #3498db;
+  color: var(--primary);
   font-weight: 600;
 }
 
 .footer-logo h3 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
-  color: white;
+  color: inherit;
   font-weight: 700;
 }
 
@@ -36,6 +37,7 @@
   color: #bdc3c7;
   margin-bottom: 0.5rem;
 }
+body.dark .footer-logo p { color: var(--muted); }
 
 .specialization {
   background: #3498db;
@@ -45,6 +47,7 @@
   font-size: 0.8rem;
   font-weight: 600;
 }
+body.dark .specialization { background: var(--primary); color: #0f1720; }
 
 .footer-description {
   font-size: 0.95rem;
@@ -52,6 +55,7 @@
   color: #bdc3c7;
   margin-top: 1rem;
 }
+body.dark .footer-description { color: var(--muted); }
 
 .footer-links {
   list-style: none;
@@ -69,16 +73,14 @@
   transition: color 0.3s ease;
   font-size: 0.95rem;
 }
-
-.footer-links a:hover {
-  color: #3498db;
-}
+.footer-links a:hover { color: var(--primary); }
 
 .contact-info p {
   margin-bottom: 0.8rem;
   font-size: 0.95rem;
   color: #bdc3c7;
 }
+body.dark .contact-info p { color: var(--muted); }
 
 .social-links {
   display: flex;
@@ -95,10 +97,7 @@
   transition: color 0.3s ease;
   font-size: 0.95rem;
 }
-
-.social-link:hover {
-  color: #3498db;
-}
+.social-link:hover { color: var(--primary); }
 
 .social-icon {
   font-size: 1.2rem;
@@ -110,11 +109,13 @@
   background: rgba(52, 152, 219, 0.2);
   border-radius: 50%;
 }
+body.dark .social-icon { background: rgba(124, 196, 255, 0.15); }
 
 .footer-bottom {
   border-top: 1px solid #34495e;
   padding-top: 2rem;
 }
+body.dark .footer-bottom { border-top-color: #223244; }
 
 .footer-bottom-content {
   display: flex;
@@ -129,6 +130,7 @@
   color: #bdc3c7;
   margin: 0;
 }
+body.dark .copyright { color: var(--muted); }
 
 .footer-tags {
   display: flex;
@@ -138,12 +140,13 @@
 
 .tag {
   background: rgba(52, 152, 219, 0.2);
-  color: #3498db;
+  color: var(--primary);
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: 500;
 }
+body.dark .tag { background: rgba(124, 196, 255, 0.15); }
 
 @media (max-width: 768px) {
   .footer-content {
