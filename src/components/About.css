@@ -141,6 +141,9 @@
 }
 
 .travel-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   background: #fff8ee;
   color: #b36800;
   border: 1px solid #ffe0b8;
@@ -148,6 +151,11 @@
   border-radius: 10px;
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+.travel-badge .flag {
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .about-stats {
