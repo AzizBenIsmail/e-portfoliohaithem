@@ -153,9 +153,11 @@
   font-weight: 600;
 }
 
-.travel-badge .flag {
-  font-size: 1rem;
-  line-height: 1;
+.flag-img {
+  width: 20px;
+  height: 15px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.06);
 }
 
 .about-stats {

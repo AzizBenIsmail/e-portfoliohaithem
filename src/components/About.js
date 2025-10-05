@@ -64,13 +64,13 @@ const About = () => {
             <div className="interests-travel">
               <h5>Pays visités</h5>
               <div className="travel-badges">
-                <span className="travel-badge"><span className="flag">🇷🇸</span><span>Serbie</span></span>
-                <span className="travel-badge"><span className="flag">🇹🇷</span><span>Turquie</span></span>
-                <span className="travel-badge"><span className="flag">🇸🇦</span><span>Arabie saoudite</span></span>
-                <span className="travel-badge"><span className="flag">🇲🇦</span><span>Maroc</span></span>
-                <span className="travel-badge"><span className="flag">🇲🇾</span><span>Malaisie</span></span>
-                <span className="travel-badge"><span className="flag">🇮🇩</span><span>Indonésie</span></span>
-                <span className="travel-badge"><span className="flag">🇹🇭</span><span>Thaïlande</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/rs.png" srcSet="https://flagcdn.com/w40/rs.png 2x" alt="Serbie" loading="lazy" /><span>Serbie</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/tr.png" srcSet="https://flagcdn.com/w40/tr.png 2x" alt="Turquie" loading="lazy" /><span>Turquie</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/sa.png" srcSet="https://flagcdn.com/w40/sa.png 2x" alt="Arabie saoudite" loading="lazy" /><span>Arabie saoudite</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/ma.png" srcSet="https://flagcdn.com/w40/ma.png 2x" alt="Maroc" loading="lazy" /><span>Maroc</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/my.png" srcSet="https://flagcdn.com/w40/my.png 2x" alt="Malaisie" loading="lazy" /><span>Malaisie</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/id.png" srcSet="https://flagcdn.com/w40/id.png 2x" alt="Indonésie" loading="lazy" /><span>Indonésie</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/th.png" srcSet="https://flagcdn.com/w40/th.png 2x" alt="Thaïlande" loading="lazy" /><span>Thaïlande</span></span>
               </div>
             </div>
           </div>
