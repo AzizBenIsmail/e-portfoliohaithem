@@ -40,7 +40,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="btn btn-outline"
               >
-                📄 Télécharger CV
+                📄 Télécharger mon CV
               </a>
             </div>
           </div>

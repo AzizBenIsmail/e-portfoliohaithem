@@ -35,7 +35,24 @@ const Skills = () => {
   const certifications = [
     { title: 'Certificat General English (Levels 5, 6, 7 & 8)', org: 'Amideast' },
     { title: 'Certificat Revit Structure', org: 'Ironhoster Academy' },
-    { title: 'Ironhoster Academy', org: 'Formation professionnelle' }
+  ];
+
+  const education = [
+    {
+      degree: "Diplôme national d’ingénieur",
+      institution: 'Université Arabe des Science, Tunis',
+      details: "Projet de fin d'étude intitulé : Etude d'un bâtiment Ilot WURTZ-JUVISY sur ORGE-FRANCE (note : 16/20)"
+    },
+    {
+      degree: 'Licence appliquée en génie civil',
+      institution: "Institut Supérieur des Technologies de l'Environnement d'Urbanisme et des Bâtiments, Tunis",
+      details: "Projet de fin d'étude : Gestion, suivi, planification et métré de l'hôtel MARRIOTT (R+12 et 3SS) (mentien : Trés bien)"
+    },
+    {
+      degree: 'Baccalauréat Science technique',
+      institution: 'Lycée 2 mars 1934, Tunis',
+      details: ''
+    }
   ];
 
   return (
@@ -122,6 +139,25 @@ const Skills = () => {
                   <h4>{cert.title}</h4>
                   <span className="native-badge">{cert.org}</span>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="skills-section">
+          <h3>Formation académique</h3>
+          <div className="languages-grid">
+            {education.map((edu, index) => (
+              <div key={index} className="language-item">
+                <div className="language-info">
+                  <h4>{edu.degree}</h4>
+                  <span className="native-badge">{edu.institution}</span>
+                </div>
+                {edu.details && (
+                  <div className="language-level">
+                    <span>{edu.details}</span>
+                  </div>
+                )}
               </div>
             ))}
           </div>
