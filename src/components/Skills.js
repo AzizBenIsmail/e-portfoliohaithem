@@ -12,17 +12,19 @@ const Skills = () => {
   ];
 
   const softwareSkills = [
-    { name: 'Autocad', icon: '📐', level: 90 },
-    { name: 'Revit', icon: '🏗️', level: 85 },
-    { name: 'Tekla Structures', icon: '🔧', level: 80 },
-    { name: 'Robot Structural', icon: '🤖', level: 85 },
-    { name: 'SAP2000', icon: '📊', level: 75 },
-    { name: 'Excel Avancé', icon: '📈', level: 90 }
+    { name: 'Autocad', icon: '📐', level: 100 },
+    { name: 'Gstarcad', icon: '📏', level: 100 },
+    { name: 'Advance Concrete', icon: '🧱', level: 100 },
+    { name: 'Autocad Structural Detailing', icon: '🏗️', level: 100 },
+    { name: 'Arche Graitec', icon: '🧮', level: 100 },
+    { name: 'Revit', icon: '🏢', level: 80 },
+    { name: 'Advance Design', icon: '🛠️', level: 70 },
+    { name: 'MS Office', icon: '📊', level: 100 }
   ];
 
   const languages = [
-    { name: 'Français', level: 95, native: true },
-    { name: 'Anglais', level: 85, native: false },
+    { name: 'Français', level: 90, native: false },
+    { name: 'Anglais', level: 80, native: false },
     { name: 'Arabe', level: 100, native: true }
   ];
 
