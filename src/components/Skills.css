@@ -1,6 +1,6 @@
 .skills {
   padding: 5rem 0;
-  background: white;
+  background: var(--bg);
 }
 
 .container {
@@ -16,14 +16,14 @@
 
 .section-header h2 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: var(--text);
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .section-header p {
   font-size: 1.2rem;
-  color: #7f8c8d;
+  color: var(--muted);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -36,7 +36,7 @@
 
 .skills-section h3 {
   font-size: 1.8rem;
-  color: #2c3e50;
+  color: var(--text);
   margin-bottom: 2rem;
   font-weight: 600;
   text-align: center;
@@ -49,10 +49,11 @@
 }
 
 .skill-item {
-  background: #f8f9fa;
+  background: var(--panel);
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--panel-border);
   transition: transform 0.3s ease;
 }
 
@@ -69,14 +70,14 @@
 
 .skill-header h4 {
   font-size: 1.2rem;
-  color: #2c3e50;
+  color: var(--text);
   font-weight: 600;
   margin: 0;
 }
 
 .skill-level {
   font-size: 1rem;
-  color: #3498db;
+  color: var(--primary);
   font-weight: 700;
 }
 
@@ -97,7 +98,7 @@
 
 .skill-description {
   font-size: 0.95rem;
-  color: #5a6c7d;
+  color: var(--muted);
   line-height: 1.5;
   margin: 0;
 }
@@ -109,11 +110,12 @@
 }
 
 .software-item {
-  background: #f8f9fa;
+  background: var(--panel);
   padding: 2rem;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--panel-border);
   transition: transform 0.3s ease;
 }
 
@@ -128,7 +130,7 @@
 
 .software-item h4 {
   font-size: 1.1rem;
-  color: #2c3e50;
+  color: var(--text);
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -155,7 +157,7 @@
 
 .software-level span {
   font-size: 0.9rem;
-  color: #7f8c8d;
+  color: var(--muted);
   font-weight: 600;
 }
 
@@ -166,10 +168,11 @@
 }
 
 .language-item {
-  background: #f8f9fa;
+  background: var(--panel);
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--panel-border);
   transition: transform 0.3s ease;
 }
 
@@ -186,7 +189,7 @@
 
 .language-info h4 {
   font-size: 1.2rem;
-  color: #2c3e50;
+  color: var(--text);
   font-weight: 600;
   margin: 0;
 }

@@ -26,6 +26,15 @@
   z-index: -1;
 }
 
+body.dark .hero-background {
+  background: linear-gradient(135deg, #0f1720 0%, #1a2330 100%);
+}
+
+body.dark .hero-overlay {
+  background: radial-gradient(ellipse at top, rgba(124, 196, 255, 0.08), transparent 60%),
+              radial-gradient(ellipse at bottom, rgba(255, 178, 74, 0.08), transparent 60%);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -128,6 +137,26 @@
   background: transparent;
   color: white;
   border: 2px solid #f39c12;
+}
+
+body.dark .btn-secondary {
+  color: #e5eef7;
+  border-color: #e5eef7;
+}
+
+body.dark .btn-secondary:hover {
+  background: #e5eef7;
+  color: #1a2330;
+}
+
+body.dark .btn-outline {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+body.dark .btn-outline:hover {
+  background: var(--accent);
+  color: #1a2330;
 }
 
 .btn-outline:hover {

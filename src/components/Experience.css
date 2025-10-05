@@ -1,6 +1,6 @@
 .experience {
   padding: 5rem 0;
-  background: #f8f9fa;
+  background: var(--bg);
 }
 
 .container {
@@ -16,14 +16,14 @@
 
 .section-header h2 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: var(--text);
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .section-header p {
   font-size: 1.2rem;
-  color: #7f8c8d;
+  color: var(--muted);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -41,7 +41,7 @@
   top: 0;
   bottom: 0;
   width: 4px;
-  background: linear-gradient(to bottom, #3498db, #2980b9);
+  background: linear-gradient(to bottom, var(--primary), var(--primary-2));
   transform: translateX(-50%);
 }
 
@@ -82,10 +82,11 @@
 }
 
 .timeline-content {
-  background: white;
+  background: var(--panel);
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--panel-border);
   position: relative;
 }
 
@@ -109,7 +110,7 @@
 }
 
 .timeline-period {
-  background: linear-gradient(135deg, #3498db, #2980b9);
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -121,35 +122,35 @@
 
 .timeline-position {
   font-size: 1.4rem;
-  color: #2c3e50;
+  color: var(--text);
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
 
 .timeline-company {
   font-size: 1.1rem;
-  color: #3498db;
+  color: var(--primary);
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .timeline-location {
   font-size: 0.9rem;
-  color: #7f8c8d;
+  color: var(--muted);
   margin-bottom: 1rem;
 }
 
 .timeline-description {
   font-size: 1rem;
   line-height: 1.6;
-  color: #5a6c7d;
+  color: var(--muted);
   margin-bottom: 1.5rem;
 }
 
 .timeline-achievements h5,
 .timeline-technologies h5 {
   font-size: 1rem;
-  color: #2c3e50;
+  color: var(--text);
   margin-bottom: 0.8rem;
   font-weight: 600;
 }
@@ -165,7 +166,7 @@
   padding-left: 1.5rem;
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
-  color: #5a6c7d;
+  color: var(--muted);
   line-height: 1.5;
 }
 
@@ -217,7 +218,7 @@
 
 .tech-tag {
   background: #e8f4fd;
-  color: #3498db;
+  color: var(--primary);
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.85rem;
@@ -229,15 +230,16 @@
 }
 
 .summary-card {
-  background: white;
+  background: var(--panel);
   padding: 3rem;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--panel-border);
 }
 
 .summary-card h3 {
   font-size: 1.8rem;
-  color: #2c3e50;
+  color: var(--text);
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 700;
@@ -262,14 +264,14 @@
 
 .expertise-item h4 {
   font-size: 1.2rem;
-  color: #2c3e50;
+  color: var(--text);
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .expertise-item p {
   font-size: 0.95rem;
-  color: #5a6c7d;
+  color: var(--muted);
   line-height: 1.5;
   margin: 0;
 }

@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [theme, setTheme] = useState('light');
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,6 +15,29 @@ const Header = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
     setIsMenuOpen(false);
+  };
+
+  useEffect(() => {
+    const saved = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initial = saved || (systemPrefersDark ? 'dark' : 'light');
+    setTheme(initial);
+    if (initial === 'dark') {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const next = theme === 'dark' ? 'light' : 'dark';
+    setTheme(next);
+    localStorage.setItem('theme', next);
+    if (next === 'dark') {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
   };
 
   return (
@@ -35,6 +59,10 @@ const Header = () => {
               <li><button onClick={() => scrollToSection('contact')}>Contact</button></li>
             </ul>
           </nav>
+
+          <button className="theme-toggle" onClick={toggleTheme} aria-label="Basculer le thème">
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
 
           <div className="menu-toggle" onClick={toggleMenu}>
             <span></span>

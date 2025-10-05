@@ -11,3 +11,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* THEME: Dark mode */
+/* Design tokens */
+:root {
+  --bg: #ffffff;
+  --text: #2c3e50;
+  --muted: #5a6c7d;
+  --panel: #ffffff;
+  --panel-border: #eef2f5;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --primary: #3498db;
+  --primary-2: #2980b9;
+  --accent: #f39c12;
+}
+
+body.dark {
+  --bg: #0f1720;
+  --text: #e5eef7;
+  --muted: #b5c7d9;
+  --panel: #121a23;
+  --panel-border: #223244;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --primary: #7cc4ff;
+  --primary-2: #3fa2ff;
+  --accent: #ffb24a;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body, .header, .about, .experience, .skills {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+body.dark .header {
+  background: rgba(22, 30, 40, 0.9);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .logo h2 { color: #e8f0f7; }
+body.dark .logo span { color: #7cc4ff; }
+body.dark .nav-list li button { color: #e5eef7; }
+body.dark .nav-list li button:hover { color: #7cc4ff; }
+body.dark .menu-toggle span { background: #e5eef7; }
+body.dark .theme-toggle { background: #1a2530; color: #e5eef7; border-color: #2a3a4a; }
+body.dark .theme-toggle:hover { background: #223040; }
+
+/* Sections */
+.about, .experience, .skills { background: var(--bg); }
+
+/* Cards */
+.about-text, .stat-card, .summary-card,
+.timeline-content, .skill-item, .software-item,
+.language-item, .education-card {
+  background: var(--panel);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  border-color: var(--panel-border);
+}
+
+/* Accents */
+.section-header h2 { color: var(--text); }
+.section-header p { color: var(--muted); }
+.timeline-company { color: var(--primary); }
+.timeline-description, .expertise-item p,
+.skill-description, .language-level span,
+.education-details { color: var(--muted); }
+body.dark .native-badge { background: #1f7a4d; }
+body.dark .education-institution-badge { color: #89e0b1; background: rgba(39,174,96,0.18); border-color: rgba(39,174,96,0.35); }
+.education-timeline::before { background: linear-gradient(180deg, #eef2f5, #e2e8f0); }
+.education-dot { background: var(--primary); box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.15); }
+.skill-progress { background: linear-gradient(90deg, var(--primary), var(--primary-2)); }
+.level-progress { background: linear-gradient(90deg, #f6b44e, #e67e22); }
+.language-level .level-progress { background: linear-gradient(90deg, #27ae60, #2ecc71); }
+
+/* Travel badges */
+.travel-badge { background: #fff8ee; color: #b36800; border-color: #ffe0b8; }
+.interest-tag { background: #eef6ff; color: #1f6fd6; border-color: #d6e6ff; }
+body.dark .travel-badge { background: #1b2430; color: #e4b471; border-color: #3a2c18; }
+body.dark .interest-tag { background: #1a2330; color: var(--primary); border-color: #2a3a4a; }
