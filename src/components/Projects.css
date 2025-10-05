@@ -1,6 +1,6 @@
 .projects {
   padding: 5rem 0;
-  background: white;
+  background: var(--bg);
 }
 
 .container {
@@ -16,14 +16,14 @@
 
 .section-header h2 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: var(--text);
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .section-header p {
   font-size: 1.2rem;
-  color: #7f8c8d;
+  color: var(--muted);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -37,9 +37,9 @@
 }
 
 .filter-btn {
-  background: #f8f9fa;
-  border: 2px solid #e9ecef;
-  color: #5a6c7d;
+  background: var(--panel);
+  border: 2px solid var(--panel-border);
+  color: var(--muted);
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
   font-size: 1rem;
@@ -49,15 +49,15 @@
 }
 
 .filter-btn:hover {
-  background: #3498db;
+  background: var(--primary);
   color: white;
-  border-color: #3498db;
+  border-color: var(--primary);
 }
 
 .filter-btn.active {
-  background: #3498db;
+  background: var(--primary);
   color: white;
-  border-color: #3498db;
+  border-color: var(--primary);
 }
 
 .projects-grid {
@@ -68,9 +68,10 @@
 }
 
 .project-card {
-  background: white;
+  background: var(--panel);
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--panel-border);
   overflow: hidden;
   transition: transform 0.3s ease;
 }
@@ -98,12 +99,13 @@
   top: 1rem;
   right: 1rem;
   background: rgba(255, 255, 255, 0.9);
-  color: #2c3e50;
+  color: var(--text);
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: 600;
 }
+body.dark .project-status { background: rgba(18, 26, 35, 0.9); color: var(--text); }
 
 .project-content {
   padding: 2rem;
@@ -115,7 +117,7 @@
 
 .project-header h3 {
   font-size: 1.4rem;
-  color: #2c3e50;
+  color: var(--text);
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -125,7 +127,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 0.9rem;
-  color: #7f8c8d;
+  color: var(--muted);
 }
 
 .project-client {
@@ -134,7 +136,7 @@
 
 .project-year {
   background: #e8f4fd;
-  color: #3498db;
+  color: var(--primary);
   padding: 0.2rem 0.6rem;
   border-radius: 10px;
   font-weight: 600;
@@ -143,14 +145,14 @@
 .project-description {
   font-size: 1rem;
   line-height: 1.6;
-  color: #5a6c7d;
+  color: var(--muted);
   margin-bottom: 1.5rem;
 }
 
 .project-features h4,
 .project-technologies h4 {
   font-size: 1rem;
-  color: #2c3e50;
+  color: var(--text);
   margin-bottom: 0.8rem;
   font-weight: 600;
 }
@@ -166,7 +168,7 @@
   padding-left: 1.5rem;
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
-  color: #5a6c7d;
+  color: var(--muted);
   line-height: 1.5;
 }
 
@@ -174,7 +176,7 @@
   content: '•';
   position: absolute;
   left: 0;
-  color: #3498db;
+  color: var(--primary);
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -187,7 +189,7 @@
 
 .tech-tag {
   background: #e8f4fd;
-  color: #3498db;
+  color: var(--primary);
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.8rem;
@@ -195,10 +197,12 @@
 }
 
 .projects-summary {
-  background: #f8f9fa;
+  background: var(--panel);
   padding: 3rem;
   border-radius: 15px;
   margin-top: 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--panel-border);
 }
 
 .summary-stats {
@@ -209,22 +213,23 @@
 
 .stat-item {
   text-align: center;
-  background: white;
+  background: var(--panel);
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--panel-border);
 }
 
 .stat-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #3498db;
+  color: var(--primary);
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
   font-size: 1rem;
-  color: #5a6c7d;
+  color: var(--muted);
   font-weight: 500;
 }
 
