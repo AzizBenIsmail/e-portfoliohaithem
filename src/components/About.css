@@ -96,6 +96,60 @@
   opacity: 0.95;
 }
 
+.about-interests {
+  margin-top: 2rem;
+}
+
+.about-interests h4 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.interest-tag {
+  background: #eef6ff;
+  color: #1f6fd6;
+  border: 1px solid #d6e6ff;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.interests-travel {
+  margin-top: 1rem;
+}
+
+.interests-travel h5 {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin: 0.5rem 0 0.6rem 0;
+  font-weight: 600;
+}
+
+.travel-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.travel-badge {
+  background: #fff8ee;
+  color: #b36800;
+  border: 1px solid #ffe0b8;
+  padding: 0.35rem 0.65rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .about-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;

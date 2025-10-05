@@ -52,6 +52,28 @@ const About = () => {
                 strictes.
               </p>
             </div>
+
+          <div className="about-interests">
+            <h4>Centres d’intérêt</h4>
+            <div className="interests-list">
+              <span className="interest-tag">⚽ Football</span>
+              <span className="interest-tag">🏋️‍♂️ Musculation</span>
+              <span className="interest-tag">✈️ Voyage</span>
+            </div>
+
+            <div className="interests-travel">
+              <h5>Pays visités</h5>
+              <div className="travel-badges">
+                <span className="travel-badge"><span className="flag">🇷🇸</span><span>Serbie</span></span>
+                <span className="travel-badge"><span className="flag">🇹🇷</span><span>Turquie</span></span>
+                <span className="travel-badge"><span className="flag">🇸🇦</span><span>Arabie saoudite</span></span>
+                <span className="travel-badge"><span className="flag">🇲🇦</span><span>Maroc</span></span>
+                <span className="travel-badge"><span className="flag">🇲🇾</span><span>Malaisie</span></span>
+                <span className="travel-badge"><span className="flag">🇮🇩</span><span>Indonésie</span></span>
+                <span className="travel-badge"><span className="flag">🇹🇭</span><span>Thaïlande</span></span>
+              </div>
+            </div>
+          </div>
           </div>
           
           <div className="about-stats">
