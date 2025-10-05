@@ -32,6 +32,12 @@ const Skills = () => {
     { name: 'Arabe', level: 100, native: true }
   ];
 
+  const certifications = [
+    { title: 'Certificat General English (Levels 5, 6, 7 & 8)', org: 'Amideast' },
+    { title: 'Certificat Revit Structure', org: 'Ironhoster Academy' },
+    { title: 'Ironhoster Academy', org: 'Formation professionnelle' }
+  ];
+
   return (
     <section id="competences" className="skills">
       <div className="container">
@@ -104,6 +110,20 @@ const Skills = () => {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+
+        <div className="skills-section">
+          <h3>Certificats & Formations</h3>
+          <div className="languages-grid">
+            {certifications.map((cert, index) => (
+              <div key={index} className="language-item">
+                <div className="language-info">
+                  <h4>{cert.title}</h4>
+                  <span className="native-badge">{cert.org}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
