@@ -146,18 +146,17 @@ const Skills = () => {
 
         <div className="skills-section">
           <h3>Formation académique</h3>
-          <div className="languages-grid">
+          <div className="education-timeline">
             {education.map((edu, index) => (
-              <div key={index} className="language-item">
-                <div className="language-info">
-                  <h4>{edu.degree}</h4>
-                  <span className="native-badge">{edu.institution}</span>
+              <div key={index} className="education-item">
+                <div className="education-dot" aria-hidden="true"></div>
+                <div className="education-card">
+                  <h4 className="education-degree">{edu.degree}</h4>
+                  <div className="education-institution">{edu.institution}</div>
+                  {edu.details && (
+                    <p className="education-details">{edu.details}</p>
+                  )}
                 </div>
-                {edu.details && (
-                  <div className="language-level">
-                    <span>{edu.details}</span>
-                  </div>
-                )}
               </div>
             ))}
           </div>
