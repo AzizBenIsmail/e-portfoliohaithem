@@ -183,6 +183,38 @@
   gap: 0.5rem;
 }
 
+.timeline-projects {
+  margin-top: 1rem;
+}
+
+.timeline-projects h5 {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.timeline-projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-projects li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: #5a6c7d;
+}
+
+.timeline-projects li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #2980b9;
+  font-weight: bold;
+}
+
 .tech-tag {
   background: #e8f4fd;
   color: #3498db;
