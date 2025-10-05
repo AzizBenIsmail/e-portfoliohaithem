@@ -2,6 +2,13 @@ import React from 'react';
 import './Skills.css';
 
 const Skills = () => {
+  const getEducationIcon = (degree) => {
+    const lower = (degree || '').toLowerCase();
+    if (lower.includes('ingénieur') || lower.includes("ingénieur")) return '🎓';
+    if (lower.includes('licence')) return '📜';
+    if (lower.includes('baccalauréat')) return '🏫';
+    return '🎓';
+  };
   const technicalSkills = [
     { name: 'Calcul de structures', level: 95, description: 'Analyse et dimensionnement de structures en béton armé' },
     { name: 'Logiciels CAO', level: 90, description: 'Autocad, Revit, Tekla Structures' },
@@ -151,8 +158,11 @@ const Skills = () => {
               <div key={index} className="education-item">
                 <div className="education-dot" aria-hidden="true"></div>
                 <div className="education-card">
-                  <h4 className="education-degree">{edu.degree}</h4>
-                  <div className="education-institution">{edu.institution}</div>
+                  <div className="education-card-header">
+                    <div className="education-icon" aria-hidden="true">{getEducationIcon(edu.degree)}</div>
+                    <h4 className="education-degree">{edu.degree}</h4>
+                  </div>
+                  <div className="education-institution-badge">{edu.institution}</div>
                   {edu.details && (
                     <p className="education-details">{edu.details}</p>
                   )}
