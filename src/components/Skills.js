@@ -19,7 +19,11 @@ const Skills = () => {
     { name: 'Arche Graitec', icon: '🧮', level: 100 },
     { name: 'Revit', icon: '🏢', level: 80 },
     { name: 'Advance Design', icon: '🛠️', level: 70 },
-    { name: 'MS Office', icon: '📊', level: 100 }
+    { name: 'MS Office', icon: '📊', level: 100 },
+    { name: 'Nova +', icon: '🧩', level: 100 },
+    { name: 'Arma +', icon: '⚙️', level: 100 },
+    { name: 'ADFER', icon: '📐', level: 50 },
+    { name: 'ARMACAD', icon: '🏗️', level: 50 }
   ];
 
   const languages = [
