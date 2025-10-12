@@ -1,5 +1,19 @@
 import React from 'react';
 import './Skills.css';
+import autocadLogo from '../assets/images/autocad.png';
+import gstarcadLogo from '../assets/images/Gstarcad.png';
+import Advance_ConcretLogo from '../assets/images/Advance_Concrete.png';
+import Autocad_Structural_DetailingLogo from '../assets/images/Autocad_Structural_Detailing.png';
+import Arche_GraitecLogo from '../assets/images/Arche_Graitec.png';
+
+/*import RevitLogo from '../assets/images/Revit.png';
+import Advance_DesignLogo from '../assets/images/Advance_Design.png';
+import MS_OfficeLogo from '../assets/images/MS_Office.png';
+import Nova_Logo from '../assets/images/Nova.png';
+import Arma_Logo from '../assets/images/Arma.png';
+import ADFERLogo from '../assets/images/ADFER.png';
+import ARMACADLogo from '../assets/images/ARMACAD.png';
+*/
 
 const Skills = () => {
   const getEducationIcon = (degree) => {
@@ -19,11 +33,11 @@ const Skills = () => {
   ];
 
   const softwareSkills = [
-    { name: 'Autocad', icon: '📐', level: 100 },
-    { name: 'Gstarcad', icon: '📏', level: 100 },
-    { name: 'Advance Concrete', icon: '🧱', level: 100 },
-    { name: 'Autocad Structural Detailing', icon: '🏗️', level: 100 },
-    { name: 'Arche Graitec', icon: '🧮', level: 100 },
+    { name: 'Autocad', icon: autocadLogo, level: 100 },
+    { name: 'Gstarcad', icon: gstarcadLogo, level: 100 },
+    { name: 'Advance Concrete', icon: Advance_ConcretLogo, level: 100 },
+    { name: 'ASD', icon: Autocad_Structural_DetailingLogo, level: 100 },
+    { name: 'Arche Graitec', icon: Arche_GraitecLogo, level: 100 },
     { name: 'Revit', icon: '🏢', level: 80 },
     { name: 'Advance Design', icon: '🛠️', level: 70 },
     { name: 'MS Office', icon: '📊', level: 100 },
@@ -97,7 +111,15 @@ const Skills = () => {
             <div className="software-grid">
               {softwareSkills.map((software, index) => (
                 <div key={index} className="software-item">
-                  <div className="software-icon">{software.icon}</div>
+                  <div className="software-icon">
+                    {typeof software.icon === 'string' && (software.icon.startsWith('/') || software.icon.includes('.png') || software.icon.includes('.jpg') || software.icon.includes('.svg')) ? (
+                      <img src={software.icon} alt={software.name} className="software-logo" />
+                    ) : typeof software.icon !== 'string' ? (
+                      <img src={software.icon} alt={software.name} className="software-logo" />
+                    ) : (
+                      software.icon
+                    )}
+                  </div>
                   <h4>{software.name}</h4>
                   <div className="software-level">
                     <div className="level-bar">

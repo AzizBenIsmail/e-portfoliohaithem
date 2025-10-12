@@ -128,6 +128,13 @@
   margin-bottom: 1rem;
 }
 
+.software-logo {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
 .software-item h4 {
   font-size: 1.1rem;
   color: var(--text);
