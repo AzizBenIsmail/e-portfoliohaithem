@@ -5,9 +5,9 @@ import gstarcadLogo from '../assets/images/Gstarcad.png';
 import Advance_ConcretLogo from '../assets/images/Advance_Concrete.png';
 import Autocad_Structural_DetailingLogo from '../assets/images/Autocad_Structural_Detailing.png';
 import Arche_GraitecLogo from '../assets/images/Arche_Graitec.png';
+import RevitLogo from '../assets/images/Revit.png';
 
-/*import RevitLogo from '../assets/images/Revit.png';
-import Advance_DesignLogo from '../assets/images/Advance_Design.png';
+/*import Advance_DesignLogo from '../assets/images/Advance_Design.png';
 import MS_OfficeLogo from '../assets/images/MS_Office.png';
 import Nova_Logo from '../assets/images/Nova.png';
 import Arma_Logo from '../assets/images/Arma.png';
