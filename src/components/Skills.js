@@ -38,7 +38,7 @@ const Skills = () => {
     { name: 'Advance Concrete', icon: Advance_ConcretLogo, level: 100 },
     { name: 'ASD', icon: Autocad_Structural_DetailingLogo, level: 100 },
     { name: 'Arche Graitec', icon: Arche_GraitecLogo, level: 100 },
-    { name: 'Revit', icon: '🏢', level: 80 },
+    { name: 'Revit', icon: RevitLogo, level: 80 },
     { name: 'Advance Design', icon: '🛠️', level: 70 },
     { name: 'MS Office', icon: '📊', level: 100 },
     { name: 'Nova +', icon: '🧩', level: 100 },
