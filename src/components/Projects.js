@@ -85,19 +85,19 @@ const Projects = () => {
           <div className="summary-stats">
             <div className="stat-item">
               <div className="stat-number">50+</div>
-              <div className="stat-label">Projets réalisés</div>
+              <div className="stat-label">{t('projects.stats.projects')}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">15+</div>
-              <div className="stat-label">Sociétés partenaires</div>
+              <div className="stat-label">{t('projects.stats.partners')}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">100%</div>
-              <div className="stat-label">Satisfaction client</div>
+              <div className="stat-label">{t('projects.stats.satisfaction')}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">7</div>
-              <div className="stat-label">Années d'expérience</div>
+              <div className="stat-label">{t('projects.stats.years')}</div>
             </div>
           </div>
         </div>

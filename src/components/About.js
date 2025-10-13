@@ -22,22 +22,22 @@ const About = () => {
             
             <div className="about-details">
               <div className="detail-item">
-                <h4>🎯 Spécialisation</h4>
+                <h4>🎯 {t('about.specialization')}</h4>
                 <p>{t('about.specialization')}</p>
               </div>
               
               <div className="detail-item">
-                <h4>🏢 Expérience</h4>
+                <h4>🏢 {t('about.experience')}</h4>
                 <p>{t('about.experience')}</p>
               </div>
               
               <div className="detail-item">
-                <h4>🇫🇷 Objectif</h4>
+                <h4>🇫🇷 {t('about.objective')}</h4>
                 <p>{t('about.objective')}</p>
               </div>
               
               <div className="detail-item">
-                <h4>🤝 Collaboration</h4>
+                <h4>🤝 {t('about.collaboration')}</h4>
                 <p>{t('about.collaboration')}</p>
               </div>
             </div>
@@ -50,21 +50,21 @@ const About = () => {
           <div className="about-interests">
             <h4>{t('about.interestsTitle')}</h4>
             <div className="interests-list">
-              <span className="interest-tag">⚽ Football</span>
-              <span className="interest-tag">🏋️‍♂️ Musculation</span>
-              <span className="interest-tag">✈️ Voyage</span>
+              <span className="interest-tag">⚽ {t('about.interest.sports')}</span>
+              <span className="interest-tag">🏋️‍♂️ {t('about.interest.fitness')}</span>
+              <span className="interest-tag">✈️ {t('about.interest.travel')}</span>
             </div>
 
             <div className="interests-travel">
               <h5>{t('about.travelTitle')}</h5>
               <div className="travel-badges">
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/rs.png" srcSet="https://flagcdn.com/w40/rs.png 2x" alt="Serbie" loading="lazy" /><span>Serbie</span></span>
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/tr.png" srcSet="https://flagcdn.com/w40/tr.png 2x" alt="Turquie" loading="lazy" /><span>Turquie</span></span>
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/sa.png" srcSet="https://flagcdn.com/w40/sa.png 2x" alt="Arabie saoudite" loading="lazy" /><span>Arabie saoudite</span></span>
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/ma.png" srcSet="https://flagcdn.com/w40/ma.png 2x" alt="Maroc" loading="lazy" /><span>Maroc</span></span>
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/my.png" srcSet="https://flagcdn.com/w40/my.png 2x" alt="Malaisie" loading="lazy" /><span>Malaisie</span></span>
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/id.png" srcSet="https://flagcdn.com/w40/id.png 2x" alt="Indonésie" loading="lazy" /><span>Indonésie</span></span>
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/th.png" srcSet="https://flagcdn.com/w40/th.png 2x" alt="Thaïlande" loading="lazy" /><span>Thaïlande</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/rs.png" srcSet="https://flagcdn.com/w40/rs.png 2x" alt="Serbie" loading="lazy" /><span>{t('about.countries.serbia')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/tr.png" srcSet="https://flagcdn.com/w40/tr.png 2x" alt="Turquie" loading="lazy" /><span>{t('about.countries.turkey')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/sa.png" srcSet="https://flagcdn.com/w40/sa.png 2x" alt="Arabie saoudite" loading="lazy" /><span>{t('about.countries.saudi_arabia')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/ma.png" srcSet="https://flagcdn.com/w40/ma.png 2x" alt="Maroc" loading="lazy" /><span>{t('about.countries.morocco')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/my.png" srcSet="https://flagcdn.com/w40/my.png 2x" alt="Malaisie" loading="lazy" /><span>{t('about.countries.malaysia')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/id.png" srcSet="https://flagcdn.com/w40/id.png 2x" alt="Indonésie" loading="lazy" /><span>{t('about.countries.indonesia')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/th.png" srcSet="https://flagcdn.com/w40/th.png 2x" alt="Thaïlande" loading="lazy" /><span>{t('about.countries.thailand')}</span></span>
               </div>
             </div>
           </div>

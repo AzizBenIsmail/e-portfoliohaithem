@@ -19,40 +19,26 @@ import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
   const { t } = useTranslation();
-  const technicalSkills = [
-    { name: 'Calcul de structures', level: 95, description: 'Analyse et dimensionnement de structures en béton armé' },
-    { name: 'Logiciels CAO', level: 90, description: 'Autocad, Revit, Tekla Structures' },
-    { name: 'Calculs offshore', level: 85, description: 'Structures marines et environnements hostiles' },
-    { name: 'Normes françaises', level: 90, description: 'Eurocodes, DTU, règles BAEL' },
-    { name: 'Gestion de projet', level: 80, description: 'Planification et coordination d\'équipes' },
-    { name: 'Rapports techniques', level: 95, description: 'Rédaction de notes de calcul et rapports' }
-  ];
+  const technicalSkills = t('skills_extra.technicalItems', { returnObjects: true }) || [];
 
   const softwareSkills = [
-    { name: 'Autocad', icon: autocadLogo, level: 100 , niveau : "Professionnel" },
-    { name: 'Gstarcad', icon: gstarcadLogo, level: 100, niveau : "Professionnel" },
-    { name: 'Advance Concrete', icon: Advance_ConcretLogo, level: 100 , niveau : "Professionnel"},
-    { name: 'ASD', icon: Autocad_Structural_DetailingLogo, level: 100 , niveau : "Professionnel"},
-    { name: 'Arche Graitec', icon: Arche_GraitecLogo, level: 100 , niveau : "Professionnel"},
-    { name: 'Revit', icon: RevitLogo, level: 80 , niveau : "Confirmé"},
-    { name: 'Advance Design', icon: Advance_DesignLogo, level: 70, niveau : "Confirmé" },
-    { name: 'MS Office', icon: MS_OfficeLogo, level: 100, niveau : "Professionnel" },
-    { name: 'Nova +', icon: Nova_Logo, level: 100 , niveau : "Professionnel"},
-    { name: 'Arma +', icon: '⚙️', level: 100 , niveau : "Professionnel"},
-    { name: 'ADFER', icon: ADFERLogo, level: 50 , niveau : "Amateur"},
-    { name: 'ARMACAD', icon: ARMACADLogo, level: 50 , niveau : "Amateur"}
+    { name: 'Autocad', icon: autocadLogo, level: 100 , niveau : t('skills.level.pro') },
+    { name: 'Gstarcad', icon: gstarcadLogo, level: 100, niveau : t('skills.level.pro') },
+    { name: 'Advance Concrete', icon: Advance_ConcretLogo, level: 100 , niveau : t('skills.level.pro')},
+    { name: 'ASD', icon: Autocad_Structural_DetailingLogo, level: 100 , niveau : t('skills.level.pro')},
+    { name: 'Arche Graitec', icon: Arche_GraitecLogo, level: 100 , niveau : t('skills.level.pro')},
+    { name: 'Revit', icon: RevitLogo, level: 80 , niveau : t('skills.level.confirmed')},
+    { name: 'Advance Design', icon: Advance_DesignLogo, level: 70, niveau : t('skills.level.confirmed') },
+    { name: 'MS Office', icon: MS_OfficeLogo, level: 100, niveau : t('skills.level.pro') },
+    { name: 'Nova +', icon: Nova_Logo, level: 100 , niveau : t('skills.level.pro')},
+    { name: 'Arma +', icon: '⚙️', level: 100 , niveau : t('skills.level.pro')},
+    { name: 'ADFER', icon: ADFERLogo, level: 50 , niveau : t('skills.level.amateur')},
+    { name: 'ARMACAD', icon: ARMACADLogo, level: 50 , niveau : t('skills.level.amateur')}
   ];
 
-  const languages = [
-    { name: 'Français', level: 90, native: false },
-    { name: 'Anglais', level: 80, native: false },
-    { name: 'Arabe', level: 100, native: true }
-  ];
+  const languages = t('skills_extra.languages', { returnObjects: true }) || [];
 
-  const certifications = [
-    { title: 'Certificat General English (Levels 5, 6, 7 & 8)', org: 'Amideast' },
-    { title: 'Certificat Revit Structure', org: 'Ironhoster Academy' },
-  ];
+  const certifications = t('skills_extra.certifications', { returnObjects: true }) || [];
 
   return (
     <section id="competences" className="skills">
@@ -138,7 +124,7 @@ const Skills = () => {
         </div>
 
         <div className="skills-section">
-          <h3>Certificats & Formations</h3>
+          <h3>{t('skills.certsTitle')}</h3>
           <div className="languages-grid">
             {certifications.map((cert, index) => (
               <div key={index} className="language-item">

@@ -64,7 +64,7 @@ const Formation = () => {
                 </div>
                 <p className="description">{t('formation.degree.engineerDescription')}</p>
                 <div className="actions">
-                  <button onClick={() => openModal(diplomePDF, 'Diplôme National d\'Ingénieur')} className="btn-primary">
+                  <button onClick={() => openModal(diplomePDF, t('formation.degree.engineerTitle'))} className="btn-primary">
                     {t('formation.viewDiploma')}
                   </button>
                   <button onClick={() => downloadPDF(diplomePDF, 'Diplôme_national_dingénieur.pdf')} className="btn-secondary">
@@ -135,17 +135,17 @@ const Formation = () => {
                     <img src={franceFlag} alt="Drapeau France" className="flag-icon" />
                   </div>
                   <div className="cert-info">
-                    <h4>TCF (Test de Connaissance du Français)</h4>
-                    <span className="cert-level">Niveau B2</span>
+                      <h4>{t('formation.cert.tcfTitle')}</h4>
+                      <span className="cert-level">Niveau B2</span>
                   </div>
                 </div>
                 <div className="cert-body">
                   <div className="cert-org">
                     <img src={institutFrancaisLogo} alt="Institut Français" className="org-logo" />
-                    Institut Français de Tunisie
+                    {t('formation.cert.tcfOrg')}
                   </div>
                   <p className="cert-description">
-                    Test de Connaissance du Français - Certification officielle de niveau linguistique
+                    {t('formation.cert.tcfDesc')}
                   </p>
                   <div className="cert-actions">
                     <button onClick={() => openModal(tcf1PDF, t('formation.cert.tcfTitle'))} className="btn-primary">
@@ -164,17 +164,17 @@ const Formation = () => {
                     <img src={franceFlag} alt="Drapeau France" className="flag-icon" />
                   </div>
                   <div className="cert-info">
-                    <h4>TCF (Test de Connaissance du Français)</h4>
+                    <h4>{t('formation.cert.tcfTitle')}</h4>
                     <span className="cert-level">Niveau C1</span>
                   </div>
                 </div>
                 <div className="cert-body">
                   <div className="cert-org">
                   <img src={institutFrancaisLogo} alt="Institut Français" className="org-logo" />
-                  Institut Français de Tunisie
+                    {t('formation.cert.tcfOrg')}
                   </div>
                   <p className="cert-description">
-                    Test de Connaissance du Français - Certification officielle de niveau linguistique avancé
+                    {t('formation.cert.tcfDesc')}
                   </p>
                   <div className="cert-actions">
                     <button onClick={() => openModal(tcf2PDF, t('formation.cert.tcfTitle'))} className="btn-primary">
@@ -193,17 +193,17 @@ const Formation = () => {
                     <img src={usaFlag} alt="Drapeau USA" className="flag-icon" />
                   </div>
                   <div className="cert-info">
-                    <h4>Certificat de Langue Anglaise</h4>
+                    <h4>{t('formation.cert.englishCertTitle')}</h4>
                     <span className="cert-level">Niveau 5</span>
                   </div>
                 </div>
                 <div className="cert-body">
                   <div className="cert-org">
                     <img src={amideastLogo} alt="Amideast" className="org-logo" />
-                    Amideast
+                    {t('formation.cert.tcfOrg')}
                   </div>
                   <p className="cert-description">
-                    Certification en langue anglaise - Niveau intermédiaire
+                    {t('formation.cert.englishCertDesc')} {t('formation.cert.englishCertLevel5', { defaultValue: ' - Niveau 5' })}
                   </p>
                   <div className="cert-actions">
                     <button onClick={() => openModal(level5PDF, t('formation.cert.englishCertTitle') + ' - Niveau 5')} className="btn-primary">
@@ -222,17 +222,17 @@ const Formation = () => {
                     <img src={usaFlag} alt="Drapeau USA" className="flag-icon" />
                   </div>
                   <div className="cert-info">
-                    <h4>Certificat de Langue Anglaise</h4>
+                    <h4>{t('formation.cert.englishCertTitle')}</h4>
                     <span className="cert-level">Niveau 6</span>
                   </div>
                 </div>
                 <div className="cert-body">
                   <div className="cert-org">
                     <img src={amideastLogo} alt="Amideast" className="org-logo" />
-                    Amideast
+                    {t('formation.cert.tcfOrg')}
                   </div>
                   <p className="cert-description">
-                    Certification en langue anglaise - Niveau avancé
+                    {t('formation.cert.englishCertDesc')} {t('formation.cert.englishCertLevel6', { defaultValue: ' - Niveau 6' })}
                   </p>
                   <div className="cert-actions">
                     <button onClick={() => openModal(level6PDF, t('formation.cert.englishCertTitle') + ' - Niveau 6')} className="btn-primary">
@@ -251,17 +251,17 @@ const Formation = () => {
                     <img src={usaFlag} alt="Drapeau USA" className="flag-icon" />
                   </div>
                   <div className="cert-info">
-                    <h4>Certificat de Langue Anglaise</h4>
+                    <h4>{t('formation.cert.englishCertTitle')}</h4>
                     <span className="cert-level">Niveau 7</span>
                   </div>
                 </div>
                 <div className="cert-body">
                   <div className="cert-org">
                     <img src={amideastLogo} alt="Amideast" className="org-logo" />
-                    Amideast
+                    {t('formation.cert.tcfOrg')}
                   </div>
                   <p className="cert-description">
-                    Certification en langue anglaise - Niveau expert
+                    {t('formation.cert.englishCertDesc')} {t('formation.cert.englishCertLevel7', { defaultValue: ' - Niveau 7' })}
                   </p>
                   <div className="cert-actions">
                     <button onClick={() => openModal(level7PDF, t('formation.cert.englishCertTitle') + ' - Niveau 7')} className="btn-primary">
@@ -280,17 +280,17 @@ const Formation = () => {
                     <img src={usaFlag} alt="Drapeau USA" className="flag-icon" />
                   </div>
                   <div className="cert-info">
-                    <h4>Certificat de Langue Anglaise</h4>
+                    <h4>{t('formation.cert.englishCertTitle')}</h4>
                     <span className="cert-level">Niveau 8</span>
                   </div>
                 </div>
                 <div className="cert-body">
                   <div className="cert-org">
                     <img src={amideastLogo} alt="Amideast" className="org-logo" />
-                    Amideast
+                    {t('formation.cert.tcfOrg')}
                   </div>
                   <p className="cert-description">
-                    Certification en langue anglaise - Niveau maîtrise
+                    {t('formation.cert.englishCertDesc')} {t('formation.cert.englishCertLevel8', { defaultValue: ' - Niveau 8' })}
                   </p>
                   <div className="cert-actions">
                     <button onClick={() => openModal(level8PDF, t('formation.cert.englishCertTitle') + ' - Niveau 8')} className="btn-primary">
@@ -313,8 +313,8 @@ const Formation = () => {
                 <div className="cert-header">
                   <div className="cert-icon">🏗️</div>
                   <div className="cert-info">
-                    <h4>Certificat Revit Structure</h4>
-                    <span className="cert-level">Ironhoster Academy</span>
+                    <h4>{t('formation.cert.revitTitle')}</h4>
+                    <span className="cert-level">{t('formation.cert.revitOrg', { defaultValue: 'Ironhoster Academy' })}</span>
                   </div>
                 </div>
                 <div className="cert-body">
@@ -323,7 +323,7 @@ const Formation = () => {
                     Ironhoster Academy
                   </div>
                   <p className="cert-description">
-                    Certification professionnelle en modélisation et conception de structures avec Revit Structure
+                    {t('formation.cert.revitDesc')}
                   </p>
                   <div className="cert-actions">
                     <button onClick={() => openModal(revitCertPDF, t('formation.cert.revitTitle'))} className="btn-primary">

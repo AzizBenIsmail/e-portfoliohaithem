@@ -27,14 +27,12 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <h3>Haythem Ayadi</h3>
-              <p>Ingénieur Génie Civil</p>
-              <span className="specialization">Spécialiste Offshore</span>
+              <h3>{t('footer.name', { defaultValue: 'Haythem Ayadi' })}</h3>
+              <p>{t('footer.role', { defaultValue: 'Ingénieur Génie Civil' })}</p>
+              <span className="specialization">{t('footer.specialization')}</span>
             </div>
             <p className="footer-description">
-              Ingénieur expérimenté en génie civil offshore, spécialisé dans 
-              la conception de structures en béton armé pour environnements marins. 
-              Recherche active d'opportunités en France.
+              {t('footer.description')}
             </p>
           </div>
 

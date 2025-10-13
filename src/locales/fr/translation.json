@@ -54,6 +54,25 @@
     },
     "native": "Natif"
   },
+  "skills_extra": {
+    "technicalItems": [
+      { "name": "Calcul de structures", "level": 95, "description": "Analyse et dimensionnement de structures en béton armé" },
+      { "name": "Logiciels CAO", "level": 90, "description": "Autocad, Revit, Tekla Structures" },
+      { "name": "Calculs offshore", "level": 85, "description": "Structures marines et environnements hostiles" },
+      { "name": "Normes françaises", "level": 90, "description": "Eurocodes, DTU, règles BAEL" },
+      { "name": "Gestion de projet", "level": 80, "description": "Planification et coordination d'équipes" },
+      { "name": "Rapports techniques", "level": 95, "description": "Rédaction de notes de calcul et rapports" }
+    ],
+    "languages": [
+      { "name": "Français", "level": 90, "native": false },
+      { "name": "Anglais", "level": 80, "native": false },
+      { "name": "Arabe", "level": 100, "native": true }
+    ],
+    "certifications": [
+      { "title": "Certificat General English (Levels 5, 6, 7 & 8)", "org": "Amideast" },
+      { "title": "Certificat Revit Structure", "org": "Ironhoster Academy" }
+    ]
+  },
   "projects": {
     "title": "Mes Projets",
     "subtitle": "Portfolio de réalisations en génie civil offshore",
@@ -85,6 +104,11 @@
         "description": "Conception d'une plateforme offshore de 15 000 m² avec structures en béton armé résistant aux conditions marines extrêmes.",
         "image": "🏗️",
         "technologies": ["Autocad", "Revit", "Robot Structural", "Eurocodes"],
+        "interest": {
+          "sports": "Football",
+          "fitness": "Musculation",
+          "travel": "Voyage"
+        },
         "features": [
           "Résistance aux vents de 200 km/h",
           "Protection contre la corrosion marine",
@@ -99,6 +123,15 @@
         "id": 2,
         "title": "Bâtiment Résidentiel Haute Performance",
         "category": "residential",
+        "countries": {
+          "serbia": "Serbie",
+          "turkey": "Turquie",
+          "saudi_arabia": "Arabie saoudite",
+          "morocco": "Maroc",
+          "malaysia": "Malaisie",
+          "indonesia": "Indonésie",
+          "thailand": "Thaïlande"
+        },
         "description": "Étude complète d'un complexe résidentiel de 200 logements avec optimisation énergétique et structure en béton armé.",
         "image": "🏢",
         "technologies": ["Revit", "Tekla Structures", "SAP2000"],
@@ -213,8 +246,13 @@
       "tcfDesc": "Test de Connaissance du Français - Certification officielle de niveau linguistique",
       "englishCertTitle": "Certificat de Langue Anglaise",
       "englishCertDesc": "Certification en langue anglaise - Niveau",
+      "englishCertLevel5": "- Niveau 5",
+      "englishCertLevel6": "- Niveau 6",
+      "englishCertLevel7": "- Niveau 7",
+      "englishCertLevel8": "- Niveau 8",
       "revitTitle": "Certificat Revit Structure",
-      "revitDesc": "Certification professionnelle en modélisation et conception de structures avec Revit Structure"
+      "revitDesc": "Certification professionnelle en modélisation et conception de structures avec Revit Structure",
+      "revitOrg": "Ironhoster Academy"
     }
   },
   "footer": {
@@ -222,6 +260,9 @@
     "contact": "Contact",
     "networks": "Réseaux",
     "specialization": "Spécialiste Offshore",
+    "name": "Haythem Ayadi",
+    "role": "Ingénieur Génie Civil",
+    "description": "Ingénieur expérimenté en génie civil offshore, spécialisé dans la conception de structures en béton armé pour environnements marins. Recherche active d'opportunités en France.",
     "copyright": "© {{year}} Haythem Ayadi - Ingénieur Génie Civil. Tous droits réservés.",
     "tags": ["Génie Civil", "Offshore", "Béton Armé", "France"]
   },
@@ -315,6 +356,12 @@
     "title": "Contactez-Moi",
     "subtitle": "Prêt à collaborer sur votre prochain projet ?",
     "infoTitle": "Informations de Contact",
+    "info": {
+      "emailTitle": "Email",
+      "phoneTitle": "Téléphone",
+      "locationTitle": "Localisation",
+      "linkedInTitle": "LinkedIn"
+    },
     "availabilityTitle": "Disponibilité",
     "available": "Disponible pour de nouvelles opportunités",
     "searchFrance": "Recherche active en France",

@@ -46,7 +46,7 @@ const Hero = () => {
             <div className="profile-image-container">
               <img 
                 src="/haythem-profile.jpg" 
-                alt="Haythem Ayadi - Ingénieur Génie Civil"
+                alt={t('hero.name') + ' - ' + t('hero.title')}
                 className="profile-image"
                 onError={(e) => {
                   e.target.style.display = 'none';

@@ -32,6 +32,20 @@
     "mission": "Design durable and safe structures that withstand extreme offshore environmental conditions while complying with the strictest French and international standards.",
     "interestsTitle": "Interests",
     "travelTitle": "Visited countries",
+    "interest": {
+      "sports": "Football",
+      "fitness": "Gym",
+      "travel": "Travel"
+    },
+    "countries": {
+      "serbia": "Serbia",
+      "turkey": "Turkey",
+      "saudi_arabia": "Saudi Arabia",
+      "morocco": "Morocco",
+      "malaysia": "Malaysia",
+      "indonesia": "Indonesia",
+      "thailand": "Thailand"
+    },
     "stats": {
       "years": "Years of experience",
       "projects": "Projects completed",
@@ -53,6 +67,25 @@
       "amateur": "Beginner"
     },
     "native": "Native"
+  },
+  "skills_extra": {
+    "technicalItems": [
+      { "name": "Structural calculation", "level": 95, "description": "Analysis and sizing of reinforced concrete structures" },
+      { "name": "CAD Software", "level": 90, "description": "Autocad, Revit, Tekla Structures" },
+      { "name": "Offshore calculations", "level": 85, "description": "Marine structures and hostile environments" },
+      { "name": "French standards", "level": 90, "description": "Eurocodes, DTU, BAEL rules" },
+      { "name": "Project management", "level": 80, "description": "Planning and team coordination" },
+      { "name": "Technical reports", "level": 95, "description": "Writing calculation notes and reports" }
+    ],
+    "languages": [
+      { "name": "French", "level": 90, "native": false },
+      { "name": "English", "level": 80, "native": false },
+      { "name": "Arabic", "level": 100, "native": true }
+    ],
+    "certifications": [
+      { "title": "Certificat General English (Levels 5, 6, 7 & 8)", "org": "Amideast" },
+      { "title": "Revit Structure Certificate", "org": "Ironhoster Academy" }
+    ]
   },
   "projects": {
     "title": "My Projects",
@@ -213,8 +246,13 @@
       "tcfDesc": "Test of Knowledge of French - Official language certification",
       "englishCertTitle": "English Language Certificate",
       "englishCertDesc": "English language certification - Level",
+      "englishCertLevel5": "- Level 5",
+      "englishCertLevel6": "- Level 6",
+      "englishCertLevel7": "- Level 7",
+      "englishCertLevel8": "- Level 8",
       "revitTitle": "Revit Structure Certificate",
-      "revitDesc": "Professional certification in modeling and structural design with Revit Structure"
+      "revitDesc": "Professional certification in modeling and structural design with Revit Structure",
+      "revitOrg": "Ironhoster Academy"
     }
   },
   "footer": {
@@ -222,9 +260,13 @@
     "contact": "Contact",
     "networks": "Networks",
     "specialization": "Offshore Specialist",
+    "name": "Haythem Ayadi",
+    "role": "Civil Engineer",
+    "description": "Experienced civil engineer specialized in offshore projects, focusing on reinforced concrete structures for marine environments. Actively seeking opportunities in France.",
     "copyright": "© {{year}} Haythem Ayadi - Civil Engineer. All rights reserved.",
     "tags": ["Civil Engineering", "Offshore", "Reinforced Concrete", "France"]
   },
+  
   "experience": {
     "title": "My Experience",
     "subtitle": "7 years of expertise in offshore engineering offices",
@@ -315,6 +357,12 @@
     "title": "Contact Me",
     "subtitle": "Ready to collaborate on your next project?",
     "infoTitle": "Contact Information",
+    "info": {
+      "emailTitle": "Email",
+      "phoneTitle": "Phone",
+      "locationTitle": "Location",
+      "linkedInTitle": "LinkedIn"
+    },
     "availabilityTitle": "Availability",
     "available": "Available for new opportunities",
     "searchFrance": "Actively looking in France",

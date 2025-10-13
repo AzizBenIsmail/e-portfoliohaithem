@@ -47,25 +47,25 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: '📧',
-      title: 'Email',
+      title: t('contact.info.emailTitle', { defaultValue: 'Email' }),
       value: 'Engineer.haithem.ayadi@gmail.com',
       action: 'mailto:Engineer.haithem.ayadi@gmail.com'
     },
     {
       icon: '📱',
-      title: 'Téléphone',
+      title: t('contact.info.phoneTitle', { defaultValue: 'Téléphone' }),
       value: '+33 611488502',
       action: 'tel:+33611488502'
     },
     {
       icon: '📍',
-      title: 'Localisation',
-      value: 'Recherche en France',
+      title: t('contact.info.locationTitle', { defaultValue: 'Localisation' }),
+      value: t('contact.searchFrance'),
       action: null
     },
     {
       icon: '💼',
-      title: 'LinkedIn',
+      title: t('contact.info.linkedInTitle', { defaultValue: 'LinkedIn' }),
       value: 'linkedin.com/in/ayadi-haithem-aa26791a9',
       action: 'https://www.linkedin.com/in/ayadi-haithem-aa26791a9/'
     }
