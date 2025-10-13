@@ -58,13 +58,13 @@ const About = () => {
             <div className="interests-travel">
               <h5>{t('about.travelTitle')}</h5>
               <div className="travel-badges">
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/rs.png" srcSet="https://flagcdn.com/w40/rs.png 2x" alt="Serbie" loading="lazy" /><span>{t('about.countries.serbia')}</span></span>
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/tr.png" srcSet="https://flagcdn.com/w40/tr.png 2x" alt="Turquie" loading="lazy" /><span>{t('about.countries.turkey')}</span></span>
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/sa.png" srcSet="https://flagcdn.com/w40/sa.png 2x" alt="Arabie saoudite" loading="lazy" /><span>{t('about.countries.saudi_arabia')}</span></span>
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/ma.png" srcSet="https://flagcdn.com/w40/ma.png 2x" alt="Maroc" loading="lazy" /><span>{t('about.countries.morocco')}</span></span>
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/my.png" srcSet="https://flagcdn.com/w40/my.png 2x" alt="Malaisie" loading="lazy" /><span>{t('about.countries.malaysia')}</span></span>
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/id.png" srcSet="https://flagcdn.com/w40/id.png 2x" alt="Indonésie" loading="lazy" /><span>{t('about.countries.indonesia')}</span></span>
-                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/th.png" srcSet="https://flagcdn.com/w40/th.png 2x" alt="Thaïlande" loading="lazy" /><span>{t('about.countries.thailand')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/rs.png" srcSet="https://flagcdn.com/w40/rs.png 2x" alt={t('about.countries.serbia')} loading="lazy" /><span>{t('about.countries.serbia')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/tr.png" srcSet="https://flagcdn.com/w40/tr.png 2x" alt={t('about.countries.turkey')} loading="lazy" /><span>{t('about.countries.turkey')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/sa.png" srcSet="https://flagcdn.com/w40/sa.png 2x" alt={t('about.countries.saudi_arabia')} loading="lazy" /><span>{t('about.countries.saudi_arabia')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/ma.png" srcSet="https://flagcdn.com/w40/ma.png 2x" alt={t('about.countries.morocco')} loading="lazy" /><span>{t('about.countries.morocco')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/my.png" srcSet="https://flagcdn.com/w40/my.png 2x" alt={t('about.countries.malaysia')} loading="lazy" /><span>{t('about.countries.malaysia')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/id.png" srcSet="https://flagcdn.com/w40/id.png 2x" alt={t('about.countries.indonesia')} loading="lazy" /><span>{t('about.countries.indonesia')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/th.png" srcSet="https://flagcdn.com/w40/th.png 2x" alt={t('about.countries.thailand')} loading="lazy" /><span>{t('about.countries.thailand')}</span></span>
               </div>
             </div>
           </div>
@@ -73,22 +73,22 @@ const About = () => {
           <div className="about-stats">
             <div className="stat-card">
               <div className="stat-number">7+</div>
-              <div className="stat-label">Années d'expérience</div>
+              <div className="stat-label">{t('about.stats.years')}</div>
             </div>
             
             <div className="stat-card">
               <div className="stat-number">50+</div>
-              <div className="stat-label">Projets réalisés</div>
+              <div className="stat-label">{t('about.stats.projects')}</div>
             </div>
             
             <div className="stat-card">
               <div className="stat-number">100%</div>
-              <div className="stat-label">Satisfaction client</div>
+              <div className="stat-label">{t('about.stats.satisfaction')}</div>
             </div>
             
             <div className="stat-card">
               <div className="stat-number">15+</div>
-              <div className="stat-label">Sociétés partenaires</div>
+              <div className="stat-label">{t('about.stats.partners')}</div>
             </div>
           </div>
         </div>

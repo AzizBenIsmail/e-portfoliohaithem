@@ -32,6 +32,20 @@
     "mission": "Concevoir des structures durables et sécurisées qui résistent aux conditions extrêmes des environnements offshore, tout en respectant les normes françaises et internationales les plus strictes.",
     "interestsTitle": "Centres d’intérêt",
     "travelTitle": "Pays visités",
+    "interest": {
+      "sports": "Football",
+      "fitness": "Musculation",
+      "travel": "Voyage"
+    },
+    "countries": {
+      "serbia": "Serbie",
+      "turkey": "Turquie",
+      "saudi_arabia": "Arabie saoudite",
+      "morocco": "Maroc",
+      "malaysia": "Malaisie",
+      "indonesia": "Indonésie",
+      "thailand": "Thaïlande"
+    },
     "stats": {
       "years": "Années d'expérience",
       "projects": "Projets réalisés",
