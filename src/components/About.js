@@ -65,6 +65,8 @@ const About = () => {
                 <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/my.png" srcSet="https://flagcdn.com/w40/my.png 2x" alt={t('about.countries.malaysia')} loading="lazy" /><span>{t('about.countries.malaysia')}</span></span>
                 <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/id.png" srcSet="https://flagcdn.com/w40/id.png 2x" alt={t('about.countries.indonesia')} loading="lazy" /><span>{t('about.countries.indonesia')}</span></span>
                 <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/th.png" srcSet="https://flagcdn.com/w40/th.png 2x" alt={t('about.countries.thailand')} loading="lazy" /><span>{t('about.countries.thailand')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/tn.png" srcSet="https://flagcdn.com/w40/tn.png 2x" alt={t('about.countries.tunisia')} loading="lazy" /><span>{t('about.countries.tunisia')}</span></span>
+                <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/fr.png" srcSet="https://flagcdn.com/w40/fr.png 2x" alt={t('about.countries.france')} loading="lazy" /><span>{t('about.countries.france')}</span></span>
               </div>
             </div>
           </div>
