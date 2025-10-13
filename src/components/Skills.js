@@ -4,16 +4,16 @@ import autocadLogo from '../assets/images/autocad.png';
 import gstarcadLogo from '../assets/images/Gstarcad.png';
 import Advance_ConcretLogo from '../assets/images/Advance_Concrete.png';
 import Autocad_Structural_DetailingLogo from '../assets/images/Autocad_Structural_Detailing.png';
-import Arche_GraitecLogo from '../assets/images/Arche_Graitec.png';
+import Arche_GraitecLogo from '../assets/images/Arche_Graitec.jpeg';
 import RevitLogo from '../assets/images/Revit.png';
 
-/*import Advance_DesignLogo from '../assets/images/Advance_Design.png';
+import Advance_DesignLogo from '../assets/images/Advance_Design.png';
 import MS_OfficeLogo from '../assets/images/MS_Office.png';
 import Nova_Logo from '../assets/images/Nova.png';
-import Arma_Logo from '../assets/images/Arma.png';
+//import Arma_Logo from '../assets/images/Arma.png';
 import ADFERLogo from '../assets/images/ADFER.png';
 import ARMACADLogo from '../assets/images/ARMACAD.png';
-*/
+
 
 const Skills = () => {
   const getEducationIcon = (degree) => {
@@ -33,18 +33,18 @@ const Skills = () => {
   ];
 
   const softwareSkills = [
-    { name: 'Autocad', icon: autocadLogo, level: 100 },
-    { name: 'Gstarcad', icon: gstarcadLogo, level: 100 },
-    { name: 'Advance Concrete', icon: Advance_ConcretLogo, level: 100 },
-    { name: 'ASD', icon: Autocad_Structural_DetailingLogo, level: 100 },
-    { name: 'Arche Graitec', icon: Arche_GraitecLogo, level: 100 },
-    { name: 'Revit', icon: RevitLogo, level: 80 },
-    { name: 'Advance Design', icon: '🛠️', level: 70 },
-    { name: 'MS Office', icon: '📊', level: 100 },
-    { name: 'Nova +', icon: '🧩', level: 100 },
-    { name: 'Arma +', icon: '⚙️', level: 100 },
-    { name: 'ADFER', icon: '📐', level: 50 },
-    { name: 'ARMACAD', icon: '🏗️', level: 50 }
+    { name: 'Autocad', icon: autocadLogo, level: 100 , niveau : "Professionnel" },
+    { name: 'Gstarcad', icon: gstarcadLogo, level: 100, niveau : "Professionnel" },
+    { name: 'Advance Concrete', icon: Advance_ConcretLogo, level: 100 , niveau : "Professionnel"},
+    { name: 'ASD', icon: Autocad_Structural_DetailingLogo, level: 100 , niveau : "Professionnel"},
+    { name: 'Arche Graitec', icon: Arche_GraitecLogo, level: 100 , niveau : "Professionnel"},
+    { name: 'Revit', icon: RevitLogo, level: 80 , niveau : "Confirmé"},
+    { name: 'Advance Design', icon: Advance_DesignLogo, level: 70, niveau : "Confirmé" },
+    { name: 'MS Office', icon: MS_OfficeLogo, level: 100, niveau : "Professionnel" },
+    { name: 'Nova +', icon: Nova_Logo, level: 100 , niveau : "Professionnel"},
+    { name: 'Arma +', icon: '⚙️', level: 100 , niveau : "Professionnel"},
+    { name: 'ADFER', icon: ADFERLogo, level: 50 , niveau : "Amateur"},
+    { name: 'ARMACAD', icon: ARMACADLogo, level: 50 , niveau : "Amateur"}
   ];
 
   const languages = [
@@ -128,7 +128,7 @@ const Skills = () => {
                         style={{ width: `${software.level}%` }}
                       ></div>
                     </div>
-                    <span>{software.level}%</span>
+                    <span>{software.niveau}</span>
                   </div>
                 </div>
               ))}
