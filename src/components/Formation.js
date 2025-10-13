@@ -5,8 +5,15 @@ import baccalaureatPDF from '../assets/certif/Diplôme_de_baccalauréat.pdf';
 import licencePDF from '../assets/certif/Licence_appliquée.pdf';
 import tcf1PDF from '../assets/certif/TCF1.pdf';
 import tcf2PDF from '../assets/certif/TCF2.pdf';
+import level5PDF from '../assets/certif/LEVEL 5.pdf';
+import level6PDF from '../assets/certif/LEVEL 6.pdf';
+import level7PDF from '../assets/certif/LEVEL 7.pdf';
+import level8PDF from '../assets/certif/LEVEL 8.pdf';
 import revitCertPDF from '../assets/certif/Certificat_Revit_Structure_Ayadi_Haithem.pdf';
 import institutFrancaisLogo from '../assets/images/Institut_Francais.jpeg';
+import amideastLogo from '../assets/images/Amideast.jpeg';
+import franceFlag from '../assets/images/Fr.jpeg';
+import usaFlag from '../assets/images/Usa.jpeg';
 
 const Formation = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -128,7 +135,9 @@ const Formation = () => {
             <div className="certifications-grid">
               <div className="certification-card">
                 <div className="cert-header">
-                  <div className="cert-icon">🇫🇷</div>
+                  <div className="cert-icon">
+                    <img src={franceFlag} alt="Drapeau France" className="flag-icon" />
+                  </div>
                   <div className="cert-info">
                     <h4>TCF (Test de Connaissance du Français)</h4>
                     <span className="cert-level">Niveau B2</span>
@@ -155,7 +164,9 @@ const Formation = () => {
 
               <div className="certification-card">
                 <div className="cert-header">
-                  <div className="cert-icon">🇫🇷</div>
+                  <div className="cert-icon">
+                    <img src={franceFlag} alt="Drapeau France" className="flag-icon" />
+                  </div>
                   <div className="cert-info">
                     <h4>TCF (Test de Connaissance du Français)</h4>
                     <span className="cert-level">Niveau C1</span>
@@ -174,6 +185,122 @@ const Formation = () => {
                       📄 Voir le certificat
                     </button>
                     <button onClick={() => downloadPDF(tcf2PDF, 'TCF2.pdf')} className="btn-secondary">
+                      ⬇️ Télécharger
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="certification-card">
+                <div className="cert-header">
+                  <div className="cert-icon">
+                    <img src={usaFlag} alt="Drapeau USA" className="flag-icon" />
+                  </div>
+                  <div className="cert-info">
+                    <h4>Certificat de Langue Anglaise</h4>
+                    <span className="cert-level">Niveau 5</span>
+                  </div>
+                </div>
+                <div className="cert-body">
+                  <div className="cert-org">
+                    <img src={amideastLogo} alt="Amideast" className="org-logo" />
+                    Amideast
+                  </div>
+                  <p className="cert-description">
+                    Certification en langue anglaise - Niveau intermédiaire
+                  </p>
+                  <div className="cert-actions">
+                    <button onClick={() => openModal(level5PDF, 'Certificat de Langue Anglaise - Niveau 5')} className="btn-primary">
+                      📄 Voir le certificat
+                    </button>
+                    <button onClick={() => downloadPDF(level5PDF, 'LEVEL_5.pdf')} className="btn-secondary">
+                      ⬇️ Télécharger
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="certification-card">
+                <div className="cert-header">
+                  <div className="cert-icon">
+                    <img src={usaFlag} alt="Drapeau USA" className="flag-icon" />
+                  </div>
+                  <div className="cert-info">
+                    <h4>Certificat de Langue Anglaise</h4>
+                    <span className="cert-level">Niveau 6</span>
+                  </div>
+                </div>
+                <div className="cert-body">
+                  <div className="cert-org">
+                    <img src={amideastLogo} alt="Amideast" className="org-logo" />
+                    Amideast
+                  </div>
+                  <p className="cert-description">
+                    Certification en langue anglaise - Niveau avancé
+                  </p>
+                  <div className="cert-actions">
+                    <button onClick={() => openModal(level6PDF, 'Certificat de Langue Anglaise - Niveau 6')} className="btn-primary">
+                      📄 Voir le certificat
+                    </button>
+                    <button onClick={() => downloadPDF(level6PDF, 'LEVEL_6.pdf')} className="btn-secondary">
+                      ⬇️ Télécharger
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="certification-card">
+                <div className="cert-header">
+                  <div className="cert-icon">
+                    <img src={usaFlag} alt="Drapeau USA" className="flag-icon" />
+                  </div>
+                  <div className="cert-info">
+                    <h4>Certificat de Langue Anglaise</h4>
+                    <span className="cert-level">Niveau 7</span>
+                  </div>
+                </div>
+                <div className="cert-body">
+                  <div className="cert-org">
+                    <img src={amideastLogo} alt="Amideast" className="org-logo" />
+                    Amideast
+                  </div>
+                  <p className="cert-description">
+                    Certification en langue anglaise - Niveau expert
+                  </p>
+                  <div className="cert-actions">
+                    <button onClick={() => openModal(level7PDF, 'Certificat de Langue Anglaise - Niveau 7')} className="btn-primary">
+                      📄 Voir le certificat
+                    </button>
+                    <button onClick={() => downloadPDF(level7PDF, 'LEVEL_7.pdf')} className="btn-secondary">
+                      ⬇️ Télécharger
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="certification-card">
+                <div className="cert-header">
+                  <div className="cert-icon">
+                    <img src={usaFlag} alt="Drapeau USA" className="flag-icon" />
+                  </div>
+                  <div className="cert-info">
+                    <h4>Certificat de Langue Anglaise</h4>
+                    <span className="cert-level">Niveau 8</span>
+                  </div>
+                </div>
+                <div className="cert-body">
+                  <div className="cert-org">
+                    <img src={amideastLogo} alt="Amideast" className="org-logo" />
+                    Amideast
+                  </div>
+                  <p className="cert-description">
+                    Certification en langue anglaise - Niveau maîtrise
+                  </p>
+                  <div className="cert-actions">
+                    <button onClick={() => openModal(level8PDF, 'Certificat de Langue Anglaise - Niveau 8')} className="btn-primary">
+                      📄 Voir le certificat
+                    </button>
+                    <button onClick={() => downloadPDF(level8PDF, 'LEVEL_8.pdf')} className="btn-secondary">
                       ⬇️ Télécharger
                     </button>
                   </div>
@@ -219,6 +346,10 @@ const Formation = () => {
             <div className="stat-item">
               <div className="stat-number">6</div>
               <div className="stat-label">Années d'études</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">8</div>
+              <div className="stat-label">Certifications</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">Mention</div>
