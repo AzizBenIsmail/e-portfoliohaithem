@@ -500,7 +500,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .education-grid {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -511,9 +511,88 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .education-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .education-card.featured {
+    grid-column: 1 / -1;
+  }
+  
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .formation {
+    padding: 40px 0;
+  }
+  
+  .formation .section-header {
+    margin-bottom: 40px;
+  }
+  
+  .formation .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .formation .section-header p {
+    font-size: 1rem;
+  }
+  
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .card-header {
+    padding: 15px 15px 10px;
+  }
+  
+  .card-body {
+    padding: 10px 15px 15px;
+  }
+  
+  .cert-header {
+    padding: 15px 15px 10px;
+  }
+  
+  .cert-body {
+    padding: 10px 15px 15px;
+  }
+  
+  .degree-icon, .cert-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  
+  .degree-info h3, .cert-info h4 {
+    font-size: 0.95rem;
+  }
+  
+  .actions, .cert-actions {
+    gap: 8px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
 @media (max-width: 768px) {
   .formation {
-    padding: 60px 0;
+    padding: 50px 0;
   }
   
   .formation .section-header h2 {
@@ -521,6 +600,11 @@
   }
   
   .education-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .certifications-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
@@ -533,7 +617,15 @@
     padding: 15px 20px 20px;
   }
   
-  .degree-icon {
+  .cert-header {
+    padding: 20px 20px 15px;
+  }
+  
+  .cert-body {
+    padding: 15px 20px 20px;
+  }
+  
+  .degree-icon, .cert-icon {
     width: 45px;
     height: 45px;
     font-size: 1.8rem;
@@ -543,14 +635,19 @@
     font-size: 1.1rem;
   }
   
-  .actions {
-    flex-direction: column;
+  .cert-info h4 {
+    font-size: 1rem;
   }
   
-  .btn-primary,
-  .btn-secondary {
+  .actions, .cert-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .btn-primary, .btn-secondary {
     width: 100%;
     justify-content: center;
+    padding: 10px 20px;
   }
   
   .formation-stats {
@@ -562,36 +659,8 @@
     padding: 15px;
   }
   
-  /* Certifications responsive */
-  .certifications-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
   .certifications-section h3 {
     font-size: 1.5rem;
-  }
-  
-  .cert-header {
-    padding: 20px 20px 15px;
-  }
-  
-  .cert-body {
-    padding: 15px 20px 20px;
-  }
-  
-  .cert-icon {
-    width: 45px;
-    height: 45px;
-    font-size: 1.8rem;
-  }
-  
-  .cert-info h4 {
-    font-size: 1rem;
-  }
-  
-  .cert-actions {
-    flex-direction: column;
   }
   
   /* Modal responsive */
@@ -622,7 +691,7 @@
 
 @media (max-width: 480px) {
   .formation .section-header h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   
   .card-header {

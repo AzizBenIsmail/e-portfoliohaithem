@@ -236,21 +236,265 @@
   font-weight: 600;
 }
 
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .software-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  
+  .languages-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
+  .skills {
+    padding: 4rem 0;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .skills-content {
+    gap: 3rem;
+  }
+  
   .skills-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .software-grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
   }
 
   .languages-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .skill-item {
+    padding: 1.5rem;
+  }
+  
+  .software-item {
+    padding: 1.5rem;
+  }
+  
+  .language-item {
+    padding: 1.5rem;
+  }
+  
+  .skills-section h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
   }
 
+  .section-header {
+    margin-bottom: 3rem;
+  }
+  
   .section-header h2 {
     font-size: 2rem;
+  }
+  
+  .section-header p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills {
+    padding: 3rem 0;
+  }
+  
+  .container {
+    padding: 0 10px;
+  }
+  
+  .skills-content {
+    gap: 2.5rem;
+  }
+  
+  .skills-grid {
+    gap: 1.2rem;
+  }
+  
+  .software-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.8rem;
+  }
+  
+  .languages-grid {
+    gap: 1.2rem;
+  }
+  
+  .skill-item {
+    padding: 1.2rem;
+  }
+  
+  .skill-header h4 {
+    font-size: 1.1rem;
+  }
+  
+  .skill-level {
+    font-size: 0.9rem;
+  }
+  
+  .skill-description {
+    font-size: 0.9rem;
+  }
+  
+  .software-item {
+    padding: 1.2rem;
+  }
+  
+  .software-icon {
+    font-size: 2.5rem;
+  }
+  
+  .software-logo {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .software-item h4 {
+    font-size: 1rem;
+  }
+  
+  .software-level span {
+    font-size: 0.85rem;
+  }
+  
+  .language-item {
+    padding: 1.2rem;
+  }
+  
+  .language-info h4 {
+    font-size: 1.1rem;
+  }
+  
+  .language-level span {
+    font-size: 0.85rem;
+  }
+  
+  .skills-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    padding: 2.5rem 0;
+  }
+  
+  .skills-content {
+    gap: 2rem;
+  }
+  
+  .skills-grid {
+    gap: 1rem;
+  }
+  
+  .software-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.6rem;
+  }
+  
+  .languages-grid {
+    gap: 1rem;
+  }
+  
+  .skill-item {
+    padding: 1rem;
+  }
+  
+  .skill-header h4 {
+    font-size: 1rem;
+  }
+  
+  .skill-level {
+    font-size: 0.85rem;
+  }
+  
+  .skill-description {
+    font-size: 0.85rem;
+  }
+  
+  .software-item {
+    padding: 1rem;
+  }
+  
+  .software-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .software-logo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .software-item h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .software-level span {
+    font-size: 0.8rem;
+  }
+  
+  .language-item {
+    padding: 1rem;
+  }
+  
+  .language-info h4 {
+    font-size: 1rem;
+  }
+  
+  .language-level span {
+    font-size: 0.8rem;
+  }
+  
+  .native-badge {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.75rem;
+  }
+  
+  .skills-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .section-header p {
+    font-size: 0.95rem;
   }
 }
 

@@ -233,25 +233,326 @@ body.dark .project-status { background: rgba(18, 26, 35, 0.9); color: var(--text
   font-weight: 500;
 }
 
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-filters {
+    gap: 0.8rem;
+  }
+  
+  .summary-stats {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
+  .projects {
+    padding: 4rem 0;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .project-filters {
     gap: 0.5rem;
+    flex-wrap: wrap;
   }
 
   .filter-btn {
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
   }
+  
+  .project-card {
+    margin-bottom: 1rem;
+  }
+  
+  .project-image {
+    height: 180px;
+  }
+  
+  .project-icon {
+    font-size: 3.5rem;
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+  }
+  
+  .project-header h3 {
+    font-size: 1.3rem;
+  }
+  
+  .project-meta {
+    font-size: 0.85rem;
+  }
+  
+  .project-description {
+    font-size: 0.95rem;
+  }
+  
+  .project-features h4,
+  .project-technologies h4 {
+    font-size: 0.95rem;
+  }
+  
+  .project-features li {
+    font-size: 0.85rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+  }
 
   .summary-stats {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .stat-item {
+    padding: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
   }
 
+  .section-header {
+    margin-bottom: 3rem;
+  }
+  
   .section-header h2 {
     font-size: 2rem;
+  }
+  
+  .section-header p {
+    font-size: 1.1rem;
+  }
+  
+  .projects-summary {
+    padding: 2.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    padding: 3rem 0;
+  }
+  
+  .container {
+    padding: 0 10px;
+  }
+  
+  .project-filters {
+    gap: 0.4rem;
+    justify-content: center;
+  }
+
+  .filter-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .projects-grid {
+    gap: 1.2rem;
+  }
+  
+  .project-image {
+    height: 160px;
+  }
+  
+  .project-icon {
+    font-size: 3rem;
+  }
+  
+  .project-status {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+  }
+  
+  .project-content {
+    padding: 1.2rem;
+  }
+  
+  .project-header h3 {
+    font-size: 1.2rem;
+  }
+  
+  .project-meta {
+    font-size: 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .project-description {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .project-features h4,
+  .project-technologies h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .project-features li {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .summary-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    padding: 1.2rem;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .stat-label {
+    font-size: 0.85rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
+  }
+  
+  .projects-summary {
+    padding: 2rem;
+    margin-top: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 2.5rem 0;
+  }
+  
+  .project-filters {
+    gap: 0.3rem;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+  
+  .projects-grid {
+    gap: 1rem;
+  }
+  
+  .project-image {
+    height: 140px;
+  }
+  
+  .project-icon {
+    font-size: 2.5rem;
+  }
+  
+  .project-status {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    top: 0.8rem;
+    right: 0.8rem;
+  }
+  
+  .project-content {
+    padding: 1rem;
+  }
+  
+  .project-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .project-meta {
+    font-size: 0.75rem;
+  }
+  
+  .project-description {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-features h4,
+  .project-technologies h4 {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-features li {
+    font-size: 0.75rem;
+    margin-bottom: 0.3rem;
+    padding-left: 1.2rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.4rem;
+  }
+
+  .summary-stats {
+    gap: 0.8rem;
+  }
+  
+  .stat-item {
+    padding: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 1.6rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .section-header p {
+    font-size: 0.95rem;
+  }
+  
+  .projects-summary {
+    padding: 1.5rem;
+    margin-top: 1rem;
   }
 }

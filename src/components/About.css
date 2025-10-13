@@ -194,7 +194,29 @@
   font-weight: 500;
 }
 
+@media (max-width: 1024px) {
+  .about-content {
+    gap: 3rem;
+  }
+  
+  .about-text {
+    padding: 2.5rem;
+  }
+  
+  .about-details {
+    gap: 1.2rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .about {
+    padding: 4rem 0;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
   .about-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -202,17 +224,241 @@
 
   .about-details {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .about-stats {
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
   .about-text {
     padding: 2rem;
   }
+  
+  .about-intro h3 {
+    font-size: 1.6rem;
+  }
+  
+  .about-intro p {
+    font-size: 1rem;
+  }
 
+  .section-header {
+    margin-bottom: 3rem;
+  }
+  
   .section-header h2 {
     font-size: 2rem;
+  }
+  
+  .section-header p {
+    font-size: 1.1rem;
+  }
+  
+  .about-mission {
+    padding: 1.5rem;
+  }
+  
+  .about-mission h4 {
+    font-size: 1.2rem;
+  }
+  
+  .about-mission p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 3rem 0;
+  }
+  
+  .container {
+    padding: 0 10px;
+  }
+  
+  .about-content {
+    gap: 1.5rem;
+  }
+  
+  .about-text {
+    padding: 1.5rem;
+  }
+  
+  .about-intro h3 {
+    font-size: 1.4rem;
+  }
+  
+  .about-intro p {
+    font-size: 0.95rem;
+  }
+  
+  .about-details {
+    gap: 0.8rem;
+  }
+  
+  .detail-item h4 {
+    font-size: 1rem;
+  }
+  
+  .detail-item p {
+    font-size: 0.9rem;
+  }
+  
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  
+  .stat-card {
+    padding: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.85rem;
+  }
+  
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
+  }
+  
+  .about-mission {
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .about-mission h4 {
+    font-size: 1.1rem;
+  }
+  
+  .about-mission p {
+    font-size: 0.9rem;
+  }
+  
+  .about-interests h4 {
+    font-size: 1rem;
+  }
+  
+  .interest-tag {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .interests-travel h5 {
+    font-size: 0.95rem;
+  }
+  
+  .travel-badge {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.5rem;
+  }
+  
+  .flag-img {
+    width: 18px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 2.5rem 0;
+  }
+  
+  .about-content {
+    gap: 1.2rem;
+  }
+  
+  .about-text {
+    padding: 1.2rem;
+  }
+  
+  .about-intro h3 {
+    font-size: 1.3rem;
+  }
+  
+  .about-intro p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .detail-item h4 {
+    font-size: 0.95rem;
+  }
+  
+  .detail-item p {
+    font-size: 0.85rem;
+  }
+  
+  .stat-card {
+    padding: 1.2rem;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .section-header p {
+    font-size: 0.95rem;
+  }
+  
+  .about-mission {
+    padding: 1rem;
+    margin-top: 1.2rem;
+  }
+  
+  .about-mission h4 {
+    font-size: 1rem;
+  }
+  
+  .about-mission p {
+    font-size: 0.85rem;
+  }
+  
+  .about-interests h4 {
+    font-size: 0.95rem;
+  }
+  
+  .interest-tag {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .interests-travel h5 {
+    font-size: 0.9rem;
+  }
+  
+  .travel-badge {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.4rem;
+  }
+  
+  .flag-img {
+    width: 16px;
+    height: 12px;
   }
 }

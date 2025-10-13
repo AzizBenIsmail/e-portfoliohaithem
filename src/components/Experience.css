@@ -276,7 +276,38 @@
   margin: 0;
 }
 
+@media (max-width: 1024px) {
+  .timeline-item {
+    width: 48%;
+  }
+  
+  .timeline-item.left {
+    padding-right: 1.5rem;
+  }
+  
+  .timeline-item.right {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-content {
+    padding: 1.8rem;
+  }
+  
+  .expertise-items {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .experience {
+    padding: 4rem 0;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
   .timeline::before {
     left: 2rem;
   }
@@ -286,6 +317,7 @@
     left: 0 !important;
     padding-left: 4rem;
     padding-right: 0;
+    margin-bottom: 2.5rem;
   }
 
   .timeline-item::before {
@@ -296,12 +328,326 @@
   .timeline-content::before {
     display: none;
   }
+  
+  .timeline-content {
+    padding: 1.5rem;
+  }
+  
+  .timeline-period {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .timeline-position {
+    font-size: 1.3rem;
+  }
+  
+  .timeline-company {
+    font-size: 1rem;
+  }
+  
+  .timeline-description {
+    font-size: 0.95rem;
+  }
+  
+  .timeline-achievements h5,
+  .timeline-technologies h5 {
+    font-size: 0.95rem;
+  }
+  
+  .timeline-achievements li {
+    font-size: 0.9rem;
+  }
+  
+  .timeline-projects h5 {
+    font-size: 0.95rem;
+  }
+  
+  .timeline-projects li {
+    font-size: 0.9rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.6rem;
+  }
 
   .expertise-items {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .expertise-item {
+    gap: 0.8rem;
+  }
+  
+  .expertise-icon {
+    font-size: 2rem;
+  }
+  
+  .expertise-item h4 {
+    font-size: 1.1rem;
+  }
+  
+  .expertise-item p {
+    font-size: 0.9rem;
   }
 
+  .section-header {
+    margin-bottom: 3rem;
+  }
+  
   .section-header h2 {
     font-size: 2rem;
+  }
+  
+  .section-header p {
+    font-size: 1.1rem;
+  }
+  
+  .summary-card {
+    padding: 2.5rem;
+  }
+  
+  .summary-card h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience {
+    padding: 3rem 0;
+  }
+  
+  .container {
+    padding: 0 10px;
+  }
+  
+  .timeline::before {
+    left: 1.5rem;
+  }
+  
+  .timeline-item {
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .timeline-item::before {
+    left: 0.5rem !important;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .timeline-content {
+    padding: 1.2rem;
+  }
+  
+  .timeline-period {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+  }
+  
+  .timeline-position {
+    font-size: 1.2rem;
+  }
+  
+  .timeline-company {
+    font-size: 0.95rem;
+  }
+  
+  .timeline-location {
+    font-size: 0.85rem;
+  }
+  
+  .timeline-description {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .timeline-achievements h5,
+  .timeline-technologies h5 {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .timeline-achievements li {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .timeline-projects h5 {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .timeline-projects li {
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+  }
+  
+  .expertise-items {
+    gap: 1.2rem;
+  }
+  
+  .expertise-item {
+    gap: 0.6rem;
+  }
+  
+  .expertise-icon {
+    font-size: 1.8rem;
+  }
+  
+  .expertise-item h4 {
+    font-size: 1rem;
+  }
+  
+  .expertise-item p {
+    font-size: 0.85rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
+  }
+  
+  .summary-card {
+    padding: 2rem;
+  }
+  
+  .summary-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 2.5rem 0;
+  }
+  
+  .timeline::before {
+    left: 1.2rem;
+  }
+  
+  .timeline-item {
+    padding-left: 2.5rem;
+    margin-bottom: 1.8rem;
+  }
+  
+  .timeline-item::before {
+    left: 0.2rem !important;
+    width: 14px;
+    height: 14px;
+  }
+  
+  .timeline-content {
+    padding: 1rem;
+  }
+  
+  .timeline-period {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .timeline-position {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .timeline-company {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .timeline-location {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .timeline-description {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  
+  .timeline-achievements h5,
+  .timeline-technologies h5 {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-achievements li {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+    padding-left: 1.2rem;
+  }
+  
+  .timeline-projects h5 {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-projects li {
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+    padding-left: 1.2rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+  }
+  
+  .expertise-items {
+    gap: 1rem;
+  }
+  
+  .expertise-item {
+    gap: 0.5rem;
+  }
+  
+  .expertise-icon {
+    font-size: 1.5rem;
+  }
+  
+  .expertise-item h4 {
+    font-size: 0.95rem;
+  }
+  
+  .expertise-item p {
+    font-size: 0.8rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .section-header p {
+    font-size: 0.95rem;
+  }
+  
+  .summary-card {
+    padding: 1.5rem;
+  }
+  
+  .summary-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
   }
 }
