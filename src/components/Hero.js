@@ -16,10 +16,13 @@ const Hero = () => {
               <span className="title">Ingénieur Génie Civil</span>
             </h1>
             <p className="hero-description">
-              Spécialisé dans les bureaux d'études offshore avec 7 ans d'expérience 
-              dans la conception de bâtiments en béton armé. Expert en sous-traitance 
-              pour des sociétés françaises, je recherche de nouvelles opportunités 
-              en France.
+            Ingénieur spécialisé dans les bureaux d’études offshore, 
+            je possède plus de 7 ans d’expérience dans la conception et 
+            le calcul de structures en béton armé. Habitué à collaborer 
+            avec des sociétés françaises exigeantes, j’allie rigueur, 
+            maîtrise technique et sens du détail. Résident à Asnières-sur-Seine, Paris,
+            je recherche aujourd’hui une opportunité en France pour 
+            mettre mon expertise au service de projets ambitieux et durables.
             </p>
             <div className="hero-buttons">
               <button 

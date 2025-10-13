@@ -169,7 +169,6 @@ body.dark .btn-outline:hover {
 .hero-image {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
   align-items: center;
 }
 

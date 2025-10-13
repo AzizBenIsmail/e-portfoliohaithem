@@ -3,6 +3,10 @@ import './Formation.css';
 import diplomePDF from '../assets/certif/Diplôme_national_dingénieur.pdf';
 import baccalaureatPDF from '../assets/certif/Diplôme_de_baccalauréat.pdf';
 import licencePDF from '../assets/certif/Licence_appliquée.pdf';
+import tcf1PDF from '../assets/certif/TCF1.pdf';
+import tcf2PDF from '../assets/certif/TCF2.pdf';
+import revitCertPDF from '../assets/certif/Certificat_Revit_Structure_Ayadi_Haithem.pdf';
+import institutFrancaisLogo from '../assets/images/Institut_Francais.jpeg';
 
 const Formation = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -118,9 +122,102 @@ const Formation = () => {
             </div>
           </div>
           
+          {/* Section Certifications Linguistiques */}
+          <div className="certifications-section">
+            <h3>Certifications Linguistiques</h3>
+            <div className="certifications-grid">
+              <div className="certification-card">
+                <div className="cert-header">
+                  <div className="cert-icon">🇫🇷</div>
+                  <div className="cert-info">
+                    <h4>TCF (Test de Connaissance du Français)</h4>
+                    <span className="cert-level">Niveau B2</span>
+                  </div>
+                </div>
+                <div className="cert-body">
+                  <div className="cert-org">
+                    <img src={institutFrancaisLogo} alt="Institut Français" className="org-logo" />
+                    Institut Français de Tunisie
+                  </div>
+                  <p className="cert-description">
+                    Test de Connaissance du Français - Certification officielle de niveau linguistique
+                  </p>
+                  <div className="cert-actions">
+                    <button onClick={() => openModal(tcf1PDF, 'TCF - Test de Connaissance du Français')} className="btn-primary">
+                      📄 Voir le certificat
+                    </button>
+                    <button onClick={() => downloadPDF(tcf1PDF, 'TCF1.pdf')} className="btn-secondary">
+                      ⬇️ Télécharger
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="certification-card">
+                <div className="cert-header">
+                  <div className="cert-icon">🇫🇷</div>
+                  <div className="cert-info">
+                    <h4>TCF (Test de Connaissance du Français)</h4>
+                    <span className="cert-level">Niveau C1</span>
+                  </div>
+                </div>
+                <div className="cert-body">
+                  <div className="cert-org">
+                  <img src={institutFrancaisLogo} alt="Institut Français" className="org-logo" />
+                  Institut Français de Tunisie
+                  </div>
+                  <p className="cert-description">
+                    Test de Connaissance du Français - Certification officielle de niveau linguistique avancé
+                  </p>
+                  <div className="cert-actions">
+                    <button onClick={() => openModal(tcf2PDF, 'TCF - Test de Connaissance du Français')} className="btn-primary">
+                      📄 Voir le certificat
+                    </button>
+                    <button onClick={() => downloadPDF(tcf2PDF, 'TCF2.pdf')} className="btn-secondary">
+                      ⬇️ Télécharger
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Section Certifications Techniques */}
+          <div className="certifications-section">
+            <h3>Certifications Techniques</h3>
+            <div className="certifications-grid">
+              <div className="certification-card">
+                <div className="cert-header">
+                  <div className="cert-icon">🏗️</div>
+                  <div className="cert-info">
+                    <h4>Certificat Revit Structure</h4>
+                    <span className="cert-level">Ironhoster Academy</span>
+                  </div>
+                </div>
+                <div className="cert-body">
+                  <div className="cert-org">
+                    <span className="org-icon">🎓</span>
+                    Ironhoster Academy
+                  </div>
+                  <p className="cert-description">
+                    Certification professionnelle en modélisation et conception de structures avec Revit Structure
+                  </p>
+                  <div className="cert-actions">
+                    <button onClick={() => openModal(revitCertPDF, 'Certificat Revit Structure')} className="btn-primary">
+                      📄 Voir le certificat
+                    </button>
+                    <button onClick={() => downloadPDF(revitCertPDF, 'Certificat_Revit_Structure_Ayadi_Haithem.pdf')} className="btn-secondary">
+                      ⬇️ Télécharger
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <div className="formation-stats">
             <div className="stat-item">
-              <div className="stat-number">5</div>
+              <div className="stat-number">6</div>
               <div className="stat-label">Années d'études</div>
             </div>
             <div className="stat-item">
