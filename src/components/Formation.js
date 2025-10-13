@@ -1,22 +1,27 @@
 import React, { useState } from 'react';
 import './Formation.css';
 import diplomePDF from '../assets/certif/Diplôme_national_dingénieur.pdf';
+import baccalaureatPDF from '../assets/certif/Diplôme_de_baccalauréat.pdf';
+import licencePDF from '../assets/certif/Licence_appliquée.pdf';
 
 const Formation = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState(null);
 
-  const openModal = () => {
+  const openModal = (pdfFile, title) => {
+    setModalContent({ pdf: pdfFile, title });
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
+    setModalContent(null);
   };
 
-  const downloadPDF = () => {
+  const downloadPDF = (pdfFile, filename) => {
     const link = document.createElement('a');
-    link.href = diplomePDF;
-    link.download = 'Diplôme_national_dingénieur.pdf';
+    link.href = pdfFile;
+    link.download = filename;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -36,7 +41,7 @@ const Formation = () => {
                 <div className="degree-icon">🎓</div>
                 <div className="degree-info">
                   <h3>Diplôme national d'ingénieur</h3>
-                  <span className="degree-year">2017</span>
+                  <span className="degree-year">2021</span>
                 </div>
               </div>
               <div className="card-body">
@@ -48,10 +53,10 @@ const Formation = () => {
                   Projet de fin d'étude intitulé : Etude d'un bâtiment Ilot WURTZ-JUVISY sur ORGE-FRANCE (note : 16/20)
                 </p>
                 <div className="actions">
-                  <button onClick={openModal} className="btn-primary">
+                  <button onClick={() => openModal(diplomePDF, 'Diplôme National d\'Ingénieur')} className="btn-primary">
                     📄 Voir le diplôme
                   </button>
-                  <button onClick={downloadPDF} className="btn-secondary">
+                  <button onClick={() => downloadPDF(diplomePDF, 'Diplôme_national_dingénieur.pdf')} className="btn-secondary">
                     ⬇️ Télécharger
                   </button>
                 </div>
@@ -63,7 +68,7 @@ const Formation = () => {
                 <div className="degree-icon">📜</div>
                 <div className="degree-info">
                   <h3>Licence appliquée</h3>
-                  <span className="degree-year">2014</span>
+                  <span className="degree-year">2018</span>
                 </div>
               </div>
               <div className="card-body">
@@ -74,6 +79,14 @@ const Formation = () => {
                 <p className="description">
                   Génie Civil - Projet MARRIOTT (R+12 et 3SS) - Mention : Très bien
                 </p>
+                <div className="actions">
+                  <button onClick={() => openModal(licencePDF, 'Licence Appliquée en Génie Civil')} className="btn-primary">
+                    📄 Voir le diplôme
+                  </button>
+                  <button onClick={() => downloadPDF(licencePDF, 'Licence_appliquée.pdf')} className="btn-secondary">
+                    ⬇️ Télécharger
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -82,7 +95,7 @@ const Formation = () => {
                 <div className="degree-icon">🏫</div>
                 <div className="degree-info">
                   <h3>Baccalauréat</h3>
-                  <span className="degree-year">2011</span>
+                  <span className="degree-year">2014</span>
                 </div>
               </div>
               <div className="card-body">
@@ -93,6 +106,14 @@ const Formation = () => {
                 <p className="description">
                   Baccalauréat Science technique
                 </p>
+                <div className="actions">
+                  <button onClick={() => openModal(baccalaureatPDF, 'Diplôme de Baccalauréat')} className="btn-primary">
+                    📄 Voir le diplôme
+                  </button>
+                  <button onClick={() => downloadPDF(baccalaureatPDF, 'Diplôme_de_baccalauréat.pdf')} className="btn-secondary">
+                    ⬇️ Télécharger
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -115,26 +136,26 @@ const Formation = () => {
       </div>
 
       {/* Modal Popup */}
-      {isModalOpen && (
+      {isModalOpen && modalContent && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
-              <h3>Diplôme National d'Ingénieur</h3>
+              <h3>{modalContent.title}</h3>
               <button className="modal-close" onClick={closeModal}>
                 ✕
               </button>
             </div>
             <div className="modal-body">
               <iframe
-                src={diplomePDF}
+                src={modalContent.pdf}
                 width="100%"
                 height="600px"
-                title="Diplôme National d'Ingénieur"
+                title={modalContent.title}
                 style={{ border: 'none', borderRadius: '8px' }}
               />
             </div>
             <div className="modal-footer">
-              <button onClick={downloadPDF} className="btn-download-modal">
+              <button onClick={() => downloadPDF(modalContent.pdf, modalContent.title.replace(/\s+/g, '_') + '.pdf')} className="btn-download-modal">
                 ⬇️ Télécharger le PDF
               </button>
             </div>
