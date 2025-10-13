@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +13,7 @@ const Contact = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState('');
+  const { t } = useTranslation();
 
   const handleChange = (e) => {
     setFormData({
@@ -73,16 +75,16 @@ const Contact = () => {
     <section id="contact" className="contact">
       <div className="container">
         <div className="section-header">
-          <h2>Contactez-Moi</h2>
-          <p>Prêt à collaborer sur votre prochain projet ?</p>
+          <h2>{t('contact.title')}</h2>
+          <p>{t('contact.subtitle')}</p>
         </div>
 
         <div className="contact-content">
           <div className="contact-info">
-            <h3>Informations de Contact</h3>
+            <h3>{t('contact.infoTitle')}</h3>
             <p>
-              Je suis disponible pour discuter de nouvelles opportunités en France. 
-              N'hésitez pas à me contacter pour échanger sur vos projets d'ingénierie civile.
+              {t('contact.available')} 
+              {t('contact.subtitle')}
             </p>
             
             <div className="contact-items">
@@ -104,14 +106,14 @@ const Contact = () => {
             </div>
 
             <div className="availability">
-              <h4>Disponibilité</h4>
+              <h4>{t('contact.availabilityTitle')}</h4>
               <p>
                 <span className="status-indicator available"></span>
-                Disponible pour de nouvelles opportunités
+                {t('contact.available')}
               </p>
               <p>
                 <span className="status-indicator"></span>
-                Recherche active en France
+                {t('contact.searchFrance')}
               </p>
               <div className="cv-download">
                 <a 
@@ -120,7 +122,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="cv-btn"
                 >
-                  📄 Télécharger mon CV
+                  {t('contact.downloadCV')}
                 </a>
               </div>
             </div>
@@ -128,11 +130,11 @@ const Contact = () => {
 
           <div className="contact-form-container">
             <form className="contact-form" onSubmit={handleSubmit}>
-              <h3>Envoyez-moi un message</h3>
+              <h3>{t('contact.form.formTitle')}</h3>
               
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="name">Nom complet *</label>
+                  <label htmlFor="name">{t('contact.form.name')}</label>
                   <input
                     type="text"
                     id="name"
@@ -140,12 +142,12 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    placeholder="Votre nom"
+                    placeholder={t('contact.form.placeholders.name')}
                   />
                 </div>
                 
                 <div className="form-group">
-                  <label htmlFor="email">Email *</label>
+                  <label htmlFor="email">{t('contact.form.email')}</label>
                   <input
                     type="email"
                     id="email"
@@ -153,25 +155,25 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    placeholder="votre@email.com"
+                    placeholder={t('contact.form.placeholders.email')}
                   />
                 </div>
               </div>
 
               <div className="form-group">
-                <label htmlFor="company">Société</label>
+                <label htmlFor="company">{t('contact.form.company')}</label>
                 <input
                   type="text"
                   id="company"
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  placeholder="Nom de votre société"
+                  placeholder={t('contact.form.placeholders.company')}
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="subject">Sujet *</label>
+                <label htmlFor="subject">{t('contact.form.subject')}</label>
                 <input
                   type="text"
                   id="subject"
@@ -179,12 +181,12 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  placeholder="Objet de votre message"
+                  placeholder={t('contact.form.placeholders.subject')}
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="message">Message *</label>
+                <label htmlFor="message">{t('contact.form.message')}</label>
                 <textarea
                   id="message"
                   name="message"
@@ -192,7 +194,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows="5"
-                  placeholder="Décrivez votre projet ou votre besoin..."
+                  placeholder={t('contact.form.placeholders.message')}
                 ></textarea>
               </div>
 
@@ -201,13 +203,11 @@ const Contact = () => {
                 className={`submit-btn ${isSubmitting ? 'submitting' : ''}`}
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
+                {isSubmitting ? t('contact.form.sending') : t('contact.form.sendMessage')}
               </button>
 
               {submitStatus === 'success' && (
-                <div className="success-message">
-                  ✅ Message envoyé avec succès ! Je vous répondrai rapidement.
-                </div>
+                <div className="success-message">{t('contact.form.success')}</div>
               )}
             </form>
           </div>

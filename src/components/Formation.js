@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Formation.css';
+import { useTranslation } from 'react-i18next';
 import diplomePDF from '../assets/certif/Diplôme_national_dingénieur.pdf';
 import baccalaureatPDF from '../assets/certif/Diplôme_de_baccalauréat.pdf';
 import licencePDF from '../assets/certif/Licence_appliquée.pdf';
@@ -16,6 +17,7 @@ import franceFlag from '../assets/images/Fr.jpeg';
 import usaFlag from '../assets/images/Usa.jpeg';
 
 const Formation = () => {
+  const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
 
@@ -41,8 +43,8 @@ const Formation = () => {
     <section id="formation" className="formation">
       <div className="container">
         <div className="section-header">
-          <h2>Formation</h2>
-          <p>Mon parcours académique et mes certifications</p>
+          <h2>{t('formation.title')}</h2>
+          <p>{t('formation.subtitle')}</p>
         </div>
         
         <div className="formation-content">
@@ -51,24 +53,22 @@ const Formation = () => {
               <div className="card-header">
                 <div className="degree-icon">🎓</div>
                 <div className="degree-info">
-                  <h3>Diplôme national d'ingénieur</h3>
+                  <h3>{t('formation.degree.engineerTitle')}</h3>
                   <span className="degree-year">2021</span>
                 </div>
               </div>
               <div className="card-body">
                 <div className="institution">
                   <span className="institution-icon">🏛️</span>
-                  Université Arabe des Sciences, Tunis
+                  {t('formation.degree.engineerInstitution')}
                 </div>
-                <p className="description">
-                  Projet de fin d'étude intitulé : Etude d'un bâtiment Ilot WURTZ-JUVISY sur ORGE-FRANCE (note : 16/20)
-                </p>
+                <p className="description">{t('formation.degree.engineerDescription')}</p>
                 <div className="actions">
                   <button onClick={() => openModal(diplomePDF, 'Diplôme National d\'Ingénieur')} className="btn-primary">
-                    📄 Voir le diplôme
+                    {t('formation.viewDiploma')}
                   </button>
                   <button onClick={() => downloadPDF(diplomePDF, 'Diplôme_national_dingénieur.pdf')} className="btn-secondary">
-                    ⬇️ Télécharger
+                    {t('formation.download')}
                   </button>
                 </div>
               </div>
@@ -78,24 +78,22 @@ const Formation = () => {
               <div className="card-header">
                 <div className="degree-icon">📜</div>
                 <div className="degree-info">
-                  <h3>Licence appliquée</h3>
+                  <h3>{t('formation.degree.licenseTitle')}</h3>
                   <span className="degree-year">2018</span>
                 </div>
               </div>
               <div className="card-body">
                 <div className="institution">
                   <span className="institution-icon">🏛️</span>
-                  ISTEUB, Tunis
+                  {t('formation.degree.licenseInstitution')}
                 </div>
-                <p className="description">
-                  Génie Civil - Projet MARRIOTT (R+12 et 3SS) - Mention : Très bien
-                </p>
+                <p className="description">{t('formation.degree.licenseDescription')}</p>
                 <div className="actions">
-                  <button onClick={() => openModal(licencePDF, 'Licence Appliquée en Génie Civil')} className="btn-primary">
-                    📄 Voir le diplôme
+                  <button onClick={() => openModal(licencePDF, t('formation.degree.licenseTitle'))} className="btn-primary">
+                    {t('formation.viewDiploma')}
                   </button>
                   <button onClick={() => downloadPDF(licencePDF, 'Licence_appliquée.pdf')} className="btn-secondary">
-                    ⬇️ Télécharger
+                    {t('formation.download')}
                   </button>
                 </div>
               </div>
@@ -105,24 +103,22 @@ const Formation = () => {
               <div className="card-header">
                 <div className="degree-icon">🏫</div>
                 <div className="degree-info">
-                  <h3>Baccalauréat</h3>
+                  <h3>{t('formation.degree.baccalaureateTitle')}</h3>
                   <span className="degree-year">2014</span>
                 </div>
               </div>
               <div className="card-body">
                 <div className="institution">
                   <span className="institution-icon">🏛️</span>
-                  Lycée 2 mars 1934, Tunis
+                  {t('formation.degree.baccalaureateInstitution')}
                 </div>
-                <p className="description">
-                  Baccalauréat Science technique
-                </p>
+                <p className="description">{t('formation.degree.baccalaureateDescription')}</p>
                 <div className="actions">
-                  <button onClick={() => openModal(baccalaureatPDF, 'Diplôme de Baccalauréat')} className="btn-primary">
-                    📄 Voir le diplôme
+                  <button onClick={() => openModal(baccalaureatPDF, t('formation.degree.baccalaureateTitle'))} className="btn-primary">
+                    {t('formation.viewDiploma')}
                   </button>
                   <button onClick={() => downloadPDF(baccalaureatPDF, 'Diplôme_de_baccalauréat.pdf')} className="btn-secondary">
-                    ⬇️ Télécharger
+                    {t('formation.download')}
                   </button>
                 </div>
               </div>
@@ -131,7 +127,7 @@ const Formation = () => {
           
           {/* Section Certifications Linguistiques */}
           <div className="certifications-section">
-            <h3>Certifications Linguistiques</h3>
+            <h3>{t('formation.linguisticCerts')}</h3>
             <div className="certifications-grid">
               <div className="certification-card">
                 <div className="cert-header">
@@ -152,11 +148,11 @@ const Formation = () => {
                     Test de Connaissance du Français - Certification officielle de niveau linguistique
                   </p>
                   <div className="cert-actions">
-                    <button onClick={() => openModal(tcf1PDF, 'TCF - Test de Connaissance du Français')} className="btn-primary">
-                      📄 Voir le certificat
+                    <button onClick={() => openModal(tcf1PDF, t('formation.cert.tcfTitle'))} className="btn-primary">
+                      {t('formation.viewDiploma')}
                     </button>
                     <button onClick={() => downloadPDF(tcf1PDF, 'TCF1.pdf')} className="btn-secondary">
-                      ⬇️ Télécharger
+                      {t('formation.download')}
                     </button>
                   </div>
                 </div>
@@ -181,11 +177,11 @@ const Formation = () => {
                     Test de Connaissance du Français - Certification officielle de niveau linguistique avancé
                   </p>
                   <div className="cert-actions">
-                    <button onClick={() => openModal(tcf2PDF, 'TCF - Test de Connaissance du Français')} className="btn-primary">
-                      📄 Voir le certificat
+                    <button onClick={() => openModal(tcf2PDF, t('formation.cert.tcfTitle'))} className="btn-primary">
+                      {t('formation.viewDiploma')}
                     </button>
                     <button onClick={() => downloadPDF(tcf2PDF, 'TCF2.pdf')} className="btn-secondary">
-                      ⬇️ Télécharger
+                      {t('formation.download')}
                     </button>
                   </div>
                 </div>
@@ -210,11 +206,11 @@ const Formation = () => {
                     Certification en langue anglaise - Niveau intermédiaire
                   </p>
                   <div className="cert-actions">
-                    <button onClick={() => openModal(level5PDF, 'Certificat de Langue Anglaise - Niveau 5')} className="btn-primary">
-                      📄 Voir le certificat
+                    <button onClick={() => openModal(level5PDF, t('formation.cert.englishCertTitle') + ' - Niveau 5')} className="btn-primary">
+                      {t('formation.viewDiploma')}
                     </button>
                     <button onClick={() => downloadPDF(level5PDF, 'LEVEL_5.pdf')} className="btn-secondary">
-                      ⬇️ Télécharger
+                      {t('formation.download')}
                     </button>
                   </div>
                 </div>
@@ -239,11 +235,11 @@ const Formation = () => {
                     Certification en langue anglaise - Niveau avancé
                   </p>
                   <div className="cert-actions">
-                    <button onClick={() => openModal(level6PDF, 'Certificat de Langue Anglaise - Niveau 6')} className="btn-primary">
-                      📄 Voir le certificat
+                    <button onClick={() => openModal(level6PDF, t('formation.cert.englishCertTitle') + ' - Niveau 6')} className="btn-primary">
+                      {t('formation.viewDiploma')}
                     </button>
                     <button onClick={() => downloadPDF(level6PDF, 'LEVEL_6.pdf')} className="btn-secondary">
-                      ⬇️ Télécharger
+                      {t('formation.download')}
                     </button>
                   </div>
                 </div>
@@ -268,11 +264,11 @@ const Formation = () => {
                     Certification en langue anglaise - Niveau expert
                   </p>
                   <div className="cert-actions">
-                    <button onClick={() => openModal(level7PDF, 'Certificat de Langue Anglaise - Niveau 7')} className="btn-primary">
-                      📄 Voir le certificat
+                    <button onClick={() => openModal(level7PDF, t('formation.cert.englishCertTitle') + ' - Niveau 7')} className="btn-primary">
+                      {t('formation.viewDiploma')}
                     </button>
                     <button onClick={() => downloadPDF(level7PDF, 'LEVEL_7.pdf')} className="btn-secondary">
-                      ⬇️ Télécharger
+                      {t('formation.download')}
                     </button>
                   </div>
                 </div>
@@ -297,11 +293,11 @@ const Formation = () => {
                     Certification en langue anglaise - Niveau maîtrise
                   </p>
                   <div className="cert-actions">
-                    <button onClick={() => openModal(level8PDF, 'Certificat de Langue Anglaise - Niveau 8')} className="btn-primary">
-                      📄 Voir le certificat
+                    <button onClick={() => openModal(level8PDF, t('formation.cert.englishCertTitle') + ' - Niveau 8')} className="btn-primary">
+                      {t('formation.viewDiploma')}
                     </button>
                     <button onClick={() => downloadPDF(level8PDF, 'LEVEL_8.pdf')} className="btn-secondary">
-                      ⬇️ Télécharger
+                      {t('formation.download')}
                     </button>
                   </div>
                 </div>
@@ -311,7 +307,7 @@ const Formation = () => {
 
           {/* Section Certifications Techniques */}
           <div className="certifications-section">
-            <h3>Certifications Techniques</h3>
+            <h3>{t('formation.technicalCerts')}</h3>
             <div className="certifications-grid">
               <div className="certification-card">
                 <div className="cert-header">
@@ -330,11 +326,11 @@ const Formation = () => {
                     Certification professionnelle en modélisation et conception de structures avec Revit Structure
                   </p>
                   <div className="cert-actions">
-                    <button onClick={() => openModal(revitCertPDF, 'Certificat Revit Structure')} className="btn-primary">
-                      📄 Voir le certificat
+                    <button onClick={() => openModal(revitCertPDF, t('formation.cert.revitTitle'))} className="btn-primary">
+                      {t('formation.viewDiploma')}
                     </button>
                     <button onClick={() => downloadPDF(revitCertPDF, 'Certificat_Revit_Structure_Ayadi_Haithem.pdf')} className="btn-secondary">
-                      ⬇️ Télécharger
+                      {t('formation.download')}
                     </button>
                   </div>
                 </div>
@@ -342,22 +338,22 @@ const Formation = () => {
             </div>
           </div>
           
-          <div className="formation-stats">
+            <div className="formation-stats">
             <div className="stat-item">
               <div className="stat-number">6</div>
-              <div className="stat-label">Années d'études</div>
+              <div className="stat-label">{t('formation.stats.years')}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">8</div>
-              <div className="stat-label">Certifications</div>
+              <div className="stat-label">{t('formation.stats.certs')}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">Mention</div>
-              <div className="stat-label">Bien</div>
+              <div className="stat-label">{t('formation.stats.mention')}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">100%</div>
-              <div className="stat-label">Réussite</div>
+              <div className="stat-label">{t('formation.stats.success')}</div>
             </div>
           </div>
         </div>
@@ -384,7 +380,7 @@ const Formation = () => {
             </div>
             <div className="modal-footer">
               <button onClick={() => downloadPDF(modalContent.pdf, modalContent.title.replace(/\s+/g, '_') + '.pdf')} className="btn-download-modal">
-                ⬇️ Télécharger le PDF
+                {t('formation.download')}
               </button>
             </div>
           </div>

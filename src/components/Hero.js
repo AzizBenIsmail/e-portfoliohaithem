@@ -1,7 +1,10 @@
 import React from 'react';
 import './Hero.css';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="accueil" className="hero">
       <div className="hero-background">
@@ -11,31 +14,23 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              <span className="greeting">Bonjour, je suis</span>
-              <span className="name">Haythem Ayadi</span>
-              <span className="title">Ingénieur Génie Civil</span>
+              <span className="greeting">{t('hero.greeting')}</span>
+              <span className="name">{t('hero.name')}</span>
+              <span className="title">{t('hero.title')}</span>
             </h1>
-            <p className="hero-description">
-            Ingénieur spécialisé dans les bureaux d’études offshore, 
-            je possède plus de 7 ans d’expérience dans la conception et 
-            le calcul de structures en béton armé. Habitué à collaborer 
-            avec des sociétés françaises exigeantes, j’allie rigueur, 
-            maîtrise technique et sens du détail. Résident à Asnières-sur-Seine, Paris,
-            je recherche aujourd’hui une opportunité en France pour 
-            mettre mon expertise au service de projets ambitieux et durables.
-            </p>
+            <p className="hero-description">{t('hero.description')}</p>
             <div className="hero-buttons">
               <button 
                 className="btn btn-primary"
                 onClick={() => document.getElementById('projets').scrollIntoView({ behavior: 'smooth' })}
               >
-                Voir mes projets
+                {t('hero.seeProjects')}
               </button>
               <button 
                 className="btn btn-secondary"
                 onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
               >
-                Me contacter
+                {t('hero.contactMe')}
               </button>
               <a 
                 href="/Curriculum-vitae.pdf" 
@@ -43,7 +38,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="btn btn-outline"
               >
-                📄 Télécharger mon CV
+                {t('hero.downloadCV')}
               </a>
             </div>
           </div>

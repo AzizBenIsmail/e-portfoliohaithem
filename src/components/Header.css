@@ -88,6 +88,34 @@
   background: #e6ebef;
 }
 
+.language-select {
+  display: inline-flex;
+  gap: 0.35rem;
+  margin-left: 0.5rem;
+  align-items: center;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text);
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.18s ease;
+}
+
+.lang-btn:hover {
+  background: rgba(0,0,0,0.04);
+}
+
+.lang-btn.active {
+  background: var(--primary);
+  color: white;
+  border-color: rgba(0,0,0,0.05);
+}
+
 @media (max-width: 1024px) {
   .nav-list {
     gap: 1.5rem;

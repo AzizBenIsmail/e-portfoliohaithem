@@ -15,7 +15,10 @@ import ADFERLogo from '../assets/images/ADFER.png';
 import ARMACADLogo from '../assets/images/ARMACAD.png';
 
 
+import { useTranslation } from 'react-i18next';
+
 const Skills = () => {
+  const { t } = useTranslation();
   const technicalSkills = [
     { name: 'Calcul de structures', level: 95, description: 'Analyse et dimensionnement de structures en béton armé' },
     { name: 'Logiciels CAO', level: 90, description: 'Autocad, Revit, Tekla Structures' },
@@ -55,13 +58,13 @@ const Skills = () => {
     <section id="competences" className="skills">
       <div className="container">
         <div className="section-header">
-          <h2>Mes Compétences</h2>
-          <p>Expertise technique et outils de conception</p>
+          <h2>{t('skills.title')}</h2>
+          <p>{t('skills.subtitle')}</p>
         </div>
 
         <div className="skills-content">
           <div className="skills-section">
-            <h3>Compétences Techniques</h3>
+            <h3>{t('skills.technicalTitle')}</h3>
             <div className="skills-grid">
               {technicalSkills.map((skill, index) => (
                 <div key={index} className="skill-item">
@@ -82,7 +85,7 @@ const Skills = () => {
           </div>
 
           <div className="skills-section">
-            <h3>Logiciels & Outils</h3>
+            <h3>{t('skills.softwareTitle')}</h3>
             <div className="software-grid">
               {softwareSkills.map((software, index) => (
                 <div key={index} className="software-item">
@@ -111,13 +114,13 @@ const Skills = () => {
           </div>
 
           <div className="skills-section">
-            <h3>Langues</h3>
+            <h3>{t('skills.languagesTitle')}</h3>
             <div className="languages-grid">
               {languages.map((language, index) => (
                 <div key={index} className="language-item">
                   <div className="language-info">
                     <h4>{language.name}</h4>
-                    {language.native && <span className="native-badge">Natif</span>}
+                    {language.native && <span className="native-badge">{t('skills.native')}</span>}
                   </div>
                   <div className="language-level">
                     <div className="level-bar">

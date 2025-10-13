@@ -1,60 +1,54 @@
 import React from 'react';
 import './About.css';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="apropos" className="about">
       <div className="container">
         <div className="section-header">
-          <h2>À Propos de Moi</h2>
-          <p>Mon parcours et ma passion pour l'ingénierie civile</p>
+          <h2>{t('about.title')}</h2>
+          <p>{t('about.subtitle')}</p>
         </div>
         
         <div className="about-content">
           <div className="about-text">
             <div className="about-intro">
-              <h3>Ingénieur Génie Civil Expérimenté</h3>
-              <p>
-                Avec 7 années d'expérience dans les bureaux d'études offshore, 
-                je me spécialise dans la conception et l'analyse de structures 
-                en béton armé pour des projets complexes en environnement marin.
-              </p>
+              <h3>{t('about.introTitle')}</h3>
+              <p>{t('about.intro')}</p>
             </div>
             
             <div className="about-details">
               <div className="detail-item">
                 <h4>🎯 Spécialisation</h4>
-                <p>Bâtiments en béton armé pour environnements offshore</p>
+                <p>{t('about.specialization')}</p>
               </div>
               
               <div className="detail-item">
                 <h4>🏢 Expérience</h4>
-                <p>7 ans dans des bureaux d'études en sous-traitance</p>
+                <p>{t('about.experience')}</p>
               </div>
               
               <div className="detail-item">
                 <h4>🇫🇷 Objectif</h4>
-                <p>Recherche d'opportunités en France</p>
+                <p>{t('about.objective')}</p>
               </div>
               
               <div className="detail-item">
                 <h4>🤝 Collaboration</h4>
-                <p>Expérience avec des sociétés françaises</p>
+                <p>{t('about.collaboration')}</p>
               </div>
             </div>
             
             <div className="about-mission">
-              <h4>Ma Mission</h4>
-              <p>
-                Concevoir des structures durables et sécurisées qui résistent 
-                aux conditions extrêmes des environnements offshore, tout en 
-                respectant les normes françaises et internationales les plus 
-                strictes.
-              </p>
+              <h4>{t('about.missionTitle')}</h4>
+              <p>{t('about.mission')}</p>
             </div>
 
           <div className="about-interests">
-            <h4>Centres d’intérêt</h4>
+            <h4>{t('about.interestsTitle')}</h4>
             <div className="interests-list">
               <span className="interest-tag">⚽ Football</span>
               <span className="interest-tag">🏋️‍♂️ Musculation</span>
@@ -62,7 +56,7 @@ const About = () => {
             </div>
 
             <div className="interests-travel">
-              <h5>Pays visités</h5>
+              <h5>{t('about.travelTitle')}</h5>
               <div className="travel-badges">
                 <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/rs.png" srcSet="https://flagcdn.com/w40/rs.png 2x" alt="Serbie" loading="lazy" /><span>Serbie</span></span>
                 <span className="travel-badge"><img className="flag-img" src="https://flagcdn.com/w20/tr.png" srcSet="https://flagcdn.com/w40/tr.png 2x" alt="Turquie" loading="lazy" /><span>Turquie</span></span>

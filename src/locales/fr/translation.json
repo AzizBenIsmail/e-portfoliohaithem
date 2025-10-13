@@ -1,0 +1,341 @@
+{
+  "header": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "skills": "Compétences",
+    "formation": "Formation",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact",
+    "themeToggle": "Basculer le thème",
+    "language": "Langue"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Haythem Ayadi",
+    "title": "Ingénieur Génie Civil",
+    "description": "Ingénieur spécialisé dans les bureaux d’études offshore, je possède plus de 7 ans d’expérience dans la conception et le calcul de structures en béton armé. Habitué à collaborer avec des sociétés françaises exigeantes, j’allie rigueur, maîtrise technique et sens du détail. Résident à Asnières-sur-Seine, Paris, je recherche aujourd’hui une opportunité en France pour mettre mon expertise au service de projets ambitieux et durables.",
+    "seeProjects": "Voir mes projets",
+    "contactMe": "Me contacter",
+    "downloadCV": "📄 Télécharger mon CV"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "subtitle": "Mon parcours et ma passion pour l'ingénierie civile",
+    "introTitle": "Ingénieur Génie Civil Expérimenté",
+    "intro": "Avec 7 années d'expérience dans les bureaux d'études offshore, je me spécialise dans la conception et l'analyse de structures en béton armé pour des projets complexes en environnement marin.",
+    "specialization": "Bâtiments en béton armé pour environnements offshore",
+    "experience": "7 ans dans des bureaux d'études en sous-traitance",
+    "objective": "Recherche d'opportunités en France",
+    "collaboration": "Expérience avec des sociétés françaises",
+    "missionTitle": "Ma Mission",
+    "mission": "Concevoir des structures durables et sécurisées qui résistent aux conditions extrêmes des environnements offshore, tout en respectant les normes françaises et internationales les plus strictes.",
+    "interestsTitle": "Centres d’intérêt",
+    "travelTitle": "Pays visités",
+    "stats": {
+      "years": "Années d'expérience",
+      "projects": "Projets réalisés",
+      "satisfaction": "Satisfaction client",
+      "partners": "Sociétés partenaires"
+    }
+  }
+  ,
+  "skills": {
+    "title": "Mes Compétences",
+    "subtitle": "Expertise technique et outils de conception",
+    "technicalTitle": "Compétences Techniques",
+    "softwareTitle": "Logiciels & Outils",
+    "languagesTitle": "Langues",
+    "certsTitle": "Certificats & Formations",
+    "level": {
+      "pro": "Professionnel",
+      "confirmed": "Confirmé",
+      "amateur": "Amateur"
+    },
+    "native": "Natif"
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "subtitle": "Portfolio de réalisations en génie civil offshore",
+    "filters": {
+      "tous": "Tous les projets",
+      "offshore": "Offshore",
+      "residential": "Résidentiel",
+      "commercial": "Commercial",
+      "infrastructure": "Infrastructure"
+    },
+    "featuresLabel": "Caractéristiques :",
+    "technologiesLabel": "Technologies :",
+    "status": {
+      "delivered": "Livré",
+      "ongoing": "En cours"
+    },
+    "stats": {
+      "projects": "Projets réalisés",
+      "partners": "Sociétés partenaires",
+      "satisfaction": "Satisfaction client",
+      "years": "Années d'expérience"
+    }
+    ,
+    "items": [
+      {
+        "id": 1,
+        "title": "Plateforme Offshore Complexe",
+        "category": "offshore",
+        "description": "Conception d'une plateforme offshore de 15 000 m² avec structures en béton armé résistant aux conditions marines extrêmes.",
+        "image": "🏗️",
+        "technologies": ["Autocad", "Revit", "Robot Structural", "Eurocodes"],
+        "features": [
+          "Résistance aux vents de 200 km/h",
+          "Protection contre la corrosion marine",
+          "Fondations sur pieux de 50m",
+          "Système de drainage intégré"
+        ],
+        "client": "Société Française d'Ingénierie",
+        "year": "2023",
+        "status": "Livré"
+      },
+      {
+        "id": 2,
+        "title": "Bâtiment Résidentiel Haute Performance",
+        "category": "residential",
+        "description": "Étude complète d'un complexe résidentiel de 200 logements avec optimisation énergétique et structure en béton armé.",
+        "image": "🏢",
+        "technologies": ["Revit", "Tekla Structures", "SAP2000"],
+        "features": [
+          "Certification HQE",
+          "Isolation thermique renforcée",
+          "Structure antisismique",
+          "Parking souterrain intégré"
+        ],
+        "client": "Promoteur Immobilier Français",
+        "year": "2022",
+        "status": "En cours"
+      },
+      {
+        "id": 3,
+        "title": "Infrastructure Portuaire",
+        "category": "infrastructure",
+        "description": "Conception de quais et entrepôts portuaires avec structures en béton armé pour charges lourdes et environnement marin.",
+        "image": "⚓",
+        "technologies": ["Autocad", "Robot Structural", "Excel"],
+        "features": [
+          "Charges de 50 tonnes/m²",
+          "Résistance à l'eau de mer",
+          "Système de levage intégré",
+          "Maintenance facilitée"
+        ],
+        "client": "Autorité Portuaire",
+        "year": "2021",
+        "status": "Livré"
+      },
+      {
+        "id": 4,
+        "title": "Centre Commercial Moderne",
+        "category": "commercial",
+        "description": "Étude structurelle d'un centre commercial de 25 000 m² avec parking multi-niveaux et espaces commerciaux.",
+        "image": "🛍️",
+        "technologies": ["Revit", "Tekla", "Robot Structural"],
+        "features": [
+          "Grandes portées sans poteaux",
+          "Éclairage naturel optimisé",
+          "Accessibilité PMR",
+          "Sécurité incendie renforcée"
+        ],
+        "client": "Groupe Commercial Français",
+        "year": "2020",
+        "status": "Livré"
+      },
+      {
+        "id": 5,
+        "title": "Usine Industrielle Offshore",
+        "category": "offshore",
+        "description": "Conception d'une usine de traitement offshore avec structures spécialisées pour environnements hostiles.",
+        "image": "🏭",
+        "technologies": ["Autocad", "SAP2000", "Robot Structural"],
+        "features": [
+          "Résistance aux explosions",
+          "Ventilation forcée",
+          "Évacuation d'urgence",
+          "Maintenance aérienne"
+        ],
+        "client": "Industriel Français",
+        "year": "2019",
+        "status": "Livré"
+      },
+      {
+        "id": 6,
+        "title": "Complexe Hôtelier de Luxe",
+        "category": "residential",
+        "description": "Étude complète d'un hôtel 5 étoiles avec piscines, spa et structures en béton armé de haute qualité.",
+        "image": "🏨",
+        "technologies": ["Revit", "Tekla Structures", "Excel"],
+        "features": [
+          "Acoustique optimisée",
+          "Climatisation centralisée",
+          "Sécurité renforcée",
+          "Design architectural"
+        ],
+        "client": "Chaîne Hôtelière Française",
+        "year": "2018",
+        "status": "Livré"
+      }
+    ]
+  },
+  "formation": {
+    "title": "Formation",
+    "subtitle": "Mon parcours académique et mes certifications",
+    "viewDiploma": "📄 Voir le diplôme",
+    "download": "⬇️ Télécharger",
+    "linguisticCerts": "Certifications Linguistiques",
+    "technicalCerts": "Certifications Techniques",
+    "stats": {
+      "years": "Années d'études",
+      "certs": "Certifications",
+      "mention": "Mention",
+      "success": "Réussite"
+    }
+    ,
+    "degree": {
+      "engineerTitle": "Diplôme national d'ingénieur",
+      "engineerInstitution": "Université Arabe des Sciences, Tunis",
+      "engineerDescription": "Projet de fin d'étude intitulé : Etude d'un bâtiment Ilot WURTZ-JUVISY sur ORGE-FRANCE (note : 16/20)",
+      "licenseTitle": "Licence appliquée",
+      "licenseInstitution": "ISTEUB, Tunis",
+      "licenseDescription": "Génie Civil - Projet MARRIOTT (R+12 et 3SS) - Mention : Très bien",
+      "baccalaureateTitle": "Baccalauréat",
+      "baccalaureateInstitution": "Lycée 2 mars 1934, Tunis",
+      "baccalaureateDescription": "Baccalauréat Science technique"
+    },
+    "cert": {
+      "tcfTitle": "TCF (Test de Connaissance du Français)",
+      "tcfOrg": "Institut Français de Tunisie",
+      "tcfDesc": "Test de Connaissance du Français - Certification officielle de niveau linguistique",
+      "englishCertTitle": "Certificat de Langue Anglaise",
+      "englishCertDesc": "Certification en langue anglaise - Niveau",
+      "revitTitle": "Certificat Revit Structure",
+      "revitDesc": "Certification professionnelle en modélisation et conception de structures avec Revit Structure"
+    }
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "networks": "Réseaux",
+    "specialization": "Spécialiste Offshore",
+    "copyright": "© {{year}} Haythem Ayadi - Ingénieur Génie Civil. Tous droits réservés.",
+    "tags": ["Génie Civil", "Offshore", "Béton Armé", "France"]
+  },
+  "experience": {
+    "title": "Mon Expérience",
+    "subtitle": "7 années d'expertise dans les bureaux d'études offshore",
+    "achievementsTitle": "Réalisations clés :",
+    "projectsTitle": "Projets réalisés :",
+    "technologiesTitle": "Technologies utilisées :",
+    "expertiseTitle": "Expertise Clé",
+    "expertise": {
+      "offshore": "Structures Offshore",
+      "advanced": "Calculs Avancés",
+      "collab": "Collaboration"
+    }
+    ,
+    "expertiseDescription": {
+      "offshoreDescription": "Conception de bâtiments résistants aux conditions marines",
+      "advancedDescription": "Dimensionnement selon les normes françaises et européennes",
+      "collabDescription": "Expérience avec des sociétés françaises en sous-traitance"
+    }
+    ,
+    "items": [
+      {
+        "period": "04/2024 – Aujourd’hui",
+        "company": "M.A.M Engineering",
+        "position": "Ingénieur structure génie civil",
+        "location": "",
+        "description": "Conception, modélisation et calcul des structures en béton armé, charpentes métalliques et ossatures bois.",
+        "achievements": [
+          "Élaboration des plans de coffrage et de ferraillage (neuf et réhabilitation)",
+          "Rédaction de notes de calcul détaillées et justification des choix techniques",
+          "Analyse des dossiers de marché et calcul de la descente des charges",
+          "Coordination avec conception et exécution, conformité aux normes",
+          "Vérification des plans et calculs pour garantir la qualité",
+          "Assistance technique aux équipes chantier et gestion des ajustements"
+        ],
+        "technologies": ["Autocad", "Gstarcad", "Graitec Arche", "Advance Design", "Revit"],
+        "projects": [
+          "Hôtel Reims : fondations et superstructure",
+          "École maternelle Gagny : structures porteuses et plans de coffrage",
+          "61 logements Vernon : plans de structure du complexe résidentiel",
+          "Ensemble immobilier Angerville : conception et calcul de trois bâtiments"
+        ]
+      },
+      {
+        "period": "03/2018 – 03/2024 (6 ans)",
+        "company": "FAZ-Project (Sous-traitant GROUPE LEGENDRE CONSTRUCTION & STRUCTURISTE & ARES-CONCEPT)",
+        "position": "Dessinateur projeteur en béton armé",
+        "location": "",
+        "description": "Calculs détaillés, ferraillage et dessins pour éléments BA; plans d’élévations, coupes, vues en plan; dalles coulées et préfabriquées; métrés et kilotage; fonds de plan; lecture et contrôle des plans.",
+        "achievements": [
+          "Calcul et ferraillage de poutres, longrines, voiles, linteaux, poteaux, raidisseurs",
+          "Plans d’élévations, coupes et vues en plan des éléments verticaux et fondations",
+          "Conception et ferraillage de dalles (in-situ et préfabriquées)",
+          "Métrés et kilotage complets de tous plans de ferraillage",
+          "Création de fonds de plan à partir des plans d’architecture",
+          "Lecture/contrôle de plans de coffrage et résolution de contradictions"
+        ],
+        "technologies": ["Autocad", "Arche Graitec", "AutoCAD Structural Detailing", "Advance Concrete", "Nova+", "Arma+", "Excel", "Word"],
+        "projects": [
+          "Collège GINKO, Bordeaux : collège avec gymnase et logements de fonction",
+          "Grand Paris Ligne 15 Sud, Vitry-sur-Seine : maintenance infrastructures",
+          "Nouveau Conservatoire, Clichy-sous-Bois : Musique, Danse, Arts",
+          "Résidence Sociale, Rosny : 170 logements",
+          "Centre de Cancérologie, Le Mans",
+          "ZAC Parc d’Affaires Sud : ensemble immobilier et réseau de transport",
+          "129 logements, Lormont : avec parking sous-sol"
+        ]
+      },
+      {
+        "period": "02/2017 – 06/2017",
+        "company": "CFE-CTE",
+        "position": "Conducteur de travaux génie civil (Stage)",
+        "location": "Tunis",
+        "description": "Surveillance de chantier, suivi administratif, sécurité, coordination d’équipe et planification des étapes.",
+        "achievements": [
+          "Suivi de l’entrée des machines/matériaux jusqu’à l’achèvement",
+          "Rédaction de comptes rendus et rapports journaliers",
+          "Respect et contrôle des mesures de sécurité sur chantier",
+          "Coordination des équipes pour respecter les délais",
+          "Surveillance autonome de petits chantiers et support aux grands projets",
+          "Planification : coffrage, ferraillage, pose d’armatures, décoffrage"
+        ],
+        "technologies": ["Autocad", "Excel"],
+        "projects": ["Hôtel MARRIOTT R+12 & 3SS : supervision des phases clés du chantier"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contactez-Moi",
+    "subtitle": "Prêt à collaborer sur votre prochain projet ?",
+    "infoTitle": "Informations de Contact",
+    "availabilityTitle": "Disponibilité",
+    "available": "Disponible pour de nouvelles opportunités",
+    "searchFrance": "Recherche active en France",
+    "downloadCV": "📄 Télécharger mon CV",
+    "form": {
+      "sendMessage": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "✅ Message envoyé avec succès ! Je vous répondrai rapidement.",
+      "formTitle": "Envoyez-moi un message",
+      "name": "Nom complet *",
+      "email": "Email *",
+      "company": "Société",
+      "subject": "Sujet *",
+      "message": "Message *",
+      "placeholders": {
+        "name": "Votre nom",
+        "email": "votre@email.com",
+        "company": "Nom de votre société",
+        "subject": "Objet de votre message",
+        "message": "Décrivez votre projet ou votre besoin..."
+      }
+    }
+  }
+}

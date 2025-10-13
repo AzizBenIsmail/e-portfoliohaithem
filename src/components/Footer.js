@@ -1,7 +1,9 @@
 import React from 'react';
 import './Footer.css';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
@@ -11,12 +13,12 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: 'Accueil', href: '#accueil' },
-    { name: 'À Propos', href: '#apropos' },
-    { name: 'Compétences', href: '#competences' },
-    { name: 'Expérience', href: '#experience' },
-    { name: 'Projets', href: '#projets' },
-    { name: 'Contact', href: '#contact' }
+    { name: t('header.home'), href: '#accueil' },
+    { name: t('header.about'), href: '#apropos' },
+    { name: t('header.skills'), href: '#competences' },
+    { name: t('header.experience'), href: '#experience' },
+    { name: t('header.projects'), href: '#projets' },
+    { name: t('header.contact'), href: '#contact' }
   ];
 
   return (
@@ -37,7 +39,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-section">
-            <h4>Navigation</h4>
+            <h4>{t('footer.navigation')}</h4>
             <ul className="footer-links">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -48,16 +50,16 @@ const Footer = () => {
           </div>
 
           <div className="footer-section">
-            <h4>Contact</h4>
+            <h4>{t('footer.contact')}</h4>
             <div className="contact-info">
               <p>📧 Engineer.haithem.ayadi@gmail.com</p>
               <p>📱 +33 611488502</p>
-              <p>📍 Recherche en France</p>
+              <p>📍 {t('contact.searchFrance')}</p>
             </div>
           </div>
 
           <div className="footer-section">
-            <h4>Réseaux</h4>
+            <h4>{t('footer.networks') || 'Réseaux'}</h4>
             <div className="social-links">
               {socialLinks.map((social, index) => (
                 <a
@@ -78,13 +80,12 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p className="copyright">
-              © {currentYear} Haythem Ayadi - Ingénieur Génie Civil. Tous droits réservés.
+              {t('footer.copyright', { year: currentYear })}
             </p>
             <div className="footer-tags">
-              <span className="tag">Génie Civil</span>
-              <span className="tag">Offshore</span>
-              <span className="tag">Béton Armé</span>
-              <span className="tag">France</span>
+              {t('footer.tags', { returnObjects: true }).map((tag, i) => (
+                <span key={i} className="tag">{tag}</span>
+              ))}
             </div>
           </div>
         </div>

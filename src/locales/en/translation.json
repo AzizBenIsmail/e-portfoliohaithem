@@ -1,0 +1,341 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "formation": "Education",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "themeToggle": "Toggle theme",
+    "language": "Language"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Haythem Ayadi",
+    "title": "Civil Engineer",
+    "description": "Engineer specialized in offshore design offices, I have over 7 years of experience in the design and calculation of reinforced concrete structures. Used to collaborating with demanding French companies, I combine rigor, technical mastery and attention to detail. Resident in Asnières-sur-Seine, Paris, I am now looking for an opportunity in France to put my expertise at the service of ambitious and sustainable projects.",
+    "seeProjects": "See my projects",
+    "contactMe": "Contact me",
+    "downloadCV": "📄 Download my CV"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "My background and my passion for civil engineering",
+    "introTitle": "Experienced Civil Engineer",
+    "intro": "With 7 years of experience in offshore engineering offices, I specialize in the design and analysis of reinforced concrete structures for complex projects in marine environments.",
+    "specialization": "Reinforced concrete buildings for offshore environments",
+    "experience": "7 years in subcontracting engineering offices",
+    "objective": "Looking for opportunities in France",
+    "collaboration": "Experience with French companies",
+    "missionTitle": "My Mission",
+    "mission": "Design durable and safe structures that withstand extreme offshore environmental conditions while complying with the strictest French and international standards.",
+    "interestsTitle": "Interests",
+    "travelTitle": "Visited countries",
+    "stats": {
+      "years": "Years of experience",
+      "projects": "Projects completed",
+      "satisfaction": "Client satisfaction",
+      "partners": "Partner companies"
+    }
+  }
+  ,
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "Technical expertise and design tools",
+    "technicalTitle": "Technical Skills",
+    "softwareTitle": "Software & Tools",
+    "languagesTitle": "Languages",
+    "certsTitle": "Certificates & Education",
+    "level": {
+      "pro": "Professional",
+      "confirmed": "Advanced",
+      "amateur": "Beginner"
+    },
+    "native": "Native"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Portfolio of civil engineering and offshore projects",
+    "filters": {
+      "tous": "All projects",
+      "offshore": "Offshore",
+      "residential": "Residential",
+      "commercial": "Commercial",
+      "infrastructure": "Infrastructure"
+    },
+    "featuresLabel": "Features:",
+    "technologiesLabel": "Technologies:",
+    "status": {
+      "delivered": "Delivered",
+      "ongoing": "Ongoing"
+    },
+    "stats": {
+      "projects": "Projects completed",
+      "partners": "Partner companies",
+      "satisfaction": "Client satisfaction",
+      "years": "Years of experience"
+    }
+    ,
+    "items": [
+      {
+        "id": 1,
+        "title": "Complex Offshore Platform",
+        "category": "offshore",
+        "description": "Design of a 15,000 m² offshore platform with reinforced concrete structures resistant to extreme marine conditions.",
+        "image": "🏗️",
+        "technologies": ["Autocad", "Revit", "Robot Structural", "Eurocodes"],
+        "features": [
+          "Resistance to winds of 200 km/h",
+          "Protection against marine corrosion",
+          "Foundations on 50m piles",
+          "Integrated drainage system"
+        ],
+        "client": "French Engineering Company",
+        "year": "2023",
+        "status": "Delivered"
+      },
+      {
+        "id": 2,
+        "title": "High Performance Residential Building",
+        "category": "residential",
+        "description": "Complete study of a residential complex of 200 units with energy optimization and reinforced concrete structure.",
+        "image": "🏢",
+        "technologies": ["Revit", "Tekla Structures", "SAP2000"],
+        "features": [
+          "HQE certification",
+          "Enhanced thermal insulation",
+          "Seismic-resistant structure",
+          "Integrated underground parking"
+        ],
+        "client": "French Real Estate Developer",
+        "year": "2022",
+        "status": "Ongoing"
+      },
+      {
+        "id": 3,
+        "title": "Port Infrastructure",
+        "category": "infrastructure",
+        "description": "Design of quays and port warehouses with reinforced concrete structures for heavy loads and marine environment.",
+        "image": "⚓",
+        "technologies": ["Autocad", "Robot Structural", "Excel"],
+        "features": [
+          "50 tons/m² loads",
+          "Resistance to seawater",
+          "Integrated lifting system",
+          "Easy maintenance"
+        ],
+        "client": "Port Authority",
+        "year": "2021",
+        "status": "Delivered"
+      },
+      {
+        "id": 4,
+        "title": "Modern Shopping Center",
+        "category": "commercial",
+        "description": "Structural study of a 25,000 m² shopping center with multi-level parking and commercial spaces.",
+        "image": "🛍️",
+        "technologies": ["Revit", "Tekla", "Robot Structural"],
+        "features": [
+          "Large spans without columns",
+          "Optimized natural lighting",
+          "Accessible for PRM",
+          "Enhanced fire safety"
+        ],
+        "client": "French Commercial Group",
+        "year": "2020",
+        "status": "Delivered"
+      },
+      {
+        "id": 5,
+        "title": "Offshore Industrial Plant",
+        "category": "offshore",
+        "description": "Design of an offshore processing plant with specialized structures for hostile environments.",
+        "image": "🏭",
+        "technologies": ["Autocad", "SAP2000", "Robot Structural"],
+        "features": [
+          "Explosion resistance",
+          "Forced ventilation",
+          "Emergency evacuation",
+          "Aerial maintenance"
+        ],
+        "client": "French Industrial Company",
+        "year": "2019",
+        "status": "Delivered"
+      },
+      {
+        "id": 6,
+        "title": "Luxury Hotel Complex",
+        "category": "residential",
+        "description": "Complete study of a 5-star hotel with pools, spa and high-quality reinforced concrete structures.",
+        "image": "🏨",
+        "technologies": ["Revit", "Tekla Structures", "Excel"],
+        "features": [
+          "Optimized acoustics",
+          "Centralized air conditioning",
+          "Enhanced security",
+          "Architectural design"
+        ],
+        "client": "French Hotel Chain",
+        "year": "2018",
+        "status": "Delivered"
+      }
+    ]
+  },
+  "formation": {
+    "title": "Education",
+    "subtitle": "My academic background and certifications",
+    "viewDiploma": "📄 View diploma",
+    "download": "⬇️ Download",
+    "linguisticCerts": "Linguistic Certifications",
+    "technicalCerts": "Technical Certifications",
+    "stats": {
+      "years": "Years of study",
+      "certs": "Certifications",
+      "mention": "Distinction",
+      "success": "Success"
+    }
+    ,
+    "degree": {
+      "engineerTitle": "National Engineering Degree",
+      "engineerInstitution": "Arab University of Sciences, Tunis",
+      "engineerDescription": "Final year project titled: Study of a building Ilot WURTZ-JUVISY on ORGE-FRANCE (grade: 16/20)",
+      "licenseTitle": "Applied License",
+      "licenseInstitution": "ISTEUB, Tunis",
+      "licenseDescription": "Civil Engineering - MARRIOTT project (R+12 & 3SS) - Distinction: Very good",
+      "baccalaureateTitle": "Baccalaureate",
+      "baccalaureateInstitution": "Lycée 2 mars 1934, Tunis",
+      "baccalaureateDescription": "Technical science baccalaureate"
+    },
+    "cert": {
+      "tcfTitle": "TCF (Test de Knowledge of French)",
+      "tcfOrg": "French Institute of Tunisia",
+      "tcfDesc": "Test of Knowledge of French - Official language certification",
+      "englishCertTitle": "English Language Certificate",
+      "englishCertDesc": "English language certification - Level",
+      "revitTitle": "Revit Structure Certificate",
+      "revitDesc": "Professional certification in modeling and structural design with Revit Structure"
+    }
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "networks": "Networks",
+    "specialization": "Offshore Specialist",
+    "copyright": "© {{year}} Haythem Ayadi - Civil Engineer. All rights reserved.",
+    "tags": ["Civil Engineering", "Offshore", "Reinforced Concrete", "France"]
+  },
+  "experience": {
+    "title": "My Experience",
+    "subtitle": "7 years of expertise in offshore engineering offices",
+    "achievementsTitle": "Key achievements:",
+    "projectsTitle": "Completed projects:",
+    "technologiesTitle": "Technologies used:",
+    "expertiseTitle": "Key Expertise",
+    "expertise": {
+      "offshore": "Offshore Structures",
+      "advanced": "Advanced Calculations",
+      "collab": "Collaboration"
+    }
+    ,
+    "expertiseDescription": {
+      "offshoreDescription": "Design of buildings resilient to marine conditions",
+      "advancedDescription": "Sizing according to French and European standards",
+      "collabDescription": "Experience with French companies as a subcontractor"
+    }
+    ,
+    "items": [
+      {
+        "period": "04/2024 – Present",
+        "company": "M.A.M Engineering",
+        "position": "Civil Structural Engineer",
+        "location": "",
+        "description": "Design, modeling and calculation of reinforced concrete structures, metal frames and timber structures.",
+        "achievements": [
+          "Preparation of formwork and reinforcement plans (new and rehabilitation)",
+          "Writing detailed calculation notes and justification of technical choices",
+          "Analysis of tender documents and load path calculation",
+          "Coordination between design and execution, compliance with standards",
+          "Checking plans and calculations to ensure quality",
+          "Technical assistance to site teams and management of adjustments"
+        ],
+        "technologies": ["Autocad", "Gstarcad", "Graitec Arche", "Advance Design", "Revit"],
+        "projects": [
+          "Hotel Reims: foundations and superstructure",
+          "Gagny kindergarten: load-bearing structures and formwork plans",
+          "61 housing Vernon: structural plans for the residential complex",
+          "Angerville complex: design and calculation of three buildings"
+        ]
+      },
+      {
+        "period": "03/2018 – 03/2024 (6 years)",
+        "company": "FAZ-Project (Subcontractor GROUPE LEGENDRE CONSTRUCTION & STRUCTURISTE & ARES-CONCEPT)",
+        "position": "Concrete Drafter",
+        "location": "",
+        "description": "Detailed calculations, reinforcement and drawings for RC elements; elevation plans, sections, plan views; cast-in-place and precast slabs; quantity surveys and takeoffs; base drawings; reading and checking plans.",
+        "achievements": [
+          "Calculation and reinforcement of beams, tie beams, walls, lintels, columns, stiffeners",
+          "Elevation plans, sections and plan views of vertical elements and foundations",
+          "Design and reinforcement of slabs (in-situ and precast)",
+          "Complete quantity surveys and takeoffs of all reinforcement plans",
+          "Creation of base drawings from architectural plans",
+          "Reading/checking formwork plans and resolving contradictions"
+        ],
+        "technologies": ["Autocad", "Arche Graitec", "AutoCAD Structural Detailing", "Advance Concrete", "Nova+", "Arma+", "Excel", "Word"],
+        "projects": [
+          "GINKO College, Bordeaux: college with gym and staff housing",
+          "Grand Paris Line 15 South, Vitry-sur-Seine: infrastructure maintenance",
+          "New Conservatory, Clichy-sous-Bois: Music, Dance, Arts",
+          "Social Residence, Rosny: 170 units",
+          "Cancer Center, Le Mans",
+          "ZAC South Business Park: real estate complex and transport network",
+          "129 housing units, Lormont: with underground parking"
+        ]
+      },
+      {
+        "period": "02/2017 – 06/2017",
+        "company": "CFE-CTE",
+        "position": "Site Engineer Intern",
+        "location": "Tunis",
+        "description": "Site monitoring, administrative follow-up, safety, team coordination and scheduling.",
+        "achievements": [
+          "Monitoring the arrival of machines/materials until completion",
+          "Writing minutes and daily reports",
+          "Respecting and checking safety measures on site",
+          "Coordinating teams to meet deadlines",
+          "Autonomous monitoring of small sites and support for large projects",
+          "Planning: formwork, reinforcement, placement of reinforcements, stripping"
+        ],
+        "technologies": ["Autocad", "Excel"],
+        "projects": ["MARRIOTT Hotel R+12 & 3SS: supervision of key construction phases"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Ready to collaborate on your next project?",
+    "infoTitle": "Contact Information",
+    "availabilityTitle": "Availability",
+    "available": "Available for new opportunities",
+    "searchFrance": "Actively looking in France",
+    "downloadCV": "📄 Download my CV",
+    "form": {
+      "sendMessage": "Send message",
+      "sending": "Sending...",
+      "success": "✅ Message sent successfully! I'll reply soon.",
+      "formTitle": "Send me a message",
+      "name": "Full name *",
+      "email": "Email *",
+      "company": "Company",
+      "subject": "Subject *",
+      "message": "Message *",
+      "placeholders": {
+        "name": "Your name",
+        "email": "your@email.com",
+        "company": "Company name",
+        "subject": "Subject of your message",
+        "message": "Describe your project or need..."
+      }
+    }
+  }
+}
