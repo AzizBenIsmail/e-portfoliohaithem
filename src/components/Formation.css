@@ -56,25 +56,41 @@
 }
 
 .formation-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 40px;
-  align-items: start;
 }
 
-/* Diplôme Card */
-.diplome-card {
+/* Education Grid */
+.education-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.education-card {
   background: white;
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(52, 152, 219, 0.1);
   transition: all 0.3s ease;
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 
-.diplome-card::before {
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.education-card.featured {
+  border: 2px solid #3498db;
+  box-shadow: 0 12px 35px rgba(52, 152, 219, 0.15);
+}
+
+.education-card.featured::before {
   content: '';
   position: absolute;
   top: 0;
@@ -84,155 +100,282 @@
   background: linear-gradient(90deg, #3498db, #2980b9, #1abc9c);
 }
 
-.diplome-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-}
-
-.diplome-icon {
+.card-header {
+  padding: 25px 25px 20px;
   display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  color: #3498db;
-}
-
-.diplome-info h3 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.diplome-description {
-  font-size: 1rem;
-  color: #6c757d;
-  line-height: 1.6;
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-.diplome-details {
-  margin-bottom: 30px;
-}
-
-.detail-row {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 12px 0;
+  gap: 15px;
   border-bottom: 1px solid #f8f9fa;
 }
 
-.detail-row:last-child {
-  border-bottom: none;
-}
-
-.detail-label {
-  font-weight: 600;
-  color: #495057;
-  font-size: 0.95rem;
-}
-
-.detail-value {
-  color: #2c3e50;
-  font-weight: 500;
-  font-size: 0.95rem;
-}
-
-.diplome-actions {
+.degree-icon {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
   display: flex;
-  gap: 15px;
+  align-items: center;
   justify-content: center;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.degree-info h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 5px 0;
+  line-height: 1.3;
+}
+
+.degree-year {
+  font-size: 0.9rem;
+  color: #3498db;
+  font-weight: 600;
+  background: rgba(52, 152, 219, 0.1);
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.card-body {
+  padding: 20px 25px 25px;
+}
+
+.institution {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #6c757d;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.institution-icon {
+  font-size: 1rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #6c757d;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
-.btn-download,
-.btn-view {
+.btn-primary,
+.btn-secondary {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  border-radius: 50px;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.btn-download {
+.btn-primary {
   background: linear-gradient(135deg, #3498db, #2980b9);
   color: white;
 }
 
-.btn-download:hover {
+.btn-primary:hover {
   background: linear-gradient(135deg, #2980b9, #1f618d);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
 }
 
-.btn-view {
+.btn-secondary {
   background: transparent;
   color: #3498db;
-  border-color: #3498db;
+  border: 1px solid #3498db;
 }
 
-.btn-view:hover {
+.btn-secondary:hover {
   background: #3498db;
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.2);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.2);
 }
 
 /* Formation Stats */
 .formation-stats {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .stat-item {
   background: white;
-  border-radius: 15px;
-  padding: 25px;
+  border-radius: 12px;
+  padding: 20px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(52, 152, 219, 0.1);
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.stat-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #3498db, #1abc9c);
+  min-width: 120px;
 }
 
 .stat-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .stat-number {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #3498db;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .stat-label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #6c757d;
   font-weight: 500;
 }
 
+/* Modal Popup Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background: white;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 1px solid #e9ecef;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border-radius: 16px 16px 0 0;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.modal-close {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.modal-body {
+  padding: 0;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body iframe {
+  flex: 1;
+  min-height: 500px;
+}
+
+.modal-footer {
+  padding: 20px 25px;
+  border-top: 1px solid #e9ecef;
+  display: flex;
+  justify-content: center;
+  background: #f8f9fa;
+  border-radius: 0 0 16px 16px;
+}
+
+.btn-download-modal {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-download-modal:hover {
+  background: linear-gradient(135deg, #2980b9, #1f618d);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+}
+
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .education-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .education-card.featured {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 768px) {
   .formation {
     padding: 60px 0;
@@ -242,34 +385,71 @@
     font-size: 2rem;
   }
   
-  .formation-content {
+  .education-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 20px;
   }
   
-  .diplome-card {
-    padding: 30px 20px;
+  .card-header {
+    padding: 20px 20px 15px;
   }
   
-  .diplome-actions {
+  .card-body {
+    padding: 15px 20px 20px;
+  }
+  
+  .degree-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.8rem;
+  }
+  
+  .degree-info h3 {
+    font-size: 1.1rem;
+  }
+  
+  .actions {
     flex-direction: column;
-    align-items: center;
   }
   
-  .btn-download,
-  .btn-view {
+  .btn-primary,
+  .btn-secondary {
     width: 100%;
     justify-content: center;
   }
   
   .formation-stats {
-    flex-direction: row;
-    flex-wrap: wrap;
+    gap: 20px;
   }
   
   .stat-item {
-    flex: 1;
-    min-width: 120px;
+    min-width: 100px;
+    padding: 15px;
+  }
+  
+  /* Modal responsive */
+  .modal-overlay {
+    padding: 10px;
+  }
+  
+  .modal-content {
+    max-height: 95vh;
+  }
+  
+  .modal-header {
+    padding: 15px 20px;
+  }
+  
+  .modal-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .modal-body iframe {
+    min-height: 400px;
+  }
+  
+  .modal-footer {
+    padding: 15px 20px;
   }
 }
 
@@ -278,21 +458,53 @@
     font-size: 1.8rem;
   }
   
-  .diplome-card {
-    padding: 25px 15px;
-  }
-  
-  .diplome-info h3 {
-    font-size: 1.5rem;
-  }
-  
-  .detail-row {
+  .card-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
+    gap: 10px;
+  }
+  
+  .degree-info h3 {
+    font-size: 1rem;
   }
   
   .formation-stats {
     flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-item {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  /* Modal mobile */
+  .modal-overlay {
+    padding: 5px;
+  }
+  
+  .modal-content {
+    max-height: 98vh;
+  }
+  
+  .modal-header {
+    padding: 12px 15px;
+  }
+  
+  .modal-header h3 {
+    font-size: 1rem;
+  }
+  
+  .modal-body iframe {
+    min-height: 350px;
+  }
+  
+  .modal-footer {
+    padding: 12px 15px;
+  }
+  
+  .btn-download-modal {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }

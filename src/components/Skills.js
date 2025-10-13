@@ -16,13 +16,6 @@ import ARMACADLogo from '../assets/images/ARMACAD.png';
 
 
 const Skills = () => {
-  const getEducationIcon = (degree) => {
-    const lower = (degree || '').toLowerCase();
-    if (lower.includes('ingénieur') || lower.includes("ingénieur")) return '🎓';
-    if (lower.includes('licence')) return '📜';
-    if (lower.includes('baccalauréat')) return '🏫';
-    return '🎓';
-  };
   const technicalSkills = [
     { name: 'Calcul de structures', level: 95, description: 'Analyse et dimensionnement de structures en béton armé' },
     { name: 'Logiciels CAO', level: 90, description: 'Autocad, Revit, Tekla Structures' },
@@ -56,24 +49,6 @@ const Skills = () => {
   const certifications = [
     { title: 'Certificat General English (Levels 5, 6, 7 & 8)', org: 'Amideast' },
     { title: 'Certificat Revit Structure', org: 'Ironhoster Academy' },
-  ];
-
-  const education = [
-    {
-      degree: "Diplôme national d’ingénieur",
-      institution: 'Université Arabe des Science, Tunis',
-      details: "Projet de fin d'étude intitulé : Etude d'un bâtiment Ilot WURTZ-JUVISY sur ORGE-FRANCE (note : 16/20)"
-    },
-    {
-      degree: 'Licence appliquée en génie civil',
-      institution: "Institut Supérieur des Technologies de l'Environnement d'Urbanisme et des Bâtiments, Tunis",
-      details: "Projet de fin d'étude : Gestion, suivi, planification et métré de l'hôtel MARRIOTT (R+12 et 3SS) (mentien : Trés bien)"
-    },
-    {
-      degree: 'Baccalauréat Science technique',
-      institution: 'Lycée 2 mars 1934, Tunis',
-      details: ''
-    }
   ];
 
   return (
@@ -173,26 +148,6 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="skills-section">
-          <h3>Formation académique</h3>
-          <div className="education-timeline">
-            {education.map((edu, index) => (
-              <div key={index} className="education-item">
-                <div className="education-dot" aria-hidden="true"></div>
-                <div className="education-card">
-                  <div className="education-card-header">
-                    <div className="education-icon" aria-hidden="true">{getEducationIcon(edu.degree)}</div>
-                    <h4 className="education-degree">{edu.degree}</h4>
-                  </div>
-                  <div className="education-institution-badge">{edu.institution}</div>
-                  {edu.details && (
-                    <p className="education-details">{edu.details}</p>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
