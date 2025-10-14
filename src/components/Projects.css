@@ -94,6 +94,25 @@
   opacity: 0.8;
 }
 
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-pdf-link {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0.6rem;
+  background: rgba(255,255,255,0.9);
+  color: var(--text);
+  padding: 0.25rem 0.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .project-status {
   position: absolute;
   top: 1rem;

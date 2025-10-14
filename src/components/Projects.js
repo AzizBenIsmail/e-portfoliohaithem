@@ -2,6 +2,28 @@ import React, { useState } from 'react';
 import './Projects.css';
 import { useTranslation } from 'react-i18next';
 
+// Load all image assets inside src/assets/projects (recursively)
+// We build maps so translations can reference files by relative path like "TOUR HEMERA/TOUR HEMERA.png"
+let imagesMap = {};
+let pdfsMap = {};
+try {
+  const reqImgs = require.context('../assets/projects', true, /\.(png|jpe?g|svg|webp)$/);
+  reqImgs.keys().forEach(key => {
+    // key looks like './FOLDER/FILE.png' -> remove './'
+    imagesMap[key.replace('./', '')] = reqImgs(key).default || reqImgs(key);
+  });
+} catch (e) {
+  // ignore in environments where require.context is not available
+}
+try {
+  const reqPdfs = require.context('../assets/projects', true, /\.pdf$/);
+  reqPdfs.keys().forEach(key => {
+    pdfsMap[key.replace('./', '')] = reqPdfs(key).default || reqPdfs(key);
+  });
+} catch (e) {
+  // ignore
+}
+
 const Projects = () => {
   const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState('tous');
@@ -16,8 +38,8 @@ const Projects = () => {
     { id: 'infrastructure', name: t('projects.filters.infrastructure') }
   ];
 
-  const filteredProjects = activeCategory === 'tous' 
-    ? projects 
+  const filteredProjects = activeCategory === 'tous'
+    ? projects
     : projects.filter(project => project.category === activeCategory);
 
   return (
@@ -44,7 +66,34 @@ const Projects = () => {
           {filteredProjects.map(project => (
             <div key={project.id} className="project-card">
               <div className="project-image">
-                <div className="project-icon">{project.image}</div>
+                {project.assetPath ? (
+                  <>
+                    {imagesMap[project.assetPath] ? (
+                      <img src={imagesMap[project.assetPath]} alt={project.title} className="project-img" />
+                    ) : (
+                      <div className="project-icon">{project.image || '📁'}</div>
+                    )}
+
+                    {pdfsMap[project.assetPath.replace(/\.[^.]+$/, '.pdf')] && (
+                      <a
+                        className="project-pdf-link"
+                        href={pdfsMap[project.assetPath.replace(/\.[^.]+$/, '.pdf')]}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Voir le PDF
+                      </a>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    <div className="project-icon">{project.image}</div>
+                    {project.pdf && (
+                      <a className="project-pdf-link" href={project.pdf} target="_blank" rel="noreferrer">Voir le PDF</a>
+                    )}
+                  </>
+                )}
+
                 <div className="project-status">{project.status}</div>
               </div>
               
@@ -76,6 +125,24 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
+                
+                {(project.localisation || project.location) && (
+                  <div className="project-location">
+                    <h4>{t('projects.locationLabel')}</h4>
+                    <div>{project.localisation || project.location}</div>
+                  </div>
+                )}
+
+                {(project.intervenants && project.intervenants.length > 0) || (project.partners && project.partners.length > 0) ? (
+                  <div className="project-intervenants">
+                    <h4>{t('projects.partnersLabel')}</h4>
+                    <ul>
+                      {(project.intervenants || project.partners).map((p, idx) => (
+                        <li key={idx}>{p}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
               </div>
             </div>
           ))}
