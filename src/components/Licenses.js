@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import './About.css';
 import { useTranslation } from 'react-i18next';
 import useInView from '../hooks/useInView';
@@ -92,7 +93,7 @@ const Licenses = () => {
           </div>
         </div>
       </div>
-      {isModalOpen && modalContent && (
+      {isModalOpen && modalContent && createPortal(
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
@@ -114,7 +115,8 @@ const Licenses = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </section>
   );
