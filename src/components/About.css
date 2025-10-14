@@ -624,3 +624,44 @@
 .license-files-actions { display: flex; gap: 0.6rem; margin-top: 0.6rem; }
 .file-btn { background: linear-gradient(90deg,#fff,#fff); border: 1px solid rgba(0,0,0,0.06); padding: 0.5rem 0.8rem; border-radius: 8px; cursor: pointer; }
 .file-btn:hover { transform: translateY(-3px); }
+
+/* Enhanced design for the Permis files block */
+.license-files {
+  margin-top: 1.2rem;
+  background: linear-gradient(180deg, var(--panel), rgba(255,255,255,0.02));
+  border-radius: 14px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: 0 10px 30px rgba(20,20,20,0.06);
+  border: 1px solid var(--panel-border);
+}
+.license-files h4 { margin: 0; font-size: 1rem; font-weight:700; color: var(--text); }
+.license-files .section-sub { color: var(--muted); font-size: 0.95rem; }
+
+.license-files-actions { display:flex; gap: 10px; }
+.file-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.06);
+  font-weight: 700;
+  color: var(--text);
+  transition: all 220ms ease;
+}
+.file-btn .icon { font-size: 18px; }
+.file-btn:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); background: linear-gradient(135deg,var(--primary),var(--primary-2)); color: white; border-color: transparent; }
+
+.file-btn.ghost { background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); }
+
+@media (max-width: 720px) {
+  .license-files { flex-direction: column; align-items: stretch; }
+  .license-files h4 { margin-bottom: 8px; }
+  .license-files-actions { width: 100%; justify-content: space-between; }
+  .file-btn { width: 48%; }
+}
