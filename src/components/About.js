@@ -40,6 +40,11 @@ const About = () => {
                 <h4>🤝 {t('about.collaboration')}</h4>
                 <p>{t('about.collaboration')}</p>
               </div>
+
+              <div className="detail-item">
+                <h4>🚦 {t('about.licensesTitle')}</h4>
+                <p><a href="#permis">{t('about.viewLicenses')}</a></p>
+              </div>
             </div>
             
             <div className="about-mission">

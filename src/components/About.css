@@ -124,6 +124,120 @@
   font-weight: 600;
 }
 
+.license-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+.license-tag {
+  background: linear-gradient(90deg,#fff4e6,#fff8ee);
+  color: #8a4b00;
+  border: 1px solid #ffe6bf;
+  padding: 0.35rem 0.55rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.license-card {
+  background: linear-gradient(180deg, rgba(255,250,240,0.9), rgba(255,248,240,0.95));
+  border: 1px solid rgba(240,200,150,0.35);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(30,30,30,0.06);
+}
+.license-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+.license-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: rgba(255,255,255,0.6);
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+.license-groups {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.license-group {
+  flex: 1 1 120px;
+  min-width: 120px;
+  background: rgba(255,255,255,0.6);
+  padding: 0.6rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.group-icon {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+.group-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.35rem;
+}
+.group-tags {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Modern license grid */
+.license-grid.modern {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.8rem;
+  margin-top: 0.6rem;
+}
+.license-card-item.modern {
+  background: linear-gradient(180deg, #fff, #fffaf6);
+  border: 1px solid rgba(200,150,100,0.12);
+  padding: 0.8rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(20,20,20,0.04);
+  text-align: center;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.license-card-item.modern:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(20,20,20,0.08);
+}
+.license-card-item .license-icon-svg {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 6px auto;
+  color: var(--primary);
+}
+.license-card-item .license-icon-emoji {
+  font-size: 28px;
+  line-height: 1;
+  margin: 0 auto 8px auto;
+}
+.license-card-item .license-code {
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+.license-card-item .license-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* category accents */
+.license-card-item.modern.light .license-icon-svg { color: #2d9cdb; }
+.license-card-item.modern.heavy .license-icon-svg { color: #f2994a; }
+.license-card-item.modern.bus .license-icon-svg { color: #6fcf97; }
+
+
 .interests-travel {
   margin-top: 1rem;
 }

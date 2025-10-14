@@ -32,6 +32,25 @@
     "mission": "Design durable and safe structures that withstand extreme offshore environmental conditions while complying with the strictest French and international standards.",
     "interestsTitle": "Interests",
     "travelTitle": "Visited countries",
+  "licensesTitle": "Driving licenses",
+    "licensesNote": "Professional & light vehicle licenses",
+    "licenseTypes": {
+      "light": "Light vehicles",
+      "heavy": "Heavy vehicles",
+      "bus": "Buses / Coaches"
+    },
+    "licenses": {
+      "AA": "Motorcycle license (AA)",
+      "B": "Car license (B)",
+      "BE": "Car with trailer (BE)",
+      "C": "Heavy goods vehicle (C)",
+      "CE": "Articulated vehicle / semi-trailer (CE)",
+      "D": "Bus / Coach (D)",
+      "DE": "Bus with trailer (DE)",
+      "G": "Minibus / light commercial (G)",
+      "H": "Tractor / agricultural vehicle (H)"
+    },
+    "viewLicenses": "View my licenses",
     "interest": {
       "sports": "Football",
       "fitness": "Gym",

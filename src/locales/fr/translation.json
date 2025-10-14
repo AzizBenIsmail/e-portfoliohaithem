@@ -32,6 +32,25 @@
     "mission": "Concevoir des structures durables et sécurisées qui résistent aux conditions extrêmes des environnements offshore, tout en respectant les normes françaises et internationales les plus strictes.",
     "interestsTitle": "Centres d’intérêt",
     "travelTitle": "Pays visités",
+  "licensesTitle": "Permis de conduire",
+    "licensesNote": "Permis professionnels et véhicules légers",
+    "licenseTypes": {
+      "light": "Véhicules légers",
+      "heavy": "Poids lourds",
+      "bus": "Bus / Autocars"
+    },
+    "licenses": {
+      "AA": "Permis moto (AA)",
+      "B": "Permis voiture (B)",
+      "BE": "Voiture avec remorque (BE)",
+      "C": "Poids lourd (C)",
+      "CE": "Semi-remorque (CE)",
+      "D": "Bus / Autocar (D)",
+      "DE": "Bus avec remorque (DE)",
+      "G": "Mini-bus / utilitaire léger (G)",
+      "H": "Tracteur agricole / remorque spéciale (H)"
+    },
+  "viewLicenses": "Voir mes permis",
     "interest": {
       "sports": "Football",
       "fitness": "Musculation",
