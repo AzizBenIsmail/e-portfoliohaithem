@@ -1,0 +1,23 @@
+/* Simple animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 520ms cubic-bezier(.2,.9,.2,1), transform 520ms cubic-bezier(.2,.9,.2,1);
+}
+.fade-in.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 420ms ease, transform 420ms ease;
+}
+.slide-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hover-raise { transition: transform 180ms ease, box-shadow 180ms ease; }
+.hover-raise:hover { transform: translateY(-6px); box-shadow: 0 16px 30px rgba(20,20,20,0.08); }

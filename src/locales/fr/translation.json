@@ -8,13 +8,14 @@
     "projects": "Projets",
     "contact": "Contact",
     "themeToggle": "Basculer le thème",
-    "language": "Langue"
+    "language": "Langue",
+    "licenses": "Permis"
   },
   "hero": {
     "greeting": "Bonjour, je suis",
     "name": "Haythem Ayadi",
     "title": "Ingénieur Génie Civil",
-    "description": "Ingénieur spécialisé dans les bureaux d’études offshore, je possède plus de 7 ans d’expérience dans la conception et le calcul de structures en béton armé. Habitué à collaborer avec des sociétés françaises exigeantes, j’allie rigueur, maîtrise technique et sens du détail. Résident à Asnières-sur-Seine, Paris, je recherche aujourd’hui une opportunité en France pour mettre mon expertise au service de projets ambitieux et durables.",
+  "description": "Ingénieur spécialisé dans les bureaux d’études offshore, je possède plus de 7 ans d’expérience dans la conception et le calcul de structures en béton armé. Habitué à collaborer avec des sociétés françaises exigeantes, j’allie rigueur, maîtrise technique et sens du détail. Résident à Asnières-sur-Seine (7 rue du Fossé de L'aumône), je recherche aujourd’hui une opportunité en France pour mettre mon expertise au service de projets ambitieux et durables.",
     "seeProjects": "Voir mes projets",
     "contactMe": "Me contacter",
     "downloadCV": "📄 Télécharger mon CV"
@@ -399,7 +400,8 @@
     },
     "availabilityTitle": "Disponibilité",
     "available": "Disponible pour de nouvelles opportunités",
-    "searchFrance": "Recherche active en France",
+  "searchFrance": "Recherche active en France",
+  "address": "7 rue du Fossé de L'aumône, Asnières-sur-Seine",
     "downloadCV": "📄 Télécharger mon CV",
     "form": {
       "sendMessage": "Envoyer le message",
@@ -419,5 +421,9 @@
         "message": "Décrivez votre projet ou votre besoin..."
       }
     }
+    ,
+    "viewRecto": "Permis (Recto)",
+    "viewVerso": "Permis (Verso)"
+    ,"close": "Fermer"
   }
 }

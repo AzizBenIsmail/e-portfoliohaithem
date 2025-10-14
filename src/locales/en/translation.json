@@ -9,12 +9,13 @@
     "contact": "Contact",
     "themeToggle": "Toggle theme",
     "language": "Language"
+    ,"licenses": "Licenses"
   },
   "hero": {
     "greeting": "Hello, I'm",
     "name": "Haythem Ayadi",
     "title": "Civil Engineer",
-    "description": "Engineer specialized in offshore design offices, I have over 7 years of experience in the design and calculation of reinforced concrete structures. Used to collaborating with demanding French companies, I combine rigor, technical mastery and attention to detail. Resident in Asnières-sur-Seine, Paris, I am now looking for an opportunity in France to put my expertise at the service of ambitious and sustainable projects.",
+  "description": "Engineer specialized in offshore design offices, I have over 7 years of experience in the design and calculation of reinforced concrete structures. Used to collaborating with demanding French companies, I combine rigor, technical mastery and attention to detail. Resident in Asnières-sur-Seine (7 rue du Fossé de L'aumône), I am now looking for an opportunity in France to put my expertise at the service of ambitious and sustainable projects.",
     "seeProjects": "See my projects",
     "contactMe": "Contact me",
     "downloadCV": "📄 Download my CV"
@@ -386,7 +387,8 @@
     },
     "availabilityTitle": "Availability",
     "available": "Available for new opportunities",
-    "searchFrance": "Actively looking in France",
+  "searchFrance": "Actively looking in France",
+  "address": "7 rue du Fossé de L'aumône, Asnières-sur-Seine",
     "downloadCV": "📄 Download my CV",
     "form": {
       "sendMessage": "Send message",
@@ -406,5 +408,9 @@
         "message": "Describe your project or need..."
       }
     }
+    ,
+    "viewRecto": "License (Front)",
+    "viewVerso": "License (Back)"
+    ,"close": "Close"
   }
 }

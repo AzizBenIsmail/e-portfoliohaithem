@@ -1,14 +1,16 @@
 import React from 'react';
 import './About.css';
 import { useTranslation } from 'react-i18next';
+import useInView from '../hooks/useInView';
 
 const About = () => {
   const { t } = useTranslation();
+  const [refHeader, headerInView] = useInView({ once: true, threshold: 0.12 });
 
   return (
     <section id="apropos" className="about">
       <div className="container">
-        <div className="section-header">
+        <div className={`section-header fade-in ${headerInView ? 'in-view' : ''}`} ref={refHeader}>
           <h2>{t('about.title')}</h2>
           <p>{t('about.subtitle')}</p>
         </div>

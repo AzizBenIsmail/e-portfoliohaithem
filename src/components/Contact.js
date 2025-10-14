@@ -60,7 +60,7 @@ const Contact = () => {
     {
       icon: '📍',
       title: t('contact.info.locationTitle', { defaultValue: 'Localisation' }),
-      value: t('contact.searchFrance'),
+      value: t('contact.address'),
       action: null
     },
     {
@@ -113,7 +113,7 @@ const Contact = () => {
               </p>
               <p>
                 <span className="status-indicator"></span>
-                {t('contact.searchFrance')}
+                {t('contact.address')}
               </p>
               <div className="cv-download">
                 <a 

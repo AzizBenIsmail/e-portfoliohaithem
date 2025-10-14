@@ -65,6 +65,7 @@ const Header = () => {
               <li><button onClick={() => scrollToSection('formation')}>{t('header.formation')}</button></li>
               <li><button onClick={() => scrollToSection('experience')}>{t('header.experience')}</button></li>
               <li><button onClick={() => scrollToSection('projets')}>{t('header.projects')}</button></li>
+              <li><button onClick={() => scrollToSection('permis')}>{t('header.licenses')}</button></li>
               <li><button onClick={() => scrollToSection('contact')}>{t('header.contact')}</button></li>
             </ul>
           </nav>
