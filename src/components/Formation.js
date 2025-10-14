@@ -200,7 +200,7 @@ const Formation = () => {
                 <div className="cert-body">
                   <div className="cert-org">
                     <img src={amideastLogo} alt="Amideast" className="org-logo" />
-                    {t('formation.cert.tcfOrg')}
+                    {t('formation.cert.englishCertOrg', { defaultValue: 'Amideast' })}
                   </div>
                   <p className="cert-description">
                     {t('formation.cert.englishCertDesc')} {t('formation.cert.englishCertLevel5', { defaultValue: ' - Niveau 5' })}
@@ -229,7 +229,7 @@ const Formation = () => {
                 <div className="cert-body">
                   <div className="cert-org">
                     <img src={amideastLogo} alt="Amideast" className="org-logo" />
-                    {t('formation.cert.tcfOrg')}
+                    {t('formation.cert.englishCertOrg', { defaultValue: 'Amideast' })}
                   </div>
                   <p className="cert-description">
                     {t('formation.cert.englishCertDesc')} {t('formation.cert.englishCertLevel6', { defaultValue: ' - Niveau 6' })}
@@ -258,7 +258,7 @@ const Formation = () => {
                 <div className="cert-body">
                   <div className="cert-org">
                     <img src={amideastLogo} alt="Amideast" className="org-logo" />
-                    {t('formation.cert.tcfOrg')}
+                    {t('formation.cert.englishCertOrg', { defaultValue: 'Amideast' })}
                   </div>
                   <p className="cert-description">
                     {t('formation.cert.englishCertDesc')} {t('formation.cert.englishCertLevel7', { defaultValue: ' - Niveau 7' })}
@@ -287,7 +287,7 @@ const Formation = () => {
                 <div className="cert-body">
                   <div className="cert-org">
                     <img src={amideastLogo} alt="Amideast" className="org-logo" />
-                    {t('formation.cert.tcfOrg')}
+                    {t('formation.cert.englishCertOrg', { defaultValue: 'Amideast' })}
                   </div>
                   <p className="cert-description">
                     {t('formation.cert.englishCertDesc')} {t('formation.cert.englishCertLevel8', { defaultValue: ' - Niveau 8' })}
