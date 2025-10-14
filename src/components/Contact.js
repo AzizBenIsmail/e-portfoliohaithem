@@ -64,6 +64,12 @@ const Contact = () => {
       action: null
     },
     {
+      icon: '🟢',
+      title: t('contact.info.whatsappTitle', { defaultValue: 'WhatsApp' }),
+      value: '+216 23294229',
+      action: 'https://wa.me/21623294229'
+    },
+    {
       icon: '💼',
       title: t('contact.info.linkedInTitle', { defaultValue: 'LinkedIn' }),
       value: 'linkedin.com/in/ayadi-haithem-aa26791a9',

@@ -395,8 +395,9 @@
     "info": {
       "emailTitle": "Email",
       "phoneTitle": "Téléphone",
-      "locationTitle": "Localisation",
-      "linkedInTitle": "LinkedIn"
+  "locationTitle": "Localisation",
+  "linkedInTitle": "LinkedIn",
+      "whatsappTitle": "WhatsApp"
     },
     "availabilityTitle": "Disponibilité",
     "available": "Disponible pour de nouvelles opportunités",

@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Portfolio — Haythem Ayadi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Site personnel (e-portfolio) réalisé en React (Create React App).
 
-## Available Scripts
+Ce dépôt contient la version source de mon portfolio, ainsi que les fichiers build prêts à être déployés dans le dossier `build/`.
 
-In the project directory, you can run:
+## Aperçu
+- Page d'accueil avec présentation (Hero)
+- Section À propos (`About`) avec pays visités, compétences, licences
+- Section Permis avec visionneuse intégrée (modal) pour consulter les scans recto/verso
+- Section Formation avec diplômes et visionneuse
+- Section Projets, Expérience, Compétences, Contact
+- Widget date/heure/météo (dans `About`) et support i18n (FR / EN)
 
-### `npm start`
+## Structure importante
+```
+public/                  # fichiers publics (index.html, assets statiques)
+src/
+	components/            # composants React (About, Licenses, Contact, Formation...)
+	assets/certif/         # PDF des diplômes et permis
+	locales/               # fichiers de traduction (fr/en)
+	hooks/                 # hooks réutilisables (ex: useInView)
+	styles/                # styles globaux (animations)
+	index.js
+	App.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+build/                   # build de production (généré)
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Lancer en local
+Prérequis : Node.js (>=16 recommandé), npm.
 
-### `npm test`
+1. Installer les dépendances
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+2. Lancer le serveur de développement
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Générer le build de production
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run build
+```
 
-### `npm run eject`
+Le dossier `build/` pourra être servi par n'importe quel serveur statique.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Internationalisation
+Le projet utilise `react-i18next` avec les fichiers de traduction situés dans `src/locales/fr/translation.json` et `src/locales/en/translation.json`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Pour ajouter une clé :
+- Ajouter la clé dans les deux fichiers (FR/EN)
+- Utiliser `t('path.to.key')` dans les composants
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Permis & Diplômes (visionneuse)
+- Les PDFs sont dans `src/assets/certif/` et s'ouvrent avec le même modal que les diplômes.
+- Le modal est rendu via `createPortal` pour s'assurer qu'il n'est pas tronqué par des parents transformés.
+- Le téléchargement s'effectue via un lien programmatique (download).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Remarques : pour un accès direct (sans bundler), vous pouvez déplacer les PDFs dans `public/` et utiliser `/Permis.pdf`.
 
-## Learn More
+## Modifier / ajouter un PDF
+- Placer le PDF dans `src/assets/certif/`
+- Importer le fichier dans le composant (ex: `import Permis from '../assets/certif/Permis.pdf'`)
+- Appeler la fonction `openModal(Permis, 'Permis (Recto)')` (ou ajouter un bouton avec `downloadPDF`)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Styles et animations
+- Styles par composant : `src/components/*.css`
+- Animations globales dans `src/styles/animations.css`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Déploiement rapide
+- Le build est prêt dans `build/` après `npm run build`.
+- Hébergement conseillé : Netlify, Vercel, GitHub Pages (ou tout serveur statique).
 
-### Code Splitting
+## Notes de maintenance
+- Garder les fichiers de traduction valides (attention aux virgules JSON).
+- Les composants utilisent des hooks (ex: `useInView`) et i18n — si vous changez leur API, mettez à jour les imports.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contacter
+- Email: Engineer.haithem.ayadi@gmail.com
+- WhatsApp: +216 23294229
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Si vous voulez, je peux :
+- Ajouter un badge `README` avec capture d'écran et instructions de déploiement sur Netlify/Vercel.
+- Ajouter des miniatures pour les PDFs.
+- Traduire le README en anglais.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Dites-moi ce que vous préférez et j'ajoute ça.

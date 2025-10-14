@@ -382,8 +382,9 @@
     "info": {
       "emailTitle": "Email",
       "phoneTitle": "Phone",
-      "locationTitle": "Location",
-      "linkedInTitle": "LinkedIn"
+  "locationTitle": "Location",
+  "linkedInTitle": "LinkedIn",
+  "whatsappTitle": "WhatsApp"
     },
     "availabilityTitle": "Availability",
     "available": "Available for new opportunities",
