@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 99999; /* ensure modal overlays header and nav */
+  z-index: 200000; /* ensure modal overlays header and nav */
   pointer-events: auto;
 }
 
@@ -57,8 +57,9 @@ body.modal-open {
   overflow: hidden;
 }
 
+/* When modal is open, hide header to avoid stacking / interaction issues */
 body.modal-open .header {
-  pointer-events: none;
+  pointer-events: none; /* keep visible but not interactive */
 }
 
 body.modal-open .menu-toggle,

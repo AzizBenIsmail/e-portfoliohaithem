@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import './Portfolio.css';
 import { useTranslation } from 'react-i18next';
 
@@ -39,24 +40,11 @@ const Portfolio = () => {
 
   useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') setModalOpen(false); };
-    const preventSave = (e) => {
-      // block Ctrl+S / Ctrl+P and Cmd+S / Cmd+P
-      if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S' || e.key === 'p' || e.key === 'P')) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-    };
-    const preventContext = (e) => { e.preventDefault(); };
-
     if (modalOpen) {
       window.addEventListener('keydown', onKey);
-      window.addEventListener('keydown', preventSave, true);
-      document.addEventListener('contextmenu', preventContext, true);
     }
     return () => {
       window.removeEventListener('keydown', onKey);
-      window.removeEventListener('keydown', preventSave, true);
-      document.removeEventListener('contextmenu', preventContext, true);
     };
   }, [modalOpen]);
 
@@ -66,6 +54,13 @@ const Portfolio = () => {
     } else {
       document.body.classList.remove('modal-open');
       // nothing special to clear when closing iframe modal
+    }
+    // set aria-hidden on header for accessibility
+    try {
+      const headerEl = document.querySelector('.header');
+      if (headerEl) headerEl.setAttribute('aria-hidden', modalOpen ? 'true' : 'false');
+    } catch (e) {
+      // ignore
     }
   }, [modalOpen]);
   
@@ -121,7 +116,7 @@ const Portfolio = () => {
           })}
         </div>
 
-        {modalOpen && (
+        {modalOpen && createPortal(
           <div className="portfolio-modal" role="dialog" aria-modal="true" aria-label={modalTitle} onClick={() => setModalOpen(false)}>
             <div className="portfolio-modal-inner" onClick={(e) => e.stopPropagation()}>
               <div className="modal-header">
@@ -129,17 +124,18 @@ const Portfolio = () => {
                 <button className="modal-close" onClick={() => setModalOpen(false)} aria-label="Close">✕</button>
               </div>
               <div className="modal-body">
-                <div className="modal-note" style={{ padding: '0.6rem 1rem', fontSize: '0.95rem', color: 'var(--muted)' }}>
-                  Le téléchargement direct est désactivé depuis cette fenêtre. Si vous avez besoin d'une copie, contactez l'administrateur.
-                </div>
+                {/* Only show iframe and download button */}
                 {modalPdf ? (
-                  <iframe src={modalPdf} title={modalTitle} frameBorder="0" style={{ width: '100%', height: '86vh' }} sandbox="allow-same-origin allow-scripts" />
+                  <>
+                    <iframe src={modalPdf} title={modalTitle} frameBorder="0" style={{ width: '100%', height: '86vh' }} />
+                  </>
                 ) : (
                   <div>Aucun PDF trouvé.</div>
                 )}
               </div>
             </div>
-          </div>
+          </div>,
+          document.body
         )}
       </div>
     </section>
