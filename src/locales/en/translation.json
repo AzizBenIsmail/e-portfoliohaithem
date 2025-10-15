@@ -178,8 +178,16 @@
         "year": "2022",
         "status": "Delivered",
         "location": "28300 Mainvilliers, France",
-  "partners": ["Developer", "Structural engineering firm"],
-  "intervenants": ["Developer", "Structural engineering firm"]
+  "partners": [
+    "Owner: Le Noble Age",
+    "Architect: AIA Architectes",
+    "Main contractor: LEGENDRE Construction"
+  ],
+  "intervenants": [
+    "Owner: Le Noble Age",
+    "Architect: AIA Architectes",
+    "Main contractor: LEGENDRE Construction"
+  ]
       },
       {
         "id": 10,
@@ -193,8 +201,16 @@
         "year": "2021",
         "status": "Delivered",
         "location": "44000 Nantes, France",
-  "partners": ["Developer", "Architect"],
-  "intervenants": ["Developer", "Architect"]
+  "partners": [
+    "Developer: KAUFMAN & BROAD",
+    "Architect: HAMONIC + MASSON",
+    "Main contractor: LEGENDRE Construction"
+  ],
+  "intervenants": [
+    "Developer: KAUFMAN & BROAD",
+    "Architect: HAMONIC + MASSON",
+    "Main contractor: LEGENDRE Construction"
+  ]
       },
       {
         "id": 11,
@@ -329,8 +345,16 @@
         "year": "2016",
         "status": "Delivered",
         "location": "77700 Chessy, France",
-  "partners": ["Developer", "Structural engineering firm"],
-  "intervenants": ["Developer", "Structural engineering firm"]
+  "partners": [
+    "Developer: LEGENDRE IMMOBILIER",
+    "Architect: JENNY & LAKATOS",
+    "Main contractor: LEGENDRE Construction"
+  ],
+  "intervenants": [
+    "Developer: LEGENDRE IMMOBILIER",
+    "Architect: JENNY & LAKATOS",
+    "Main contractor: LEGENDRE Construction"
+  ]
       },
       {
         "id": 20,
@@ -344,8 +368,16 @@
         "year": "2015",
         "status": "Delivered",
         "location": "22400 Lamballe, France",
-  "partners": ["Developer", "Architect"],
-  "intervenants": ["Developer", "Architect"]
+  "partners": [
+    "Developer: LEGENDRE IMMOBILIER",
+    "Architect: Atelier du canal-Rennes",
+    "Main contractor: LEGENDRE Construction"
+  ],
+  "intervenants": [
+    "Developer: LEGENDRE IMMOBILIER",
+    "Architect: Atelier du canal-Rennes",
+    "Main contractor: LEGENDRE Construction"
+  ]
       }
     ]
   },
