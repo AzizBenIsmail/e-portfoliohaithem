@@ -546,7 +546,7 @@
     ,
     "items": [
             {
-        "period": "05/2025 – 11/2025",
+        "period": "04/2025 – 11/2025",
         "company": "FAZ Project (Sous-traitant Groupe LEGENDRE Construction, STRUCTURISTE, ETTEC & ARES)",
         "position": "Ingénieur – Référent pôle ferraillage",
         "location": "Tunis",
@@ -562,7 +562,7 @@
         "projects": []
       },
       {
-        "period": "04/2024 – Aujourd’hui",
+        "period": "04/2024 – 03/2025",
         "company": "M.A.M Engineering",
         "position": "Ingénieur structure génie civil",
         "location": "",
@@ -582,7 +582,7 @@
           "61 logements Vernon : plans de structure du complexe résidentiel",
           "Ensemble immobilier Angerville : conception et calcul de trois bâtiments"
         ]
-      },
+      },      
       {
         "period": "03/2018 – 03/2024 (6 ans)",
         "company": "FAZ-Project (Sous-traitant GROUPE LEGENDRE CONSTRUCTION & STRUCTURISTE & ARES-CONCEPT)",
@@ -607,6 +607,24 @@
           "ZAC Parc d’Affaires Sud : ensemble immobilier et réseau de transport",
           "129 logements, Lormont : avec parking sous-sol"
         ]
+      },
+            {
+        "period": "10/2017 – 02/2018",
+        "company": "MASTER RETAIL",
+        "position": "Vendeur",
+        "location": "Tunis",
+        "description": "Accueil et conseil client, mise en rayon des produits, gestion du stock et participation aux ventes en magasin.",
+        "achievements": [
+          "Accueil et accompagnement personnalisé des clients dans leurs choix d’achat",
+          "Mise en valeur des produits et gestion quotidienne du merchandising",
+          "Réapprovisionnement et suivi des stocks en coordination avec le responsable magasin",
+          "Atteinte et dépassement des objectifs de vente fixés mensuellement",
+          "Encaissement, gestion des retours et traitement des réclamations clients",
+          "Contribution à la fidélisation de la clientèle grâce à un service de qualité"
+        ],
+        "technologies": [],
+        "projects": [],
+        "skills": ["Relation client", "Vente directe", "Merchandising", "Gestion de stock", "Travail en équipe"]
       },
       {
         "period": "02/2017 – 06/2017",
