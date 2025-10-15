@@ -545,6 +545,22 @@
     }
     ,
     "items": [
+            {
+        "period": "05/2025 – 11/2025",
+        "company": "FAZ Project (Sous-traitant Groupe LEGENDRE Construction, STRUCTURISTE, ETTEC & ARES)",
+        "position": "Ingénieur – Référent pôle ferraillage",
+        "location": "Tunis",
+        "description": "Élaboration de plans de ferraillage complexes pour des projets de construction en France; supervision et accompagnement des techniciens dessinateurs & stagiaires; vérification et validation des plans produits par l’équipe.",
+        "achievements": [
+          "Élaboration de plans de ferraillage complexes pour des projets de construction en France",
+          "Supervision et accompagnement des techniciens dessinateurs & stagiaires",
+          "Vérification et validation des plans produits par l’équipe",
+          "Communication directe avec les clients et respect des plannings",
+          "Proposition de solutions techniques adaptées aux contraintes du projet"
+        ],
+        "technologies": ["Autocad", "Arma+", "Excel"],
+        "projects": []
+      },
       {
         "period": "04/2024 – Aujourd’hui",
         "company": "M.A.M Engineering",

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Experience.css';
 import { useTranslation } from 'react-i18next';
+import useInView from '../hooks/useInView';
 
 const Experience = () => {
   const { t } = useTranslation();
@@ -16,45 +17,7 @@ const Experience = () => {
 
         <div className="timeline">
           {experiences.map((exp, index) => (
-            <div key={index} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
-              <div className="timeline-content">
-                <div className="timeline-period">{exp.period}</div>
-                <h3 className="timeline-position">{exp.position}</h3>
-                <h4 className="timeline-company">{exp.company}</h4>
-                <div className="timeline-location">📍 {exp.location}</div>
-                
-                <p className="timeline-description">{exp.description}</p>
-                
-                <div className="timeline-achievements">
-                  <h5>{t('experience.achievementsTitle')}</h5>
-                  <ul>
-                    {exp.achievements.map((achievement, achIndex) => (
-                      <li key={achIndex}>{achievement}</li>
-                    ))}
-                  </ul>
-                </div>
-                
-                {exp.projects && exp.projects.length > 0 && (
-                  <div className="timeline-projects">
-                    <h5>{t('experience.projectsTitle')}</h5>
-                    <ul>
-                      {exp.projects.map((project, projIndex) => (
-                        <li key={projIndex}>{project}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-
-                <div className="timeline-technologies">
-                  <h5>{t('experience.technologiesTitle')}</h5>
-                  <div className="tech-tags">
-                    {exp.technologies.map((tech, techIndex) => (
-                      <span key={techIndex} className="tech-tag">{tech}</span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+            <AnimatedTimelineItem key={index} exp={exp} index={index} side={index % 2 === 0 ? 'left' : 'right'} t={t} />
           ))}
         </div>
 
@@ -92,3 +55,50 @@ const Experience = () => {
 };
 
 export default Experience;
+
+// Animated timeline item component
+const AnimatedTimelineItem = ({ exp, index, side, t }) => {
+  const [ref, inView] = useInView({ once: true, threshold: 0.15 });
+  const delay = Math.min(0.6, 0.08 * index);
+
+  return (
+    <div ref={ref} className={`timeline-item ${side} ${inView ? 'in-view' : 'hidden'}`} style={{ '--delay': `${delay}s` }}>
+      <div className="timeline-content">
+        <div className="timeline-period">{exp.period}</div>
+        <h3 className="timeline-position">{exp.position}</h3>
+        <h4 className="timeline-company">{exp.company}</h4>
+        <div className="timeline-location">📍 {exp.location}</div>
+        <p className="timeline-description">{exp.description}</p>
+
+        <div className="timeline-achievements">
+          <h5>{t('experience.achievementsTitle')}</h5>
+          <ul>
+            {exp.achievements.map((achievement, achIndex) => (
+              <li key={achIndex}>{achievement}</li>
+            ))}
+          </ul>
+        </div>
+
+        {exp.projects && exp.projects.length > 0 && (
+          <div className="timeline-projects">
+            <h5>{t('experience.projectsTitle')}</h5>
+            <ul>
+              {exp.projects.map((project, projIndex) => (
+                <li key={projIndex}>{project}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        <div className="timeline-technologies">
+          <h5>{t('experience.technologiesTitle')}</h5>
+          <div className="tech-tags">
+            {exp.technologies.map((tech, techIndex) => (
+              <span key={techIndex} className="tech-tag">{tech}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
