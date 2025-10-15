@@ -24,6 +24,8 @@ try {
 }
 
 const findImageFor = (title) => {
+  // guard: title may be undefined coming from translations
+  if (!title || typeof title !== 'string') return null;
   // try to find any image whose path contains a normalized title
   const norm = title.toLowerCase().replace(/\s+/g, '');
   const matchKey = Object.keys(imagesMap).find(k => k.toLowerCase().replace(/\s+/g, '').includes(norm));
@@ -77,9 +79,10 @@ const Portfolio = () => {
 
   <div className="portfolio-grid">
           {items.map(item => {
-            const img = findImageFor(item.title);
+            const title = (item && item.title) ? item.title : '';
+            const img = findImageFor(title);
             // find pdf by matching normalized title in pdfsMap keys
-            const norm = item.title.toLowerCase().replace(/\s+/g, '');
+            const norm = title.toLowerCase().replace(/\s+/g, '');
             const pdfKey = Object.keys(pdfsMap).find(k => k.toLowerCase().replace(/\s+/g, '').includes(norm));
             const pdf = pdfKey ? pdfsMap[pdfKey] : null;
 

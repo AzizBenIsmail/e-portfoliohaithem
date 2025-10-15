@@ -1,0 +1,51 @@
+/* Global responsive helpers */
+
+/* Make media adapt to container */
+img, iframe, video, embed, object {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure modals and overlays are full width on small screens */
+.portfolio-modal, .modal, .dialog {
+  max-width: 920px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .portfolio-modal, .modal, .dialog { width: calc(100% - 24px); }
+}
+
+/* Fluid container utility */
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* Reduce heavy shadows and hover effects on mobile to save perf */
+@media (max-width: 600px) {
+  .project-card, .timeline-content, .summary-card { box-shadow: none; }
+  .project-card:hover { transform: none; }
+}
+
+/* Targeted overflow fixes (avoid global hiding which can mask layout bugs) */
+/* Constrain elements known to produce horizontal overflow */
+.header, .hero, .portfolio-modal, .timeline, .projects-grid {
+  overflow-x: hidden;
+}
+
+/* Additional safe adjustments for timeline and absolute pseudo-elements on mobile */
+@media (max-width: 768px) {
+  .timeline::before { left: 1.5rem !important; }
+  .timeline-item {
+    left: 0 !important;
+    width: 100% !important;
+    padding-left: 3.5rem !important;
+    padding-right: 0 !important;
+  }
+  .timeline-item::before,
+  .timeline-item::after {
+    left: 1rem !important;
+    right: auto !important;
+    transform: none !important;
+  }
+}
