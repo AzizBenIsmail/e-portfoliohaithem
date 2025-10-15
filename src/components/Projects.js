@@ -74,16 +74,29 @@ const Projects = () => {
                       <div className="project-icon">{project.image || '📁'}</div>
                     )}
 
-                    {pdfsMap[project.assetPath.replace(/\.[^.]+$/, '.pdf')] && (
-                      <a
-                        className="project-pdf-link"
-                        href={pdfsMap[project.assetPath.replace(/\.[^.]+$/, '.pdf')]}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Voir le PDF
-                      </a>
-                    )}
+                    {/* overlay with title/meta/actions */}
+                    <div className="project-overlay">
+                      <div className="overlay-left">
+                        <h3 className="overlay-title">{project.title}</h3>
+                        <div className="overlay-meta">
+                          <span className="overlay-client">{project.client}</span>
+                          <span className="overlay-year">{project.year}</span>
+                        </div>
+                      </div>
+                      <div className="overlay-actions">
+                        {pdfsMap[project.assetPath.replace(/\.[^.]+$/, '.pdf')] && (
+                          <a
+                            className="overlay-btn"
+                            href={pdfsMap[project.assetPath.replace(/\.[^.]+$/, '.pdf')]}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Voir le PDF
+                          </a>
+                        )}
+                      </div>
+                    </div>
+
                   </>
                 ) : (
                   <>

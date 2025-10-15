@@ -121,22 +121,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
-        </div>
-
-        <div className="skills-section">
-          <h3>{t('skills.certsTitle')}</h3>
-          <div className="languages-grid">
-            {certifications.map((cert, index) => (
-              <div key={index} className="language-item">
-                <div className="language-info">
-                  <h4>{cert.title}</h4>
-                  <span className="native-badge">{cert.org}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
+        </div>        
       </div>
     </section>
   );
