@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import { useTranslation } from 'react-i18next';
+import Portfolio from './Portfolio';
 
 // Load all image assets inside src/assets/projects (recursively)
 // We build maps so translations can reference files by relative path like "TOUR HEMERA/TOUR HEMERA.png"
@@ -145,7 +146,10 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="projects-summary">
+        {/* Portfolio section inserted below projects */}
+        <Portfolio />
+
+          <div className="projects-summary">
           <div className="summary-stats">
             <div className="stat-item">
               <div className="stat-number">50+</div>
@@ -165,6 +169,8 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        
+
       </div>
     </section>
   );

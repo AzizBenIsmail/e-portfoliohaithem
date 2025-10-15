@@ -459,6 +459,20 @@
       }
     ]
   },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Plans de détails techniques",
+    "items": [
+      { "id": 1, "title": "Basin de rétention" },
+      { "id": 2, "title": "Casques & barettes" },
+      { "id": 3, "title": "Dalle" },
+      { "id": 4, "title": "Maçonnerie" },
+      { "id": 5, "title": "Poutres" },
+      { "id": 6, "title": "Semelles" },
+      { "id": 7, "title": "Verticaux" },
+      { "id": 8, "title": "Voile par passe" }
+    ]
+  },
   "formation": {
     "title": "Formation",
     "subtitle": "Mon parcours académique et mes certifications",

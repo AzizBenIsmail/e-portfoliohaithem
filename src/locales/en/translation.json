@@ -109,6 +109,20 @@
       { "title": "Revit Structure Certificate", "org": "Ironhoster Academy" }
     ]
   },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Technical details gallery",
+    "items": [
+      { "id": 1, "title": "Retention Basin" },
+      { "id": 2, "title": "Helmets & Bars" },
+      { "id": 3, "title": "Slab" },
+      { "id": 4, "title": "Masonry" },
+      { "id": 5, "title": "Beams" },
+      { "id": 6, "title": "Footings" },
+      { "id": 7, "title": "Verticals" },
+      { "id": 8, "title": "Wall by pass" }
+    ]
+  },
   "projects": {
     "title": "My Projects",
     "subtitle": "Portfolio of civil engineering and offshore projects",
