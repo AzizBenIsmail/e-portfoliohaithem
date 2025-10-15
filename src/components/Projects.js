@@ -27,6 +27,27 @@ try {
 const Projects = () => {
   const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState('tous');
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState(null);
+
+  const openModal = (pdfFile, title) => {
+    setModalContent({ pdf: pdfFile, title });
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalContent(null);
+  };
+
+  const downloadPDF = (pdfFile, filename) => {
+    const link = document.createElement('a');
+    link.href = pdfFile;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const projects = t('projects.items', { returnObjects: true }) || [];
 
@@ -75,21 +96,36 @@ const Projects = () => {
                     )}
 
                     {pdfsMap[project.assetPath.replace(/\.[^.]+$/, '.pdf')] && (
-                      <a
-                        className="project-pdf-link"
-                        href={pdfsMap[project.assetPath.replace(/\.[^.]+$/, '.pdf')]}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Voir le PDF
-                      </a>
+                      <div className="pdf-actions">
+                        <button
+                          className="project-pdf-link btn-primary"
+                          onClick={() => openModal(pdfsMap[project.assetPath.replace(/\.[^.]+$/, '.pdf')], project.title)}
+                        >
+                          {t('formation.viewDiploma', { defaultValue: 'Voir le diplôme' })}
+                        </button>
+                        <a
+                          className="project-pdf-download btn-secondary"
+                          href={pdfsMap[project.assetPath.replace(/\.[^.]+$/, '.pdf')]}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {t('formation.download', { defaultValue: 'Télécharger' })}
+                        </a>
+                      </div>
                     )}
                   </>
                 ) : (
                   <>
                     <div className="project-icon">{project.image}</div>
                     {project.pdf && (
-                      <a className="project-pdf-link" href={project.pdf} target="_blank" rel="noreferrer">Voir le PDF</a>
+                      <div className="pdf-actions">
+                        <button className="project-pdf-link btn-primary" onClick={() => openModal(project.pdf, project.title)}>
+                          {t('formation.viewDiploma', { defaultValue: 'Voir le diplôme' })}
+                        </button>
+                        <a className="project-pdf-download btn-secondary" href={project.pdf} target="_blank" rel="noreferrer">
+                          {t('formation.download', { defaultValue: 'Télécharger' })}
+                        </a>
+                      </div>
                     )}
                   </>
                 )}
@@ -169,6 +205,31 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      {/* Modal Popup for project PDFs (same behavior as Formation.js) */}
+      {isModalOpen && modalContent && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h3>{modalContent.title}</h3>
+              <button className="modal-close" onClick={closeModal}>✕</button>
+            </div>
+            <div className="modal-body">
+              <iframe
+                src={modalContent.pdf}
+                width="100%"
+                height="600px"
+                title={modalContent.title}
+                style={{ border: 'none', borderRadius: '8px' }}
+              />
+            </div>
+            <div className="modal-footer">
+              <button onClick={() => downloadPDF(modalContent.pdf, (modalContent.title || 'document').replace(/\s+/g, '_') + '.pdf')} className="btn-download-modal">
+                {t('formation.download', { defaultValue: 'Télécharger' })}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
