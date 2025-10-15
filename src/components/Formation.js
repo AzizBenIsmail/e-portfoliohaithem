@@ -15,6 +15,7 @@ import institutFrancaisLogo from '../assets/images/Institut_Francais.jpeg';
 import amideastLogo from '../assets/images/Amideast.jpeg';
 import franceFlag from '../assets/images/Fr.jpeg';
 import usaFlag from '../assets/images/Usa.jpeg';
+import IronhosterLogo from '../assets/images/Ironhoster Academy.png';
 
 const Formation = () => {
   const { t } = useTranslation();
@@ -319,8 +320,8 @@ const Formation = () => {
                 </div>
                 <div className="cert-body">
                   <div className="cert-org">
-                    <span className="org-icon">🎓</span>
-                    Ironhoster Academy
+                    <img src={IronhosterLogo} alt="Ironhoster Academy" className="org-logo" />
+                    <span className="org-name">Ironhoster Academy</span>
                   </div>
                   <p className="cert-description">
                     {t('formation.cert.revitDesc')}
