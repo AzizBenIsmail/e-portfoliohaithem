@@ -38,8 +38,6 @@ const Skills = () => {
 
   const languages = t('skills_extra.languages', { returnObjects: true }) || [];
 
-  const certifications = t('skills_extra.certifications', { returnObjects: true }) || [];
-
   return (
     <section id="competences" className="skills">
       <div className="container">
