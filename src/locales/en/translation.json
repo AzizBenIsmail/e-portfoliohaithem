@@ -113,6 +113,22 @@
     "title": "Portfolio",
     "subtitle": "Technical details gallery",
     "items": [
+      {
+        "period": "05/2025 – 11/2025",
+        "company": "FAZ Project (Subcontractor Groupe LEGENDRE Construction, STRUCTURISTE, ETTEC & ARES)",
+        "position": "Engineer – Rebar Department Lead",
+        "location": "Tunis",
+        "description": "Prepared complex reinforcement drawings for construction projects in France; supervised and mentored drafting technicians & interns; reviewed and validated the team's produced drawings.",
+        "achievements": [
+          "Prepared complex reinforcement drawings for construction projects in France",
+          "Supervised and mentored drafting technicians & interns",
+          "Reviewed and validated drawings produced by the team",
+          "Maintained direct client communication and respected project schedules",
+          "Proposed technical solutions adapted to project constraints"
+        ],
+        "technologies": ["Autocad", "Arma+", "Excel"],
+        "projects": []
+      },
       { "id": 1, "title": "Retention Basin" },
       { "id": 2, "title": "Helmets & Bars" },
       { "id": 3, "title": "Slab" },
