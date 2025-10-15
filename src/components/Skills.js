@@ -6,7 +6,6 @@ import Advance_ConcretLogo from '../assets/images/Advance_Concrete.png';
 import Autocad_Structural_DetailingLogo from '../assets/images/Autocad_Structural_Detailing.png';
 import Arche_GraitecLogo from '../assets/images/Arche_Graitec.jpeg';
 import RevitLogo from '../assets/images/Revit.png';
-import IronhosterLogo from '../assets/images/Ironhoster Academy.png';
 
 import Advance_DesignLogo from '../assets/images/Advance_Design.png';
 import MS_OfficeLogo from '../assets/images/MS_Office.png';
@@ -32,7 +31,6 @@ const Skills = () => {
     { name: 'Advance Design', icon: Advance_DesignLogo, level: 70, niveau : t('skills.level.confirmed') },
     { name: 'MS Office', icon: MS_OfficeLogo, level: 100, niveau : t('skills.level.pro') },
     { name: 'Nova +', icon: Nova_Logo, level: 100 , niveau : t('skills.level.pro')},
-  { name: 'Ironhoster Academy', icon: IronhosterLogo, level: 100 , niveau : t('skills.level.pro')},
     { name: 'Arma +', icon: '⚙️', level: 100 , niveau : t('skills.level.pro')},
     { name: 'ADFER', icon: ADFERLogo, level: 50 , niveau : t('skills.level.amateur')},
     { name: 'ARMACAD', icon: ARMACADLogo, level: 50 , niveau : t('skills.level.amateur')}
