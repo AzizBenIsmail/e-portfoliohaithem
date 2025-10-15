@@ -147,7 +147,8 @@
         "year": "2024",
         "status": "Livré",
         "location": "44000 Nantes, France",
-        "partners": ["Architecte", "BET structure"]
+        "partners": ["Architecte", "BET structure"],
+        "intervenants": ["Architecte", "BET structure"]
       },
       {
         "id": 8,
@@ -161,7 +162,8 @@
         "year": "2023",
         "status": "Livré",
         "location": "35000 Rennes, France",
-        "partners": ["Orange", "Architecte"]
+        "partners": ["Orange", "Architecte"],
+        "intervenants": ["Orange", "Architecte"]
       },
       {
         "id": 9,
@@ -175,7 +177,8 @@
         "year": "2022",
         "status": "Livré",
         "location": "28300 Mainvilliers, France",
-        "partners": ["Promoteur", "BET structure"]
+        "partners": ["Promoteur", "BET structure"],
+        "intervenants": ["Promoteur", "BET structure"]
       },
       {
         "id": 10,
@@ -189,7 +192,8 @@
         "year": "2021",
         "status": "Livré",
         "location": "44000 Nantes, France",
-        "partners": ["Promoteur", "Architecte"]
+        "partners": ["Promoteur", "Architecte"],
+        "intervenants": ["Promoteur", "Architecte"]
       },
       {
         "id": 11,
@@ -203,7 +207,8 @@
         "year": "2020",
         "status": "Livré",
         "location": "75000 Paris, France",
-        "partners": ["Aménageur", "BET VRD"]
+        "partners": ["Aménageur", "BET VRD"],
+        "intervenants": ["Aménageur", "BET VRD"]
       },
       {
         "id": 12,
@@ -217,7 +222,8 @@
         "year": "2023",
         "status": "Livré",
         "location": "22800 Quintin, France",
-        "partners": ["Collectivité", "Bureau d'études"]
+        "partners": ["Collectivité", "Bureau d'études"],
+        "intervenants": ["Collectivité", "Bureau d'études"]
       },
       {
         "id": 13,
@@ -231,7 +237,8 @@
         "year": "2022",
         "status": "Livré",
         "location": "35000 Rennes, France",
-        "partners": ["Promoteur", "Architecte"]
+        "partners": ["Promoteur", "Architecte"],
+        "intervenants": ["Promoteur", "Architecte"]
       },
       {
         "id": 14,
@@ -245,7 +252,8 @@
         "year": "2021",
         "status": "Livré",
         "location": "Asnières-sur-Seine, France",
-        "partners": ["Groupe Hôtelier", "Architecte"]
+        "partners": ["Groupe Hôtelier", "Architecte"],
+        "intervenants": ["Groupe Hôtelier", "Architecte"]
       },
       {
         "id": 15,
@@ -259,7 +267,8 @@
         "year": "2020",
         "status": "Livré",
         "location": "35000 Rennes, France",
-        "partners": ["Client Privé", "BET structure"]
+        "partners": ["Client Privé", "BET structure"],
+        "intervenants": ["Client Privé", "BET structure"]
       },
       {
         "id": 16,
@@ -273,7 +282,8 @@
         "year": "2019",
         "status": "Livré",
         "location": "44600 Saint-Nazaire, France",
-        "partners": ["Société", "Architecte"]
+        "partners": ["Société", "Architecte"],
+        "intervenants": ["Société", "Architecte"]
       },
       {
         "id": 17,
@@ -287,7 +297,8 @@
         "year": "2018",
         "status": "Livré",
         "location": "91450 Étiolles, France",
-        "partners": ["Maître d'ouvrage", "BET réhabilitation"]
+        "partners": ["Maître d'ouvrage", "BET réhabilitation"],
+        "intervenants": ["Maître d'ouvrage", "BET réhabilitation"]
       },
       {
         "id": 18,
@@ -301,7 +312,8 @@
         "year": "2017",
         "status": "Livré",
         "location": "35000 Rennes, France",
-        "partners": ["Promoteur", "Architecte"]
+        "partners": ["Promoteur", "Architecte"],
+        "intervenants": ["Promoteur", "Architecte"]
       },
       {
         "id": 19,
@@ -315,7 +327,8 @@
         "year": "2016",
         "status": "Livré",
         "location": "77700 Chessy, France",
-        "partners": ["Promoteur", "BET structure"]
+        "partners": ["Promoteur", "BET structure"],
+        "intervenants": ["Promoteur", "BET structure"]
       },
       {
         "id": 20,
@@ -329,7 +342,8 @@
         "year": "2015",
         "status": "Livré",
         "location": "22400 Lamballe, France",
-        "partners": ["Promoteur", "Architecte"]
+        "partners": ["Promoteur", "Architecte"],
+        "intervenants": ["Promoteur", "Architecte"]
       }
     ]
   },

@@ -148,7 +148,8 @@
         "year": "2024",
         "status": "Delivered",
         "location": "44000 Nantes, France",
-        "partners": ["Architect", "Structural engineering firm"]
+  "partners": ["Architect", "Structural engineering firm"],
+  "intervenants": ["Architect", "Structural engineering firm"]
       },
       {
         "id": 8,
@@ -162,7 +163,8 @@
         "year": "2023",
         "status": "Delivered",
         "location": "35000 Rennes, France",
-        "partners": ["Orange", "Architect"]
+  "partners": ["Orange", "Architect"],
+  "intervenants": ["Orange", "Architect"]
       },
       {
         "id": 9,
@@ -176,7 +178,8 @@
         "year": "2022",
         "status": "Delivered",
         "location": "28300 Mainvilliers, France",
-        "partners": ["Developer", "Structural engineering firm"]
+  "partners": ["Developer", "Structural engineering firm"],
+  "intervenants": ["Developer", "Structural engineering firm"]
       },
       {
         "id": 10,
@@ -190,7 +193,8 @@
         "year": "2021",
         "status": "Delivered",
         "location": "44000 Nantes, France",
-        "partners": ["Developer", "Architect"]
+  "partners": ["Developer", "Architect"],
+  "intervenants": ["Developer", "Architect"]
       },
       {
         "id": 11,
@@ -204,7 +208,8 @@
         "year": "2020",
         "status": "Delivered",
         "location": "75000 Paris, France",
-        "partners": ["Developer", "Site & utilities engineering"]
+  "partners": ["Developer", "Site & utilities engineering"],
+  "intervenants": ["Developer", "Site & utilities engineering"]
       }
       ,
       {
@@ -219,7 +224,8 @@
         "year": "2023",
         "status": "Delivered",
         "location": "22800 Quintin, France",
-        "partners": ["Local authority", "Engineering firm"]
+  "partners": ["Local authority", "Engineering firm"],
+  "intervenants": ["Local authority", "Engineering firm"]
       },
       {
         "id": 13,
@@ -233,7 +239,8 @@
         "year": "2022",
         "status": "Delivered",
         "location": "35000 Rennes, France",
-        "partners": ["Developer", "Architect"]
+  "partners": ["Developer", "Architect"],
+  "intervenants": ["Developer", "Architect"]
       },
       {
         "id": 14,
@@ -247,7 +254,8 @@
         "year": "2021",
         "status": "Delivered",
         "location": "Asnières-sur-Seine, France",
-        "partners": ["Hotel Group", "Architect"]
+  "partners": ["Hotel Group", "Architect"],
+  "intervenants": ["Hotel Group", "Architect"]
       },
       {
         "id": 15,
@@ -261,7 +269,8 @@
         "year": "2020",
         "status": "Delivered",
         "location": "35000 Rennes, France",
-        "partners": ["Private Client", "Structural engineering firm"]
+  "partners": ["Private Client", "Structural engineering firm"],
+  "intervenants": ["Private Client", "Structural engineering firm"]
       },
       {
         "id": 16,
@@ -275,7 +284,8 @@
         "year": "2019",
         "status": "Delivered",
         "location": "44600 Saint-Nazaire, France",
-        "partners": ["Company", "Architect"]
+  "partners": ["Company", "Architect"],
+  "intervenants": ["Company", "Architect"]
       },
       {
         "id": 17,
@@ -289,7 +299,8 @@
         "year": "2018",
         "status": "Delivered",
         "location": "91450 Étiolles, France",
-        "partners": ["Client/Owner", "Rehabilitation engineering firm"]
+  "partners": ["Client/Owner", "Rehabilitation engineering firm"],
+  "intervenants": ["Client/Owner", "Rehabilitation engineering firm"]
       },
       {
         "id": 18,
@@ -303,7 +314,8 @@
         "year": "2017",
         "status": "Delivered",
         "location": "35000 Rennes, France",
-        "partners": ["Developer", "Architect"]
+  "partners": ["Developer", "Architect"],
+  "intervenants": ["Developer", "Architect"]
       },
       {
         "id": 19,
@@ -317,7 +329,8 @@
         "year": "2016",
         "status": "Delivered",
         "location": "77700 Chessy, France",
-        "partners": ["Developer", "Structural engineering firm"]
+  "partners": ["Developer", "Structural engineering firm"],
+  "intervenants": ["Developer", "Structural engineering firm"]
       },
       {
         "id": 20,
@@ -331,7 +344,8 @@
         "year": "2015",
         "status": "Delivered",
         "location": "22400 Lamballe, France",
-        "partners": ["Developer", "Architect"]
+  "partners": ["Developer", "Architect"],
+  "intervenants": ["Developer", "Architect"]
       }
     ]
   },
