@@ -108,23 +108,7 @@ const Projects = () => {
                 
                 <p className="project-description">{project.description}</p>
                 
-                <div className="project-features">
-                  <h4>{t('projects.featuresLabel')}</h4>
-                  <ul>
-                    {project.features.map((feature, index) => (
-                      <li key={index}>{feature}</li>
-                    ))}
-                  </ul>
-                </div>
                 
-                <div className="project-technologies">
-                  <h4>{t('projects.technologiesLabel')}</h4>
-                  <div className="tech-tags">
-                    {project.technologies.map((tech, index) => (
-                      <span key={index} className="tech-tag">{tech}</span>
-                    ))}
-                  </div>
-                </div>
                 
                 {(project.localisation || project.location) && (
                   <div className="project-location">
