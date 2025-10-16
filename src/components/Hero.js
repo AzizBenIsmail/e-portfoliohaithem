@@ -45,7 +45,7 @@ const Hero = () => {
           <div className="hero-image">
             <div className="profile-image-container">
               <img 
-                src="/haythem-profile.jpg" 
+                src="/haythem-profile.jpeg" 
                 alt={t('hero.name') + ' - ' + t('hero.title')}
                 className="profile-image"
                 onError={(e) => {
