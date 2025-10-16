@@ -665,3 +665,51 @@
   .license-files-actions { width: 100%; justify-content: space-between; }
   .file-btn { width: 48%; }
 }
+
+/* Dark-mode overrides for Licenses (Permis) block */
+body.dark .license-card-item.modern,
+body.dark .license-card,
+body.dark .license-group,
+body.dark .license-files,
+body.dark .license-tag {
+  background: linear-gradient(180deg, var(--panel), rgba(255,255,255,0.02));
+  border-color: var(--panel-border);
+  color: var(--text);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+}
+
+body.dark .license-card-item.modern {
+  border: 1px solid var(--panel-border);
+}
+
+/* ensure emoji/icon and desc contrast in dark mode */
+body.dark .license-card-item .license-icon-emoji,
+body.dark .license-card-item .license-icon-svg {
+  color: var(--primary);
+  filter: none;
+}
+
+body.dark .license-card-item .license-desc,
+body.dark .license-files h4,
+body.dark .license-files .section-sub {
+  color: var(--muted);
+}
+
+/* File buttons in dark mode */
+body.dark .file-btn {
+  color: var(--text);
+  border-color: rgba(255,255,255,0.04);
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
+body.dark .file-btn:hover {
+  background: linear-gradient(135deg,var(--primary),var(--primary-2));
+  color: white;
+}
+
+/* small tweak for license tags */
+body.dark .license-tag {
+  background: rgba(255,255,255,0.02);
+  color: var(--muted);
+  border-color: rgba(255,255,255,0.03);
+}
