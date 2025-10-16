@@ -126,11 +126,11 @@
 }
 
 .timeline-content {
-  background: linear-gradient(180deg, rgba(255,255,255,0.98), var(--panel));
+  background: linear-gradient(180deg, var(--panel), rgba(255,255,255,0.02));
   padding: 1.8rem 2rem;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(12,18,30,0.06);
-  border: 1px solid rgba(12,18,30,0.04);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--panel-border);
   position: relative;
   transition: transform 260ms cubic-bezier(.2,.9,.2,1), box-shadow 260ms cubic-bezier(.2,.9,.2,1);
 }
@@ -146,12 +146,12 @@
 
 .timeline-item.left .timeline-content::before {
   right: -24px;
-  border-left-color: rgba(255,255,255,0.98);
+  border-left-color: var(--panel);
 }
 
 .timeline-item.right .timeline-content::before {
   left: -24px;
-  border-right-color: rgba(255,255,255,0.98);
+  border-right-color: var(--panel);
 }
 
 .timeline-period {
@@ -267,7 +267,7 @@
 
 .timeline-projects h5 {
   font-size: 1rem;
-  color: #2c3e50;
+  color: var(--text);
   margin-bottom: 0.8rem;
   font-weight: 600;
 }
@@ -282,14 +282,14 @@
   padding-left: 1.5rem;
   margin-bottom: 0.4rem;
   font-size: 0.95rem;
-  color: #5a6c7d;
+  color: var(--muted);
 }
 
 .timeline-projects li::before {
   content: '•';
   position: absolute;
   left: 0;
-  color: #2980b9;
+  color: var(--primary);
   font-weight: bold;
 }
 
@@ -302,6 +302,35 @@
   font-weight: 600;
   border: 1px solid rgba(46,125,246,0.12);
 }
+
+/* Dark-mode specific tweaks */
+body.dark .timeline::before {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+}
+
+body.dark .timeline-content {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  box-shadow: var(--shadow);
+}
+
+body.dark .timeline-content::before {
+  border-left-color: var(--panel);
+  border-right-color: var(--panel);
+}
+
+body.dark .timeline-item::before {
+  background: var(--bg);
+  border: 4px solid var(--primary);
+  box-shadow: 0 8px 26px rgba(0,0,0,0.35);
+}
+
+body.dark .timeline-item.in-view::after {
+  animation: pulse 1.6s ease-out 0.1s;
+}
+
+body.dark .timeline-projects h5 { color: var(--text); }
+body.dark .timeline-projects li { color: var(--muted); }
 
 .experience-summary {
   margin-top: 4rem;
