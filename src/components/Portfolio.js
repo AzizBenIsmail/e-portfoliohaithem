@@ -13,6 +13,18 @@ try {
   // ignore when require.context is not available
 }
 
+// Also include images placed under src/assets/images (some images may be added there)
+try {
+  const reqImgs2 = require.context('../assets/images', false, /\.(png|jpe?g|svg|webp)$/);
+  reqImgs2.keys().forEach(key => {
+    // prefix with folder name to avoid key collision with Portfolio subfolders
+    const cleanKey = key.replace('./', 'images/');
+    imagesMap[cleanKey] = reqImgs2(key).default || reqImgs2(key);
+  });
+} catch (e) {
+  // ignore when require.context is not available
+}
+
 let pdfsMap = {};
 try {
   const reqPdfs = require.context('../assets/Portfolio', true, /\.pdf$/);
