@@ -51,7 +51,7 @@ const Footer = () => {
             <h4>{t('footer.contact')}</h4>
             <div className="contact-info">
               <p>📧 Engineer.haithem.ayadi@gmail.com</p>
-              <p>📱 +33 611488502</p>
+              <p>📱 +33 07 54 80 03 34</p>
               <p>📍 {t('contact.searchFrance')}</p>
             </div>
           </div>
