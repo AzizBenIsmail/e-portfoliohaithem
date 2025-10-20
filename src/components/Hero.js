@@ -1,6 +1,8 @@
 import React from 'react';
 import './Hero.css';
 import { useTranslation } from 'react-i18next';
+import fazLetter from '../assets/Lettre de recommandation/Lettre de recommandation FAZ.pdf';
+import mamLetter from '../assets/Lettre de recommandation/Lettre de recommandation M.A.M.pdf';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -39,6 +41,24 @@ const Hero = () => {
                 className="btn btn-outline"
               >
                 {t('hero.downloadCV')}
+              </a>
+              <a
+                href={fazLetter}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline"
+                style={{marginLeft: '8px'}}
+              >
+                {t('hero.viewRecommendation') || 'Lettre recommandation FAZ'}
+              </a>
+              <a
+                href={mamLetter}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline"
+                style={{marginLeft: '8px'}}
+              >
+                {t('hero.viewRecommendationMAM') || "Lettre recommandation M.A.M"}
               </a>
             </div>
           </div>
