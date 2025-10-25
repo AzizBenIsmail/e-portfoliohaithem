@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import useInView from '../hooks/useInView';
 import PermisPdf from '../assets/certif/Permis.pdf';
 import Permis2Pdf from '../assets/certif/Permis2.pdf';
+import CertifAuthenticity from "../assets/certif/certificat d'authenticité.pdf";
 
 const Licenses = () => {
   const { t } = useTranslation();
@@ -89,6 +90,13 @@ const Licenses = () => {
               className="btn file-btn"
             >
               📄 {t('contact.viewVerso', { defaultValue: 'Permis (Verso)' })}
+            </button>
+
+            <button
+              onClick={() => openModal(CertifAuthenticity, t('about.viewAuthenticity', { defaultValue: "Certificat d'authenticité" }))}
+              className="btn file-btn"
+            >
+              📄 {t('about.viewAuthenticity', { defaultValue: "Certificat d'authenticité" })}
             </button>
           </div>
         </div>
