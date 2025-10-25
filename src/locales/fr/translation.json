@@ -462,7 +462,7 @@
     ]
   },
   "portfolio": {
-    "title": "Portfolio",
+    "title": "Référence au lieu de portfolio",
     "subtitle": "Plans de détails techniques",
     "items": [
       { "id": 1, "title": "Basin de rétention" },
