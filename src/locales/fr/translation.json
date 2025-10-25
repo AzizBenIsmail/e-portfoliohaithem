@@ -54,6 +54,7 @@
       "H": "Tracteur agricole / remorque spéciale (H)"
     },
   "viewLicenses": "Voir mes permis",
+  "viewAuthenticity": "📄 Voir certificat d'authenticité",
     "interest": {
       "sports": "Football",
       "fitness": "Musculation",
@@ -531,6 +532,7 @@
     "title": "Mon Expérience",
     "subtitle": "7 années d'expertise dans les bureaux d'études offshore",
     "achievementsTitle": "Réalisations clés :",
+  "viewAttestation": "📄 Voir l'attestation",
     "projectsTitle": "Projets réalisés :",
     "technologiesTitle": "Technologies utilisées :",
     "expertiseTitle": "Expertise Clé",
@@ -613,7 +615,7 @@
             {
         "period": "10/2017 – 02/2018",
         "company": "MASTER RETAIL (PIMKIE)",
-        "position": "Vendeur",
+        "position": "Conseiller de vente",
         "location": "Tunis",
         "description": "Accueil et conseil client, mise en rayon des produits, gestion du stock et participation aux ventes en magasin.",
         "achievements": [
@@ -626,7 +628,8 @@
         ],
         "technologies": [],
         "projects": [],
-        "skills": ["Relation client", "Vente directe", "Merchandising", "Gestion de stock", "Travail en équipe"]
+        "skills": ["Relation client", "Vente directe", "Merchandising", "Gestion de stock", "Travail en équipe"],
+        "attestation": "Attestation de travail MR.pdf"
       },
       {
         "period": "02/2017 – 06/2017",
