@@ -68,9 +68,6 @@ const Formation = () => {
                   <button onClick={() => openModal(diplomePDF, t('formation.degree.engineerTitle'))} className="btn-primary">
                     {t('formation.viewDiploma')}
                   </button>
-                  <button onClick={() => downloadPDF(diplomePDF, 'Diplôme_national_dingénieur.pdf')} className="btn-secondary">
-                    {t('formation.download')}
-                  </button>
                 </div>
               </div>
             </div>
@@ -93,9 +90,6 @@ const Formation = () => {
                   <button onClick={() => openModal(licencePDF, t('formation.degree.licenseTitle'))} className="btn-primary">
                     {t('formation.viewDiploma')}
                   </button>
-                  <button onClick={() => downloadPDF(licencePDF, 'Licence_appliquée.pdf')} className="btn-secondary">
-                    {t('formation.download')}
-                  </button>
                 </div>
               </div>
             </div>
@@ -117,9 +111,6 @@ const Formation = () => {
                 <div className="actions">
                   <button onClick={() => openModal(baccalaureatPDF, t('formation.degree.baccalaureateTitle'))} className="btn-primary">
                     {t('formation.viewDiploma')}
-                  </button>
-                  <button onClick={() => downloadPDF(baccalaureatPDF, 'Diplôme_de_baccalauréat.pdf')} className="btn-secondary">
-                    {t('formation.download')}
                   </button>
                 </div>
               </div>
@@ -152,9 +143,6 @@ const Formation = () => {
                     <button onClick={() => openModal(tcf1PDF, t('formation.cert.tcfTitle'))} className="btn-primary">
                       {t('formation.viewDiploma')}
                     </button>
-                    <button onClick={() => downloadPDF(tcf1PDF, 'TCF1.pdf')} className="btn-secondary">
-                      {t('formation.download')}
-                    </button>
                   </div>
                 </div>
               </div>
@@ -180,9 +168,6 @@ const Formation = () => {
                   <div className="cert-actions">
                     <button onClick={() => openModal(tcf2PDF, t('formation.cert.tcfTitle'))} className="btn-primary">
                       {t('formation.viewDiploma')}
-                    </button>
-                    <button onClick={() => downloadPDF(tcf2PDF, 'TCF2.pdf')} className="btn-secondary">
-                      {t('formation.download')}
                     </button>
                   </div>
                 </div>
@@ -210,9 +195,6 @@ const Formation = () => {
                     <button onClick={() => openModal(level5PDF, t('formation.cert.englishCertTitle') + ' - Niveau 5')} className="btn-primary">
                       {t('formation.viewDiploma')}
                     </button>
-                    <button onClick={() => downloadPDF(level5PDF, 'LEVEL_5.pdf')} className="btn-secondary">
-                      {t('formation.download')}
-                    </button>
                   </div>
                 </div>
               </div>
@@ -238,9 +220,6 @@ const Formation = () => {
                   <div className="cert-actions">
                     <button onClick={() => openModal(level6PDF, t('formation.cert.englishCertTitle') + ' - Niveau 6')} className="btn-primary">
                       {t('formation.viewDiploma')}
-                    </button>
-                    <button onClick={() => downloadPDF(level6PDF, 'LEVEL_6.pdf')} className="btn-secondary">
-                      {t('formation.download')}
                     </button>
                   </div>
                 </div>
@@ -268,9 +247,6 @@ const Formation = () => {
                     <button onClick={() => openModal(level7PDF, t('formation.cert.englishCertTitle') + ' - Niveau 7')} className="btn-primary">
                       {t('formation.viewDiploma')}
                     </button>
-                    <button onClick={() => downloadPDF(level7PDF, 'LEVEL_7.pdf')} className="btn-secondary">
-                      {t('formation.download')}
-                    </button>
                   </div>
                 </div>
               </div>
@@ -296,9 +272,6 @@ const Formation = () => {
                   <div className="cert-actions">
                     <button onClick={() => openModal(level8PDF, t('formation.cert.englishCertTitle') + ' - Niveau 8')} className="btn-primary">
                       {t('formation.viewDiploma')}
-                    </button>
-                    <button onClick={() => downloadPDF(level8PDF, 'LEVEL_8.pdf')} className="btn-secondary">
-                      {t('formation.download')}
                     </button>
                   </div>
                 </div>
