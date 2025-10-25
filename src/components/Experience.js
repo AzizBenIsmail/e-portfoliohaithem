@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Experience.css';
 import { useTranslation } from 'react-i18next';
 import useInView from '../hooks/useInView';
@@ -61,6 +61,43 @@ const AnimatedTimelineItem = ({ exp, index, side, t }) => {
   const [ref, inView] = useInView({ once: true, threshold: 0.15 });
   const delay = Math.min(0.6, 0.08 * index);
 
+  // Modal state for attestation PDF
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalPdf, setModalPdf] = useState(null);
+  const [modalTitle, setModalTitle] = useState('');
+
+  const openModal = (pdfPath, title) => {
+    setModalPdf(pdfPath);
+    setModalTitle(title);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalPdf(null);
+    setModalTitle('');
+  };
+
+  const downloadPDF = (pdfFile, filename) => {
+    const link = document.createElement('a');
+    link.href = pdfFile;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  // Pre-resolve the PDF path if attestation is present to include it in the bundle
+  let attestationSrc = null;
+  try {
+    if (exp.attestation) {
+      attestationSrc = require(`../assets/Attestation_de_Travaille/${exp.attestation}`);
+    }
+  } catch (e) {
+    // If require fails, leave null (file missing)
+    console.warn('Attestation file not found:', exp.attestation, e);
+  }
+
   return (
     <div ref={ref} className={`timeline-item ${side} ${inView ? 'in-view' : 'hidden'}`} style={{ '--delay': `${delay}s` }}>
       <div className="timeline-content">
@@ -98,6 +135,47 @@ const AnimatedTimelineItem = ({ exp, index, side, t }) => {
             ))}
           </div>
         </div>
+
+        {attestationSrc && (
+          <div className="timeline-attestation">
+            <button
+              type="button"
+              className="btn-primary"
+              onClick={() => openModal(attestationSrc, `${exp.company} - Attestation`)}
+            >
+              {t('experience.viewAttestation') || "📄 Voir l'attestation"}
+            </button>
+          </div>
+        )}
+
+        {/* Modal Popup for attestation PDF */}
+        {isModalOpen && modalPdf && (
+          <div className="modal-overlay" onClick={closeModal}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <div className="modal-header">
+                <h3>{modalTitle}</h3>
+                <button className="modal-close" onClick={closeModal}>✕</button>
+              </div>
+              <div className="modal-body">
+                <iframe
+                  src={modalPdf}
+                  width="100%"
+                  height="600px"
+                  title={modalTitle}
+                  style={{ border: 'none', borderRadius: '8px' }}
+                />
+              </div>
+              <div className="modal-footer">
+                <button
+                  onClick={() => downloadPDF(modalPdf, (exp.attestation || 'attestation').replace(/\s+/g, '_'))}
+                  className="btn-download-modal"
+                >
+                  {t('formation.download') || '⬇️ Télécharger'}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
