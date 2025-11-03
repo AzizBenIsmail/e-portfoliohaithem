@@ -343,52 +343,6 @@
           "Maître d’oeuvre / Architecte : CABINET JP VIGUIER, BLANCHARD MARSAULT PONDEVIE, MAURER ARCHITECTE",
           "Gros Oeuvre: LEGENDRE Construction"
         ]
-      },
-      {
-        "id": 16,
-        "title": "KAPLA",
-        "category": "commercial",
-        "description": "1,600 m² of offices and services and 950 m² of retail. Very close to major road links; transport at ground level and TGV station within 10 minutes.",
-        "assetPath": "KAPLA/KAPLA.png",
-        "technologies": ["Autocad"],
-        "features": ["Étude de charpente", "Dossier technique"],
-        "client": "Société",
-        "year": "2019",
-        "status": "Livré",
-        "location": "44600 Saint-Nazaire, France",
-        "partners": [
-          "Maître d’ouvrage : LEGENDRE IMMOBILIER – 360 DEG",
-          "Maître d’oeuvre / Architecte : ASA GIMBERT SARL",
-          "Gros Oreuvre: LEGENDRE Construction"
-        ],
-        "intervenants": [
-          "Maître d’ouvrage : LEGENDRE IMMOBILIER – 360 DEG",
-          "Maître d’oeuvre / Architecte : ASA GIMBERT SARL",
-          "Gros Oreuvre: LEGENDRE Construction"
-        ]
-      },
-      {
-        "id": 19,
-        "title": "LE RIVIERA CHESSY",
-        "category": "residential",
-        "description": "Art Deco high-end residence of 128 units (studio to 6-room) plus 5 duplex houses. The program includes 194 underground parking spaces.",
-        "assetPath": "LE RIVIERA CHESSY/LE RIVIERA CHESSY.png",
-        "technologies": ["Revit", "Tekla"],
-        "features": ["Plans", "Notes de calcul"],
-        "client": "Promoteur",
-        "year": "2016",
-        "status": "Livré",
-        "location": "77700 Chessy, France",
-        "partners": [
-          "Maître d’ouvrage : LEGENDRE IMMOBILIER",
-          "Maître d’oeuvre / Architecte : JENNY & LAKATOS",
-          "Gros Oeuvre : LEGENDRE Construction"
-        ],
-        "intervenants": [
-          "Maître d’ouvrage : LEGENDRE IMMOBILIER",
-          "Maître d’oeuvre / Architecte : JENNY & LAKATOS",
-          "Gros Oeuvre : LEGENDRE Construction"
-        ]
       }
     ]
   },
