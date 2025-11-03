@@ -405,16 +405,13 @@
       "baccalaureateDescription": "Baccalauréat Science technique"
     },
     "cert": {
-      "tcfTitle": "TCF (Test de Connaissance du Français)",
+      "tcfTitle": "Test de Connaissance du Français (TCF)",
       "tcfOrg": "Institut Français de Tunisie",
-      "tcfDesc": "Test de Connaissance du Français - Certification officielle de niveau linguistique",
+      "tcfDesc": "Tests de Connaissance du Français - Certifications officielles de niveau linguistique",
       "englishCertOrg": "Amideast",
-      "englishCertTitle": "Certificat de Langue Anglaise",
-      "englishCertDesc": "Certification en langue anglaise - Niveau",
-      "englishCertLevel5": "- Niveau 5",
-      "englishCertLevel6": "- Niveau 6",
-      "englishCertLevel7": "- Niveau 7",
-      "englishCertLevel8": "- Niveau 8",
+      "englishCertTitle": "Certifications en Langue Anglaise",
+      "englishCertDesc": "Certifications complètes en langue anglaise",
+      "englishLevels": "Niveaux 5, 6, 7 et 8 - Maîtrise progressive de l'anglais",
       "revitTitle": "Certificat Revit Structure",
       "revitDesc": "Certification professionnelle en modélisation et conception de structures avec Revit Structure",
       "revitOrg": "Ironhoster Academy"

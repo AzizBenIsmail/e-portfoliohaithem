@@ -389,6 +389,29 @@
   flex-wrap: wrap;
 }
 
+.cert-actions .btn-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cert-actions .btn-group .btn-secondary {
+  min-width: 45px;
+  padding: 8px 12px;
+  text-align: center;
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.cert-actions .btn-group .btn-secondary:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+}
+
 /* Modal Popup Styles */
 .modal-overlay {
   position: fixed;
