@@ -474,7 +474,9 @@
       { "id": 6, "title": "Semelles" },
       { "id": 7, "title": "Verticaux" },
       { "id": 8, "title": "Voile par passe" },
-      { "id": 9, "title": "Reprise en sous oeuvre" }
+      { "id": 9, "title": "Reprise en sous oeuvre" },
+      { "id": 10, "title": "Poteaux" },
+      { "id": 11, "title": "Ouvertures de baies" }
     ],
     "modelisationTitle": "Modélisations",
     "modelisationItems": [
