@@ -62,7 +62,7 @@ const Header = () => {
               <li><button onClick={() => scrollToSection('accueil')}>{t('header.home')}</button></li>
               <li><button onClick={() => scrollToSection('apropos')}>{t('header.about')}</button></li>
               <li><button onClick={() => scrollToSection('competences')}>{t('header.skills')}</button></li>
-              <li><button onClick={() => scrollToSection('formation')}>{t('header.formation')}</button></li>
+              <li><button onClick={() => scrollToSection('portfolio')}>{t('header.référence')}</button></li>
               <li><button onClick={() => scrollToSection('experience')}>{t('header.experience')}</button></li>
               <li><button onClick={() => scrollToSection('projets')}>{t('header.projects')}</button></li>
               <li><button onClick={() => scrollToSection('permis')}>{t('header.licenses')}</button></li>
