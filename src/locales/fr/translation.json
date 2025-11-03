@@ -463,7 +463,7 @@
     ]
   },
   "portfolio": {
-    "title": "Référence au lieu de portfolio",
+    "title": "Référence",
     "subtitle": "Plans de détails techniques",
     "items": [
       { "id": 1, "title": "Basin de rétention" },
@@ -474,6 +474,11 @@
       { "id": 6, "title": "Semelles" },
       { "id": 7, "title": "Verticaux" },
       { "id": 8, "title": "Voile par passe" }
+    ],
+    "modelisation": [
+      { "id": 1, "title": "Modélisation 66 logement par Arche ossature" },
+      { "id": 2, "title": "Modélisation du projet à Angerville par Graitec" },
+      { "id": 3, "title": "Modélisation GYMNASE VILLE PARIS PAR Graitec" }
     ]
   },
   "formation": {
