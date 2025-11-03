@@ -463,7 +463,7 @@
     ]
   },
   "portfolio": {
-    "title": "Référence",
+    "title": "Références",
     "subtitle": "Plans de détails techniques",
     "items": [
       { "id": 1, "title": "Basin de rétention" },
@@ -476,7 +476,9 @@
       { "id": 8, "title": "Voile par passe" },
       { "id": 9, "title": "Reprise en sous oeuvre" },
       { "id": 10, "title": "Poteaux" },
-      { "id": 11, "title": "Ouvertures de baies" }
+      { "id": 11, "title": "Ouvertures de baies" },
+      { "id": 11, "title": "Etude villa" }
+
     ],
     "modelisationTitle": "Modélisations",
     "modelisationItems": [

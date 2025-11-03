@@ -107,7 +107,7 @@ const Portfolio = () => {
     <section id="portfolio" className="portfolio-section">
       <div className="container">
         <div className="section-header">
-          <h2>{t('portfolio.title')}</h2>
+          <h1>{t('portfolio.title')}</h1>
           <p>{t('portfolio.subtitle')}</p>
         </div>
 
@@ -160,7 +160,7 @@ const Portfolio = () => {
         {/* Section des modélisations */}
         <br></br>
         <div className="section-header">
-          <h3>{t('portfolio.modelisationTitle')}</h3>
+          <p>{t('portfolio.modelisationTitle')}</p>
         </div>
         <div className="portfolio-grid">
           {t('portfolio.modelisationItems', { returnObjects: true })?.map(item => {
