@@ -224,25 +224,7 @@ const Formation = () => {
             </div>
           </div>
           
-            <div className="formation-stats">
-            <div className="stat-item">
-              <div className="stat-number">6</div>
-              <div className="stat-label">{t('formation.stats.years')}</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">8</div>
-              <div className="stat-label">{t('formation.stats.certs')}</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">Mention</div>
-              <div className="stat-label">{t('formation.stats.mention')}</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">100%</div>
-              <div className="stat-label">{t('formation.stats.success')}</div>
-            </div>
           </div>
-        </div>
       </div>
 
       {/* Modal Popup */}
