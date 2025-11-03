@@ -25,6 +25,18 @@ try {
   // ignore when require.context is not available
 }
 
+// Include images from modelisation folder
+try {
+  const reqImgs3 = require.context('../assets/modelisation', true, /\.(png|jpe?g|svg|webp)$/);
+  reqImgs3.keys().forEach(key => {
+    // prefix with folder name to avoid key collision
+    const cleanKey = key.replace('./', 'modelisation/');
+    imagesMap[cleanKey] = reqImgs3(key).default || reqImgs3(key);
+  });
+} catch (e) {
+  // ignore when require.context is not available
+}
+
 let pdfsMap = {};
 try {
   const reqPdfs = require.context('../assets/Portfolio', true, /\.pdf$/);
@@ -89,11 +101,58 @@ const Portfolio = () => {
           <p>{t('portfolio.subtitle')}</p>
         </div>
 
+  {/* Section des plans de détails techniques */}
   <div className="portfolio-grid">
           {items.map(item => {
             const title = (item && item.title) ? item.title : '';
             const img = findImageFor(title);
             // find pdf by matching normalized title in pdfsMap keys
+            const norm = title.toLowerCase().replace(/\s+/g, '');
+            const pdfKey = Object.keys(pdfsMap).find(k => k.toLowerCase().replace(/\s+/g, '').includes(norm));
+            const pdf = pdfKey ? pdfsMap[pdfKey] : null;
+
+            const onClick = () => {
+              if (pdf) {
+                setModalPdf(pdf);
+                setModalTitle(item.title);
+                setModalOpen(true);
+              }
+            };
+
+            return (
+              <div
+                key={item.id}
+                className={`portfolio-card ${pdf ? 'clickable' : ''}`}
+                onClick={onClick}
+                role={pdf ? 'link' : 'button'}
+                tabIndex={0}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { onClick(); } }}
+              >
+                <div className="portfolio-image">
+                  {img ? (
+                    <img src={img} alt={item.title} />
+                  ) : (
+                    <div className="portfolio-placeholder">📁</div>
+                  )}
+                </div>
+                <div className="portfolio-body">
+                  <h3>{item.title}</h3>
+                  {pdf && <div className="portfolio-pdf-indicator">PDF disponible</div>}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Section des modélisations */}
+        <br></br>
+        <div className="section-header">
+          <h3>{t('portfolio.modelisationTitle')}</h3>
+        </div>
+        <div className="portfolio-grid">
+          {t('portfolio.modelisationItems', { returnObjects: true })?.map(item => {
+            const title = (item && item.title) ? item.title : '';
+            const img = findImageFor(title);
             const norm = title.toLowerCase().replace(/\s+/g, '');
             const pdfKey = Object.keys(pdfsMap).find(k => k.toLowerCase().replace(/\s+/g, '').includes(norm));
             const pdf = pdfKey ? pdfsMap[pdfKey] : null;

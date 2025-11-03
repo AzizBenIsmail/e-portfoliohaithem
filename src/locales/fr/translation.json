@@ -475,6 +475,12 @@
       { "id": 7, "title": "Verticaux" },
       { "id": 8, "title": "Voile par passe" }
     ],
+    "modelisationTitle": "Modélisations",
+    "modelisationItems": [
+      { "id": 1, "title": "Modélisation 66 logement par Arche ossature" },
+      { "id": 2, "title": "Modélisation du projet à Angerville par Graitec" },
+      { "id": 3, "title": "Modélisation GYMNASE VILLE PARIS PAR Graitec" }
+    ],
     "modelisation": [
       { "id": 1, "title": "Modélisation 66 logement par Arche ossature" },
       { "id": 2, "title": "Modélisation du projet à Angerville par Graitec" },
