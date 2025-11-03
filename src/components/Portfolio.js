@@ -56,12 +56,22 @@ const findImageFor = (title) => {
   return matchKey ? imagesMap[matchKey] : null;
 }
 
+const findPdfsFor = (title) => {
+  if (!title || typeof title !== 'string') return [];
+  const norm = title.toLowerCase().replace(/\s+/g, '');
+  return Object.entries(pdfsMap)
+    .filter(([key]) => key.toLowerCase().replace(/\s+/g, '').includes(norm))
+    .map(([_, value]) => value);
+}
+
 const Portfolio = () => {
   const { t } = useTranslation();
   const items = t('portfolio.items', { returnObjects: true }) || [];
   const [modalOpen, setModalOpen] = useState(false);
   const [modalPdf, setModalPdf] = useState(null);
   const [modalTitle, setModalTitle] = useState('');
+  const [currentPdfs, setCurrentPdfs] = useState([]);
+  const [currentPdfIndex, setCurrentPdfIndex] = useState(0);
   // keep simple iframe viewer state
 
   useEffect(() => {
@@ -106,14 +116,13 @@ const Portfolio = () => {
           {items.map(item => {
             const title = (item && item.title) ? item.title : '';
             const img = findImageFor(title);
-            // find pdf by matching normalized title in pdfsMap keys
-            const norm = title.toLowerCase().replace(/\s+/g, '');
-            const pdfKey = Object.keys(pdfsMap).find(k => k.toLowerCase().replace(/\s+/g, '').includes(norm));
-            const pdf = pdfKey ? pdfsMap[pdfKey] : null;
+            const pdfs = findPdfsFor(title);
 
             const onClick = () => {
-              if (pdf) {
-                setModalPdf(pdf);
+              if (pdfs.length > 0) {
+                setCurrentPdfs(pdfs);
+                setCurrentPdfIndex(0);
+                setModalPdf(pdfs[0]);
                 setModalTitle(item.title);
                 setModalOpen(true);
               }
@@ -122,9 +131,9 @@ const Portfolio = () => {
             return (
               <div
                 key={item.id}
-                className={`portfolio-card ${pdf ? 'clickable' : ''}`}
+                className={`portfolio-card ${pdfs.length > 0 ? 'clickable' : ''}`}
                 onClick={onClick}
-                role={pdf ? 'link' : 'button'}
+                role={pdfs.length > 0 ? 'link' : 'button'}
                 tabIndex={0}
                 onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { onClick(); } }}
               >
@@ -137,7 +146,11 @@ const Portfolio = () => {
                 </div>
                 <div className="portfolio-body">
                   <h3>{item.title}</h3>
-                  {pdf && <div className="portfolio-pdf-indicator">PDF disponible</div>}
+                  {pdfs.length > 0 && (
+                    <div className="portfolio-pdf-indicator">
+                      {pdfs.length} PDF{pdfs.length > 1 ? 's' : ''} disponible{pdfs.length > 1 ? 's' : ''}
+                    </div>
+                  )}
                 </div>
               </div>
             );
@@ -198,10 +211,38 @@ const Portfolio = () => {
                 <button className="modal-close" onClick={() => setModalOpen(false)} aria-label="Close">✕</button>
               </div>
               <div className="modal-body">
-                {/* Only show iframe and download button */}
                 {modalPdf ? (
                   <>
-                    <iframe src={modalPdf} title={modalTitle} frameBorder="0" style={{ width: '100%', height: '86vh' }} />
+                    <div className="modal-controls" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
+                      <button 
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          if (currentPdfIndex > 0) {
+                            setCurrentPdfIndex(currentPdfIndex - 1);
+                            setModalPdf(currentPdfs[currentPdfIndex - 1]);
+                          }
+                        }}
+                        disabled={currentPdfIndex === 0}
+                        style={{ padding: '5px 10px' }}
+                      >
+                        ← Précédent
+                      </button>
+                      <span>PDF {currentPdfIndex + 1} sur {currentPdfs.length}</span>
+                      <button 
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          if (currentPdfIndex < currentPdfs.length - 1) {
+                            setCurrentPdfIndex(currentPdfIndex + 1);
+                            setModalPdf(currentPdfs[currentPdfIndex + 1]);
+                          }
+                        }}
+                        disabled={currentPdfIndex === currentPdfs.length - 1}
+                        style={{ padding: '5px 10px' }}
+                      >
+                        Suivant →
+                      </button>
+                    </div>
+                    <iframe src={modalPdf} title={modalTitle} frameBorder="0" style={{ width: '100%', height: '82vh' }} />
                   </>
                 ) : (
                   <div>Aucun PDF trouvé.</div>
