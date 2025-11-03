@@ -3,7 +3,7 @@
     "home": "Accueil",
     "about": "À Propos",
     "skills": "Compétences",
-    "référence": "référence",
+    "référence": "Référence",
     "experience": "Expérience",
     "projects": "Projets",
     "contact": "Contact",
@@ -473,7 +473,8 @@
       { "id": 5, "title": "Poutres" },
       { "id": 6, "title": "Semelles" },
       { "id": 7, "title": "Verticaux" },
-      { "id": 8, "title": "Voile par passe" }
+      { "id": 8, "title": "Voile par passe" },
+      { "id": 9, "title": "Reprise en sous oeuvre" }
     ],
     "modelisationTitle": "Modélisations",
     "modelisationItems": [
