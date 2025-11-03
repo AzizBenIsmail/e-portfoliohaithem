@@ -484,12 +484,14 @@
     "modelisationItems": [
       { "id": 1, "title": "Modélisation 66 logement par Arche ossature" },
       { "id": 2, "title": "Modélisation du projet à Angerville par Graitec" },
-      { "id": 3, "title": "Modélisation GYMNASE VILLE PARIS PAR Graitec" }
+      { "id": 3, "title": "Modélisation GYMNASE VILLE PARIS PAR Graitec" },
+      { "id": 4, "title": "Villa CHAHIR" }
     ],
     "modelisation": [
       { "id": 1, "title": "Modélisation 66 logement par Arche ossature" },
       { "id": 2, "title": "Modélisation du projet à Angerville par Graitec" },
-      { "id": 3, "title": "Modélisation GYMNASE VILLE PARIS PAR Graitec" }
+      { "id": 3, "title": "Modélisation GYMNASE VILLE PARIS PAR Graitec" },
+      { "id": 4, "title": "Villa CHAHIR" }
     ]
   },
   "formation": {
