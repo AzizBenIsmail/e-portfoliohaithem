@@ -369,52 +369,6 @@
         ]
       },
       {
-        "id": 17,
-        "title": "LA FERME DU COUDRAY",
-        "category": "residential",
-        "description": "Construction of 28 owner-occupied units and 38 social rental units across 6 buildings, including one rehabilitation. One basement level, SLABE insulating box and BBC energy performance operation.",
-        "assetPath": "LA FERME DU COUDRAY/LA FERME DU COUDRAY.png",
-        "technologies": ["Autocad", "Revit"],
-        "features": ["Réhabilitation", "Plans d'exécution"],
-        "client": "Maître d'ouvrage",
-        "year": "2018",
-        "status": "Livré",
-        "location": "91450 Étiolles, France",
-        "partners": [
-          "Maître d’ouvrage : ESSONNE HABITAT – TERRALIA",
-          "Maître d’oeuvre / Architecte : LANCTUIT ARCHITECTE",
-          "Gros Oreuvre: LEGENDRE Construction"
-        ],
-        "intervenants": [
-          "Maître d’ouvrage : ESSONNE HABITAT – TERRALIA",
-          "Maître d’oeuvre / Architecte : LANCTUIT ARCHITECTE",
-          "Gros Oreuvre: LEGENDRE Construction"
-        ]
-      },
-      {
-        "id": 18,
-        "title": "LE PANORAMIK",
-        "category": "commercial",
-        "description": "Construction of 127 dwellings and ground-floor retail with a shared basement level and a chapel. External insulation with perforated cladding.",
-        "assetPath": "LE PANORAMIK/LE PANORAMIK.png",
-        "technologies": ["Autocad"],
-        "features": ["Dossier PDF", "Plans"],
-        "client": "Promoteur",
-        "year": "2017",
-        "status": "Livré",
-        "location": "35000 Rennes, France",
-        "partners": [
-          "Maître d’ouvrage : KAUFMAN & BROAD, AIGUILLON",
-          "Maître d’oeuvre / Architecte : LAN ARCHITECTE",
-          "Gros oeuvre : LEGENDRE construction"
-        ],
-        "intervenants": [
-          "Maître d’ouvrage : KAUFMAN & BROAD, AIGUILLON",
-          "Maître d’oeuvre / Architecte : LAN ARCHITECTE",
-          "Gros oeuvre : LEGENDRE construction"
-        ]
-      },
-      {
         "id": 19,
         "title": "LE RIVIERA CHESSY",
         "category": "residential",
@@ -435,29 +389,6 @@
           "Maître d’ouvrage : LEGENDRE IMMOBILIER",
           "Maître d’oeuvre / Architecte : JENNY & LAKATOS",
           "Gros Oeuvre : LEGENDRE Construction"
-        ]
-      },
-      {
-        "id": 20,
-        "title": "LES TERRASSES DU HARAS",
-        "category": "residential",
-        "description": "Three-storey residence (R+3) of 24 units including a medical center and ground-floor shops. Apartments range from 2 to 4 rooms and a private underground car park with 73 spaces.",
-        "assetPath": "LES TERRASSES DU HARAS/LES TERRASSES DU HARAS.png",
-        "technologies": ["Autocad"],
-        "features": ["Plans de structure", "Ferraillage"],
-        "client": "Promoteur",
-        "year": "2015",
-        "status": "Livré",
-        "location": "22400 Lamballe, France",
-        "partners": [
-          "Maître d’ouvrage : LEGENDRE IMMOBILIER",
-          "Maître d’oeuvre / Architecte : Atelier du canal-Rennes",
-          "Gros oeuvre : LEGENDRE Construction"
-        ],
-        "intervenants": [
-          "Maître d’ouvrage : LEGENDRE IMMOBILIER",
-          "Maître d’oeuvre / Architecte : Atelier du canal-Rennes",
-          "Gros oeuvre : LEGENDRE Construction"
         ]
       }
     ]
