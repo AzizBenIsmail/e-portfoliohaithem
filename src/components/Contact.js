@@ -66,8 +66,8 @@ const Contact = () => {
     {
       icon: '🟢',
       title: t('contact.info.whatsappTitle', { defaultValue: 'WhatsApp' }),
-      value: '+216 23294229',
-      action: 'https://wa.me/21623294229'
+      value: '+33 6 51 18 90 60',
+      action: 'https://wa.me/33651189060'
     },
     {
       icon: '💼',
