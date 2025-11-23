@@ -54,8 +54,8 @@ const Contact = () => {
     {
       icon: '📱',
       title: t('contact.info.phoneTitle', { defaultValue: 'Téléphone' }),
-      value: '+33 611488502',
-      action: 'tel:+33611488502'
+      value: '+33 6 51 18 90 60',
+      action: 'tel:+33651189060'
     },
     {
       icon: '📍',
@@ -66,8 +66,8 @@ const Contact = () => {
     {
       icon: '🟢',
       title: t('contact.info.whatsappTitle', { defaultValue: 'WhatsApp' }),
-      value: '+33 6 51 18 90 60',
-      action: 'https://wa.me/33651189060'
+      value: '+216 23 29 42 29',
+      action: 'https://wa.me/+21623294229'
     },
     {
       icon: '💼',
