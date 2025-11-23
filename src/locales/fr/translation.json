@@ -553,7 +553,9 @@
           "Planification : coffrage, ferraillage, pose d’armatures, décoffrage"
         ],
         "technologies": ["Autocad", "Excel"],
-        "projects": ["Hôtel MARRIOTT R+12 & 3SS : supervision des phases clés du chantier"]
+        "projects": ["Hôtel MARRIOTT R+12 & 3SS : supervision des phases clés du chantier"],
+        "attestation": "Attestation de stage PFE licence.pdf"
+
       }
     ]
   },
